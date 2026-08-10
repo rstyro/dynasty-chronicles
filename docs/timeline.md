@@ -29,7 +29,6 @@ export default {
   <p class="hero-desc">纵览华夏五千年，从三皇五帝的传说，到最后一个封建王朝的落幕。</p>
 </div>
 
----
 
 ## 🌍 文明演进总览
 
@@ -44,7 +43,7 @@ export default {
 
 </div>
 
----
+
 
 ## 📋 朝代速览（完整版）
 
@@ -108,7 +107,7 @@ export default {
 | **东汉** | 光武中兴、班超定远，造纸术改进，佛教传入 |
 
 **关联帝王**：[秦始皇](/figures/emperors/qin-shi-huang) · [汉武帝](/figures/emperors/han-wudi) · [汉光武帝](/figures/emperors/han-guangwudi)  
-**关联武将**：[白起](/figures/generals/bai-qi) · [韩信](/figures/generals/han-xin) · [卫青](/figures/generals/wei-qing) · [霍去病](/figures/generals/huo-qu-bing)  
+**关联武将**：[蒙恬](/figures/generals/meng-tian) · [白起](/figures/generals/bai-qi) · [韩信](/figures/generals/han-xin) · [李广](/figures/generals/li-guang) · [卫青](/figures/generals/wei-qing) · [霍去病](/figures/generals/huo-qu-bing)  
 **关联谋臣**：[张良](/figures/strategists/zhang-liang)  
 **关联战役**：[长平之战](/battles/changping) · [巨鹿之战](/battles/juluzhi-zhan)
 
@@ -127,7 +126,7 @@ export default {
 | **南北朝对峙** | 北朝鲜卑汉化改革，南朝宋齐梁陈——佛教兴盛于乱世 |
 
 **关联帝王**：[汉献帝](/figures/emperors/han-xiandi)  
-**关联武将**：[关羽](/figures/generals/guan-yu)  
+**关联武将**：[吕布](/figures/generals/lv-bu) · [关羽](/figures/generals/guan-yu) · [祖逖](/figures/generals/zu-ti)  
 **关联谋臣**：[诸葛亮](/figures/strategists/zhuge-liang)  
 **关联战役**：[赤壁之战](/battles/chibi) · [淝水之战](/battles/feishui)
 
@@ -145,7 +144,7 @@ export default {
 | **安史之乱** | 盛极而衰，藩镇割据的导火索 |
 
 **关联帝王**：[隋文帝](/figures/emperors/sui-wendi) · [唐太宗](/figures/emperors/tang-taizong)  
-**关联武将**：[李靖](/figures/generals/li-jing) · [薛仁贵](/figures/generals/xue-ren-gui)  
+**关联武将**：[李靖](/figures/generals/li-jing) · [秦叔宝](/figures/generals/qin-shu-bao) · [尉迟恭](/figures/generals/wei-chi-gong) · [苏定方](/figures/generals/su-ding-fang) · [薛仁贵](/figures/generals/xue-ren-gui)  
 **关联谋臣**：[房玄龄](/figures/strategists/fang-xuanling) · **杜如晦**
 
 ---
@@ -165,7 +164,7 @@ export default {
 | **大清帝国** | 奠定现代中国疆域，晚清面临三千年未有之变局 |
 
 **关联帝王**：[宋太祖](/figures/emperors/song-taizu) · [明太祖](/figures/emperors/ming-taizu) · [康熙帝](/figures/emperors/kangxi)  
-**关联武将**：[岳飞](/figures/generals/yue-fei) · [徐达](/figures/generals/xu-da) · [戚继光](/figures/generals/qi-ji-guang) · **左宗棠**  
+**关联武将**：[岳飞](/figures/generals/yue-fei) · [徐达](/figures/generals/xu-da) · [戚继光](/figures/generals/qi-ji-guang) · [袁崇焕](/figures/generals/yuan-chong-huan)  
 **关联谋臣**：[刘基](/figures/strategists/liu-ji) · [张居正](/figures/strategists/zhang-ju-zheng)
 
 ---
@@ -213,10 +212,10 @@ export default {
   margin: 0 auto;
 }
 
-/* ===== 五时期网格卡片 ===== */
+/* ===== 六时期网格卡片 ===== */
 .era-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 1.5rem 0 2.5rem 0;
 }
@@ -263,7 +262,8 @@ export default {
 }
 
 /* 各时期主题色点缀（可选） */
-.era-ancient { border-top: 4px solid #b8860b; }
+.era-myth     { border-top: 4px solid #7c6a4f; }
+.era-ancient  { border-top: 4px solid #b8860b; }
 .era-imperial { border-top: 4px solid #c0392b; }
 .era-turbulent { border-top: 4px solid #8e44ad; }
 .era-golden { border-top: 4px solid #d4a017; }

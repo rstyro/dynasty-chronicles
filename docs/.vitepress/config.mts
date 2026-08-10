@@ -5,6 +5,8 @@ export default defineConfig({
   title: "王朝编年史",
   description: "纵览华夏五千年——从夏商周到元明清，帝王将相、金戈铁马、文化瑰宝的数字方志",
   lang: 'zh-CN',
+  assetsDir: 'assets',
+  base: '/dynasty-chronicles/',
   
   // 本地搜索
   themeConfig: {
@@ -193,27 +195,48 @@ export default defineConfig({
                 { text: '白起', link: '/figures/generals/bai-qi' },
                 { text: '王翦', link: '/figures/generals/wang-jian' },
                 { text: '廉颇', link: '/figures/generals/lian-po' },
-                { text: '李牧', link: '/figures/generals/li-mu' }
+                { text: '李牧', link: '/figures/generals/li-mu' },
+                { text: '蒙恬', link: '/figures/generals/meng-tian' }
               ] },
             { text: '秦汉', collapsed: true, items: [
                 { text: '项羽', link: '/figures/generals/xiang-yu' },
                 { text: '韩信', link: '/figures/generals/han-xin' },
+                { text: '李广', link: '/figures/generals/li-guang' },
                 { text: '卫青', link: '/figures/generals/wei-qing' },
                 { text: '霍去病', link: '/figures/generals/huo-qu-bing' },
                 { text: '班超', link: '/figures/generals/ban-chao' }
               ] },
             { text: '三国', collapsed: true, items: [
+                { text: '吕布', link: '/figures/generals/lv-bu' },
+                { text: '夏侯惇', link: '/figures/generals/xia-hou-dun' },
+                { text: '夏侯渊', link: '/figures/generals/xia-hou-yuan' },
+                { text: '曹仁', link: '/figures/generals/cao-ren' },
+                { text: '张辽', link: '/figures/generals/zhang-liao' },
+                { text: '徐晃', link: '/figures/generals/xu-huang' },
+                { text: '张郃', link: '/figures/generals/zhang-he' },
+                { text: '乐进', link: '/figures/generals/yue-jin' },
+                { text: '于禁', link: '/figures/generals/yu-jin' },
                 { text: '关羽', link: '/figures/generals/guan-yu' },
-                { text: '周瑜', link: '/figures/generals/zhou-yu' },
                 { text: '张飞', link: '/figures/generals/zhang-fei' },
-                { text: '赵云', link: '/figures/generals/zhao-yun' }
+                { text: '赵云', link: '/figures/generals/zhao-yun' },
+                { text: '马超', link: '/figures/generals/ma-chao' },
+                { text: '黄忠', link: '/figures/generals/huang-zhong' },
+                { text: '魏延', link: '/figures/generals/wei-yan' },
+                { text: '姜维', link: '/figures/generals/jiang-wei' },
+                { text: '周瑜', link: '/figures/generals/zhou-yu' },
+                { text: '吕蒙', link: '/figures/generals/lv-meng' },
+                { text: '陆逊', link: '/figures/generals/lu-xun' }
               ] },
             { text: '两晋南北朝', collapsed: true, items: [
+                { text: '祖逖', link: '/figures/generals/zu-ti' },
                 { text: '谢玄', link: '/figures/generals/xie-xuan' },
                 { text: '陈庆之', link: '/figures/generals/chen-qing-zhi' }
               ] },
             { text: '隋唐', collapsed: true, items: [
                 { text: '李靖', link: '/figures/generals/li-jing' },
+                { text: '秦叔宝', link: '/figures/generals/qin-shu-bao' },
+                { text: '尉迟恭', link: '/figures/generals/wei-chi-gong' },
+                { text: '苏定方', link: '/figures/generals/su-ding-fang' },
                 { text: '薛仁贵', link: '/figures/generals/xue-ren-gui' },
                 { text: '郭子仪', link: '/figures/generals/guo-zi-yi' }
               ] },
@@ -221,6 +244,7 @@ export default defineConfig({
                 { text: '岳飞', link: '/figures/generals/yue-fei' },
                 { text: '徐达', link: '/figures/generals/xu-da' },
                 { text: '戚继光', link: '/figures/generals/qi-ji-guang' },
+                { text: '袁崇焕', link: '/figures/generals/yuan-chong-huan' },
                 { text: '郑成功', link: '/figures/generals/zheng-cheng-gong' }
               ] }
           ]
