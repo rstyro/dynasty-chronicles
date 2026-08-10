@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 1. 外环：历史周期律（天命） -->
+    <circle cx="100" cy="100" r="85" />
+
+    <!-- 2. 顶部：王朝宫殿/飞檐 -->
+    <path d="M 30 70 L 100 15 L 170 70" />
+
+    <!-- 3. 中部双柱：左柱为武将（刚硬），右柱为谋臣（支撑） -->
+    <rect x="65" y="70" width="18" height="65" />
+    <rect x="117" y="70" width="18" height="65" />
+
+    <!-- 4. 底部：打开的史书卷轴（代表历代战役与记载） -->
+    <path d="M 20 150 Q 100 120 180 150" />
+    <path d="M 20 170 Q 100 140 180 170" />
+
+    <!-- 5. 中心：皇帝/龙心（太阳） -->
+    <circle cx="100" cy="75" r="14" fill="currentColor" />
+</svg>
