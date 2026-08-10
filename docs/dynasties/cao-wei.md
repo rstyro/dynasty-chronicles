@@ -62,7 +62,7 @@ keyword: 三分天下
 ## 🔗 相关人物
 
 - [曹操](/figures/emperors/cao-cao) — 魏武帝（追封）
-- [司马懿](/figures/generals/sima-yi) — 高平陵之变
+- **司马懿** — 高平陵之变
 - 曹植 — 才高八斗
 
 ## 🔗 相关战役

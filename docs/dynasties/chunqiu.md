@@ -62,9 +62,9 @@ keyword: 春秋五霸
 
 ## 🔗 相关人物
 
-- [齐桓公](/figures/emperors/qi-huan-gong) — 春秋首霸
+- **齐桓公** — 春秋首霸
 - [管仲](/figures/strategists/guan-zhong) — 齐国名相
-- [孔子](/figures/figures/kongzi) — 至圣先师
+- **孔子** — 至圣先师
 - [孙武](/figures/generals/sun-wu) — 兵圣
 
 ---

@@ -68,7 +68,7 @@ keyword: 百家争鸣
 ## 🔗 相关人物
 
 - [商鞅](/figures/strategists/shang-yang) — 变法强秦
-- [屈原](/figures/figures/qu-yuan) — 楚辞之祖
+- **屈原** — 楚辞之祖
 - [白起](/figures/generals/bai-qi) — 秦国名将
 - 苏秦、张仪 — 合纵连横
 

@@ -63,9 +63,9 @@ keyword: 偏安江南
 ## 🔗 相关人物
 
 - [岳飞](/figures/generals/yue-fei) — 精忠报国
-- [文天祥](/figures/figures/wen-tianxiang) — 人生自古谁无死
-- [陆游](/figures/figures/lu-you) — 爱国诗人
-- [朱熹](/figures/figures/zhu-xi) — 理学集大成者
+- **文天祥** — 人生自古谁无死
+- **陆游** — 爱国诗人
+- **朱熹** — 理学集大成者
 
 ---
 

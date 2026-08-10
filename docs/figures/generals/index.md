@@ -10,7 +10,7 @@
 |------|------|------|--------|
 | [孙武](/figures/generals/sun-wu) | 春秋 | 约前545–前470 | 兵圣，《孙子兵法》 |
 | [吴起](/figures/generals/wu-qi) | 战国 | 约前440–前381 | 魏武卒缔造者，七十六战六十四胜 |
-| [白起](/figures/generals/白起) | 战国·秦 | ?–前257 | 人屠，长平之战坑杀赵军四十万 |
+| [白起](/figures/generals/bai-qi) | 战国·秦 | ?–前257 | 人屠，长平之战坑杀赵军四十万 |
 | [王翦](/figures/generals/wang-jian) | 战国·秦 | ?–? | 灭赵破燕平楚，功成身退 |
 | [廉颇](/figures/generals/lian-po) | 战国·赵 | 约前327–前243 | 负荆请罪，战国四大名将 |
 | [李牧](/figures/generals/li-mu) | 战国·赵 | ?–前229 | 北击匈奴，赵国最后的长城 |

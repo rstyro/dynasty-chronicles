@@ -146,7 +146,7 @@ export default {
 
 **关联帝王**：[隋文帝](/figures/emperors/sui-wendi) · [唐太宗](/figures/emperors/tang-taizong)  
 **关联武将**：[李靖](/figures/generals/li-jing) · [薛仁贵](/figures/generals/xue-ren-gui)  
-**关联谋臣**：[房玄龄](/figures/strategists/fang-xuanling) · [杜如晦](/figures/strategists/du-ruhui)
+**关联谋臣**：[房玄龄](/figures/strategists/fang-xuanling) · **杜如晦**
 
 ---
 
@@ -165,7 +165,7 @@ export default {
 | **大清帝国** | 奠定现代中国疆域，晚清面临三千年未有之变局 |
 
 **关联帝王**：[宋太祖](/figures/emperors/song-taizu) · [明太祖](/figures/emperors/ming-taizu) · [康熙帝](/figures/emperors/kangxi)  
-**关联武将**：[岳飞](/figures/generals/yue-fei) · [徐达](/figures/generals/xu-da) · [戚继光](/figures/generals/qi-ji-guang) · [左宗棠](/figures/generals/zuo-zong-tang)  
+**关联武将**：[岳飞](/figures/generals/yue-fei) · [徐达](/figures/generals/xu-da) · [戚继光](/figures/generals/qi-ji-guang) · **左宗棠**  
 **关联谋臣**：[刘基](/figures/strategists/liu-ji) · [张居正](/figures/strategists/zhang-ju-zheng)
 
 ---

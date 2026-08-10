@@ -64,8 +64,8 @@ keyword: 衣冠南渡
 
 ## 🔗 相关人物
 
-- [王羲之](/figures/figures/wang-xizhi) — 书圣
-- [陶渊明](/figures/figures/tao-yuanming) — 田园诗人
+- **王羲之** — 书圣
+- **陶渊明** — 田园诗人
 
 ## 🔗 相关战役
 

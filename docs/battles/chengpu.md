@@ -42,7 +42,7 @@ era: 春秋
 
 ## 🔗 相关人物
 
-- [晋文公](/figures/emperors/jin-wendi)
+- **晋文公**
 - [先轸](/figures/generals/) — 晋军主将
 
 ---

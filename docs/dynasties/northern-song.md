@@ -64,9 +64,9 @@ keyword: 澶渊之盟
 ## 🔗 相关人物
 
 - [宋太祖](/figures/emperors/song-taizu) — 开国明君
-- [范仲淹](/figures/figures/fan-zhongyan) — 先天下之忧而忧
-- [王安石](/figures/figures/wang-anshi) — 变法改革家
-- [苏轼](/figures/figures/su-shi) — 文坛巨擘
+- **范仲淹** — 先天下之忧而忧
+- [王安石](/figures/strategists/wang-anshi) — 变法改革家
+- **苏轼** — 文坛巨擘
 
 ---
 
