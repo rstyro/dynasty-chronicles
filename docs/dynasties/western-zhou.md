@@ -1,6 +1,7 @@
 ---
 title: 西周
 period: 上古
+order: 4
 start: '前1046'
 end: '前771'
 capital: 镐京

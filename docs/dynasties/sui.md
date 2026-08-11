@@ -1,6 +1,7 @@
 ---
 title: 隋朝
 period: 隋唐盛世
+order: 1
 start: '581'
 end: '618'
 capital: 大兴

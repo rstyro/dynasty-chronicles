@@ -1,6 +1,7 @@
 ---
 title: 辽朝
 period: 宋元明清
+order: 4
 start: '907'
 end: '1125'
 capital: 上京

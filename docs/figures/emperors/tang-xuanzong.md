@@ -3,6 +3,7 @@ title: 唐玄宗
 dynasty: 隋唐
 type: emperor
 era: 唐
+order: 5
 ---
 
 # 唐玄宗

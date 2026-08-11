@@ -1,6 +1,7 @@
 ---
 title: 夏朝
 period: 上古
+order: 2
 start: '前2070'
 end: '前1600'
 capital: 阳城

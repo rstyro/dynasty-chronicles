@@ -2,7 +2,8 @@
 title: 明思宗
 dynasty: 宋元明清
 type: emperor
-era: 明末
+era: 明
+order: 16
 ---
 
 # 明思宗

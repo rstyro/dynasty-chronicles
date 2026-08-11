@@ -1,6 +1,7 @@
 ---
 title: 先秦时期
 period: 上古
+order: 5
 start: '约前2070'
 end: '前221'
 capital: '多都'

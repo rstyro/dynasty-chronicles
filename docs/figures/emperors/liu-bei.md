@@ -3,6 +3,7 @@ title: 刘备
 dynasty: 三国
 type: emperor
 era: 东汉末-蜀汉
+order: 1
 ---
 
 # 刘备

@@ -3,6 +3,7 @@ title: 秦二世
 dynasty: 秦汉
 type: emperor
 era: 秦
+order: 2
 ---
 
 # 秦二世

@@ -3,6 +3,7 @@ title: 隋文帝
 dynasty: 隋唐
 type: emperor
 era: 隋
+order: 1
 ---
 
 # 隋文帝

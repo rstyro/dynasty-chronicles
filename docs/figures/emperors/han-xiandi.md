@@ -2,7 +2,8 @@
 title: 汉献帝
 dynasty: 秦汉
 type: emperor
-era: 东汉末
+era: 东汉
+order: 6
 ---
 
 # 汉献帝

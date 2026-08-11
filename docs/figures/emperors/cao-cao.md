@@ -3,6 +3,7 @@ title: 曹操
 dynasty: 三国
 type: emperor
 era: 东汉末
+order: 1
 ---
 
 # 曹操

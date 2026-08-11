@@ -3,6 +3,7 @@ title: 明太祖
 dynasty: 宋元明清
 type: emperor
 era: 明初
+order: 1
 ---
 
 # 明太祖

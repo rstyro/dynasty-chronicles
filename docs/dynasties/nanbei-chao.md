@@ -1,6 +1,7 @@
 ---
 title: 南北朝
 period: 分裂融合
+order: 9
 start: '420'
 end: '589'
 capital: '—'

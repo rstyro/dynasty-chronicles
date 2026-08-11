@@ -1,3 +1,9 @@
+---
+title: 吕布
+dynasty: 三国
+type: general
+era: 东汉末
+---
 # 吕布
 
 > **战神——"人中吕布，马中赤兔。"**

@@ -1,6 +1,7 @@
 ---
 title: 晋朝
 period: 分裂融合
+order: 5
 start: '265'
 end: '420'
 capital: '洛阳/建康'

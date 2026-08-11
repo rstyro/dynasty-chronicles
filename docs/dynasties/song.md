@@ -1,6 +1,7 @@
 ---
 title: 宋朝
 period: 宋元明清
+order: 1
 start: '960'
 end: '1279'
 capital: '开封/临安'

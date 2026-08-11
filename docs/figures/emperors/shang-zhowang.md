@@ -3,6 +3,7 @@ title: 商纣王
 dynasty: 上古
 type: emperor
 era: 商末
+order: 4
 ---
 
 # 商纣王

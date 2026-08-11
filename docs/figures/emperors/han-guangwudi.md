@@ -3,6 +3,7 @@ title: 汉光武帝
 dynasty: 秦汉
 type: emperor
 era: 东汉
+order: 1
 ---
 
 # 汉光武帝

@@ -3,6 +3,7 @@ title: 周平王
 dynasty: 上古
 type: emperor
 era: 东周
+order: 1
 ---
 
 # 周平王

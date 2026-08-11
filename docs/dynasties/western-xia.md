@@ -1,6 +1,7 @@
 ---
 title: 西夏
 period: 宋元明清
+order: 5
 start: '1038'
 end: '1227'
 capital: 兴庆

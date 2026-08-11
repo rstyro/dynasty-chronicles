@@ -1,0 +1,653 @@
+/**
+ * @file sidebar-gen.mjs
+ * @description VitePress 侧边栏自动生成脚本
+ *
+ * 本脚本通过扫描 docs/ 目录下所有 markdown 文件的 frontmatter 元数据，
+ * 自动生成 VitePress 侧边栏配置，避免手动维护 config.mts 中的侧边栏列表。
+ *
+ * ## 使用方式
+ * 1. 在 config.mts 中导入：`import { generateSidebar } from './sidebar-gen.mjs'`
+ * 2. 将 `sidebar` 字段设为 `generateSidebar()`
+ *
+ * ## Frontmatter 字段说明
+ * 每个 markdown 文件头部需要包含 YAML frontmatter：
+ * ```yaml
+ * ---
+ * title: 显示标题          # 侧边栏显示的名称（可选，默认从 H1 标题提取）
+ * era: 秦汉               # 历史时期分组，用于侧边栏分组
+ * type: general           # 类型：general / emperor / strategist（可选）
+ * order: 1                # 同组内排序序号，数字越小越靠前（可选，默认 0）
+ * ---
+ * ```
+ *
+ * ## era 分组规则
+ * - 人物（帝王/武将/谋臣）：先秦 / 秦汉 / 三国 / 两晋南北朝 / 隋唐 / 宋元明清
+ * - 朝代：上古 / 春秋战国 / 帝国初立 / 分裂融合 / 隋唐盛世 / 宋元明清
+ * - 战役：上古先秦 / 秦汉 / 三国 / 两晋南北朝 / 隋唐 / 宋元明清
+ *
+ * 如果 era 值不在上述标准分组中，会通过映射表自动归并到最近的大分组。
+ */
+
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+// 当前脚本所在目录（docs/.vitepress/）
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+// docs 根目录
+const docsDir = path.resolve(__dirname, '..')
+
+// ── 侧边栏分组排序 ──────────────────────────────────────────
+// 定义各个板块侧边栏的分组显示顺序，数组顺序即为侧边栏中分组的出现顺序
+
+/** 人物板块（帝王/武将/谋臣）的时期分组排序 */
+const FIGURES_ERA_ORDER = ['上古', '先秦', '秦汉', '三国', '两晋南北朝', '隋唐', '宋元明清']
+
+/** 朝代板块的时期分组排序 */
+const DYNASTIES_PERIOD_ORDER = ['上古', '春秋战国', '帝国初立', '分裂融合', '隋唐盛世', '宋元明清']
+
+/** 战役板块的时期分组排序 */
+const BATTLES_ERA_ORDER = ['上古先秦', '秦汉', '三国', '两晋南北朝', '隋唐', '宋元明清']
+
+// ── Era → 侧边栏分组 映射 ──────────────────────────────────
+// 将文件中具体的、细粒度的 era 值映射为侧边栏的大分组名。
+// 新增人物/战役时，只需在其 frontmatter 中填入 era 值，
+// 脚本会自动通过此映射表将其归入正确的侧边栏分组。
+
+/** 人物类（帝王/武将/谋臣）的 era 映射表 */
+const ERA_TO_GROUP = {
+  // ── 上古 ──
+  '上古': '上古',
+  // ── 先秦 ──
+  '夏': '上古',
+  '商': '上古',
+  '商末': '上古',
+  '商末周初': '先秦',
+  '西周': '先秦',
+  '东周': '先秦',
+  '春秋': '先秦',
+  '战国': '先秦',
+  '先秦': '先秦',
+  // ── 秦汉 ──
+  '秦': '秦汉',
+  '秦末': '秦汉',
+  '秦末汉初': '秦汉',
+  '西汉': '秦汉',
+  '东汉': '秦汉',
+  '秦汉': '秦汉',
+  '楚汉之争': '秦汉',
+  '新': '秦汉',
+  '新莽': '秦汉',
+  '新莽末年': '秦汉',
+  // ── 三国 ──
+  '东汉末': '三国',
+  '东汉末-蜀汉': '三国',
+  '东汉末年': '三国',
+  '三国': '三国',
+  '三国初年': '三国',
+  '曹魏': '三国',
+  '蜀汉': '三国',
+  '孙吴': '三国',
+  // ── 两晋南北朝 ──
+  '西晋': '两晋南北朝',
+  '东晋': '两晋南北朝',
+  '十六国': '两晋南北朝',
+  '十六国-前秦': '两晋南北朝',
+  '十六国-后赵': '两晋南北朝',
+  '前秦': '两晋南北朝',
+  '后赵': '两晋南北朝',
+  '北朝': '两晋南北朝',
+  '北朝-北魏': '两晋南北朝',
+  '北朝-北周': '两晋南北朝',
+  '北魏': '两晋南北朝',
+  '南朝': '两晋南北朝',
+  '南朝-梁': '两晋南北朝',
+  '南朝-宋': '两晋南北朝',
+  '南朝-陈': '两晋南北朝',
+  '南朝梁': '两晋南北朝',
+  '梁': '两晋南北朝',
+  // ── 隋唐 ──
+  '隋': '隋唐',
+  '唐': '隋唐',
+  '唐初': '隋唐',
+  '唐中期': '隋唐',
+  '唐-武周': '隋唐',
+  '隋唐': '隋唐',
+  '安史之乱': '隋唐',
+  // ── 宋元明清 ──
+  '五代': '宋元明清',
+  '五代十国': '宋元明清',
+  '五代-后周': '宋元明清',
+  '后周': '宋元明清',
+  '宋': '宋元明清',
+  '北宋': '宋元明清',
+  '南宋': '宋元明清',
+  '辽': '宋元明清',
+  '辽朝': '宋元明清',
+  '西夏': '宋元明清',
+  '金': '宋元明清',
+  '金朝': '宋元明清',
+  '元': '宋元明清',
+  '元末': '宋元明清',
+  '明初': '宋元明清',
+  '明': '宋元明清',
+  '明末': '宋元明清',
+  '清末': '宋元明清',
+  '清': '宋元明清',
+  '清（后金）': '宋元明清',
+  '清（后金/清）': '宋元明清',
+  '后金': '宋元明清',
+  '明末清初': '宋元明清'
+}
+
+/** 朝代类的 period 映射表（朝代使用 period 而非 era） */
+const PERIOD_TO_GROUP = {
+  '上古': '上古',
+  '春秋战国': '春秋战国',
+  '帝国初立': '帝国初立',
+  '分裂融合': '分裂融合',
+  '隋唐盛世': '隋唐盛世',
+  '宋元明清': '宋元明清'
+}
+
+/**
+ * 人物 era 子分组映射表
+ * 将细粒度的 rawEra 值映射为二级分组名，用于在侧边栏中做二级分类。
+ * key: rawEra 值（frontmatter 中的 era 字段原始值）
+ * value: 对应的二级分组名
+ *
+ * 如果某个 era 分组下所有人物的 rawEra 都映射到同一个子分组，
+ * 则不会产生二级菜单（因为没有细分意义）。
+ */
+const ERA_SUBGROUP_MAP = {
+  // ── 上古 ──
+  '上古': '上古',
+  '夏': '夏', '商': '商', '商末': '商', '西周': '西周', '东周': '东周',
+  // ── 先秦 ──
+  '春秋': '春秋', '战国': '战国',
+  // ── 秦汉 ──
+  '秦': '秦', '秦末汉初': '秦末汉初', '西汉': '西汉', '东汉': '东汉', '新': '新',
+  // ── 三国 ──
+  '曹魏': '曹魏', '蜀汉': '蜀汉', '孙吴': '孙吴',
+  '东汉末': '群雄', '东汉末-蜀汉': '蜀汉',
+  // ── 两晋南北朝 ──
+  '西晋': '西晋', '东晋': '东晋',
+  '十六国': '十六国', '十六国-前秦': '十六国', '十六国-后赵': '十六国',
+  '前秦': '十六国', '后赵': '十六国',
+  '南朝': '南朝', '南朝-梁': '南朝', '南朝-宋': '南朝', '南朝-陈': '南朝',
+  '北朝': '北朝', '北朝-北魏': '北朝', '北朝-北周': '北朝',
+  // ── 隋唐 ──
+  '隋': '隋', '唐': '唐', '唐初': '唐', '唐中期': '唐', '唐-武周': '唐',
+  // ── 宋元明清 ──
+  '五代': '五代', '五代-后周': '五代', '五代十国': '五代', '后周': '五代',
+  '北宋': '宋', '南宋': '宋', '辽': '辽', '金': '金', '西夏': '西夏',
+  '元': '元', '明': '明', '明初': '明', '明末清初': '明末清初',
+  '清': '清', '后金': '清', '清（后金）': '清', '清（后金/清）': '清'
+}
+
+/**
+ * 各时期的二级分组排序（数字越小越靠前）
+ * 确保子分组按历史顺序排列，而非拼音排序
+ */
+const SUBGROUP_ORDER = {
+  '上古': 0, '夏': 1, '商': 2, '西周': 3, '东周': 4,
+  '春秋': 1, '战国': 2,
+  '秦': 1, '秦末汉初': 2, '西汉': 3, '新': 4, '东汉': 5,
+  '曹魏': 1, '蜀汉': 2, '孙吴': 3, '群雄': 4,
+  '西晋': 1, '东晋': 2, '十六国': 3, '南朝': 4, '北朝': 5,
+  '隋': 1, '唐': 2,
+  '五代': 1, '宋': 2, '辽': 3, '金': 4, '西夏': 5, '元': 6, '明': 7, '明末清初': 8, '清': 9
+}
+
+/**
+ * 朝代父子层级映射表
+ * key: 父朝代 slug（总览页），value: 子朝代 slug 列表
+ * 在侧边栏中，父朝代会显示为可展开的折叠组，子朝代作为其下级菜单项。
+ * 不在此映射中的朝代作为独立条目直接显示。
+ */
+const DYNASTY_HIERARCHY = {
+  'han': ['western-han', 'eastern-han', 'xin'],       // 汉朝 → 西汉、东汉、新朝
+  'sanguo': ['cao-wei', 'shu-han', 'sun-wu'],          // 三国 → 曹魏、蜀汉、孙吴
+  'jin': ['western-jin', 'eastern-jin'],                // 晋朝 → 西晋、东晋
+  'nanbei-chao': ['nanchao', 'beichao'],                // 南北朝 → 南朝、北朝
+  'song': ['northern-song', 'southern-song']            // 宋朝 → 北宋、南宋
+}
+
+/** 战役类的 era 映射表 */
+const BATTLES_ERA_TO_GROUP = {
+  '传说时代': '上古先秦',
+  '上古': '上古先秦',
+  '先秦': '上古先秦',
+  '上古先秦': '上古先秦',
+  '春秋': '上古先秦',
+  '战国': '上古先秦',
+  '商末': '上古先秦',
+  '秦汉': '秦汉',
+  '秦末': '秦汉',
+  '西汉': '秦汉',
+  '东汉末年': '三国',
+  '三国': '三国',
+  '三国初年': '三国',
+  '两晋南北朝': '两晋南北朝',
+  '隋唐': '隋唐',
+  '唐初': '隋唐',
+  '安史之乱': '隋唐',
+  '宋元明清': '宋元明清',
+  '明': '宋元明清',
+  '明末': '宋元明清',
+  '元末': '宋元明清',
+  '楚汉之争': '秦汉',
+  '新莽末年': '秦汉'
+}
+
+// ── Frontmatter 解析 ────────────────────────────────────────
+
+/**
+ * 解析 markdown 文件头部的 YAML frontmatter
+ *
+ * @param {string} content - markdown 文件的完整文本内容
+ * @returns {Object} 解析后的键值对对象，如 { title: '韩信', era: '秦汉', type: 'general' }
+ *
+ * @example
+ * // 输入：
+ * // ---
+ * // title: 韩信
+ * // era: 秦汉
+ * // type: general
+ * // ---
+ * //
+ * // 返回：{ title: '韩信', era: '秦汉', type: 'general' }
+ */
+function parseFrontmatter(content) {
+  // 匹配以 --- 开始和结束的 YAML frontmatter 块（支持 Windows \r\n 和 Unix \n 换行）
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  if (!match) return {}
+
+  const result = {}
+  // 逐行解析 key: value 格式
+  match[1].split(/\r?\n/).forEach(line => {
+    const colonIdx = line.indexOf(':')
+    if (colonIdx > 0) {
+      const key = line.substring(0, colonIdx).trim()
+      let value = line.substring(colonIdx + 1).trim()
+      // 去除值两端的引号（支持单引号和双引号）
+      if ((value.startsWith("'") && value.endsWith("'")) ||
+          (value.startsWith('"') && value.endsWith('"'))) {
+        value = value.slice(1, -1)
+      }
+      result[key] = value
+    }
+  })
+  return result
+}
+
+// ── 从 markdown 正文提取标题 ────────────────────────────────
+
+/**
+ * 获取侧边栏中显示的标题文本。
+ * 优先级：frontmatter 中的 title > markdown 中的 H1 标题 > 文件名（slug）
+ *
+ * @param {string} content - markdown 文件的完整文本内容
+ * @param {string|undefined} fmTitle - frontmatter 中的 title 值
+ * @param {string} slug - 文件名（不含 .md 后缀）
+ * @returns {string} 用于侧边栏显示的标题文本
+ */
+function extractTitle(content, fmTitle, slug) {
+  if (fmTitle) return fmTitle
+  // 尝试从正文中提取第一个 H1 标题
+  const h1 = content.match(/^#\s+(.+)/m)
+  if (h1) return h1[1].trim()
+  return slug
+}
+
+// ── 获取映射后的侧边栏分组名 ────────────────────────────────
+
+/**
+ * 根据 era 值在映射表中查找对应的侧边栏分组名。
+ * 如果 era 为空则归入"其他"分组；如果映射表中没有对应项，则直接使用原值。
+ *
+ * @param {string} era - 文件 frontmatter 中的 era 值
+ * @param {Object} mapping - era → 分组名 的映射表（如 ERA_TO_GROUP）
+ * @returns {string} 侧边栏分组名
+ */
+function resolveGroup(era, mapping) {
+  if (!era) return '其他'
+  return mapping[era] || era
+}
+
+// ── 目录扫描 ────────────────────────────────────────────────
+
+/**
+ * 递归扫描指定目录，读取所有 markdown 文件并解析其 frontmatter。
+ * 忽略以点开头的隐藏文件和 index.md 索引页。
+ *
+ * @param {string} dir - 要扫描的目录绝对路径
+ * @param {string} [basePath=''] - 相对于 docs 根目录的路径前缀，用于生成链接
+ * @param {Object} [mapping={}] - era → 分组名 的映射表
+ * @returns {Array<Object>} 文件元数据数组，每个元素包含：
+ *   - {string} slug: 文件名（不含 .md）
+ *   - {string} text: 侧边栏显示的标题
+ *   - {string} link: VitePress 路由链接（如 /figures/generals/han-xin）
+ *   - {string} group: 映射后的侧边栏分组名
+ *   - {string} rawEra: 原始的 era/period 值
+ *   - {string} type: 文件类型（general/emperor/strategist）
+ *   - {number} order: 同组内排序序号
+ *   - {string} dynasty: 朝代信息
+ */
+function scanDir(dir, basePath = '', mapping = {}) {
+  if (!fs.existsSync(dir)) return []
+
+  const entries = fs.readdirSync(dir, { withFileTypes: true })
+  const files = []
+
+  for (const entry of entries) {
+    // 跳过隐藏文件和 index 索引页
+    if (entry.name.startsWith('.') || entry.name === 'index.md') continue
+
+    const fullPath = path.join(dir, entry.name)
+    const relPath = path.join(basePath, entry.name)
+
+    if (entry.isDirectory()) {
+      // 递归扫描子目录
+      files.push(...scanDir(fullPath, relPath, mapping))
+    } else if (entry.isFile() && entry.name.endsWith('.md')) {
+      // 读取文件内容并解析 frontmatter
+      const content = fs.readFileSync(fullPath, 'utf-8')
+      const fm = parseFrontmatter(content)
+      const slug = entry.name.replace(/\.md$/, '')
+      // 生成 VitePress 路由链接，使用正斜杠分隔，去掉 .md 后缀
+      const link = '/' + relPath.replace(/\\/g, '/').replace(/\.md$/, '')
+
+      // 兼容 era 和 period 字段（人物用 era，朝代用 period）
+      const rawEra = fm.era || fm.period || ''
+      const group = resolveGroup(rawEra, mapping)
+
+      files.push({
+        slug,
+        text: extractTitle(content, fm.title, slug),
+        link,
+        group,
+        rawEra,
+        type: fm.type || '',
+        order: parseInt(fm.order || '0', 10),
+        dynasty: fm.dynasty || ''
+      })
+    }
+  }
+  return files
+}
+
+// ── 分组并排序 ──────────────────────────────────────────────
+
+/**
+ * 将文件元数据数组按 group 字段分组，并按指定的顺序排列分组。
+ * 每个分组内的元素先按 order 字段数值排序，再按文字的中文拼音排序。
+ *
+ * @param {Array<Object>} items - scanDir 返回的文件元数据数组
+ * @param {Array<string>|null} orderList - 分组的预期显示顺序。
+ *   如果为 null，则按分组名字母排序。未在 orderList 中的分组会被追加到末尾。
+ * @returns {Object} 以分组名为键、排序后文件数组为值的对象
+ */
+function groupBy(items, orderList) {
+  // 第一步：按 group 值分组
+  const groups = {}
+  for (const item of items) {
+    const k = item.group || '其他'
+    if (!groups[k]) groups[k] = []
+    groups[k].push(item)
+  }
+
+  // 第二步：按 orderList 指定的顺序排列分组
+  const sortedGroups = {}
+  const keys = orderList
+    ? [...orderList, ...Object.keys(groups).filter(k => !orderList.includes(k))]
+    : Object.keys(groups).sort()
+
+  // 第三步：对每个分组内的文件进行排序
+  for (const k of keys) {
+    if (groups[k]) {
+      sortedGroups[k] = groups[k].sort((a, b) => {
+        // 先按 order 数字排序，order 相同时按标题文本的中文拼音排序
+        if (a.order !== b.order) return a.order - b.order
+        return a.text.localeCompare(b.text, 'zh-CN')
+      })
+    }
+  }
+  return sortedGroups
+}
+
+// ── 主入口：生成完整侧边栏 ──────────────────────────────────
+
+/**
+ * 生成 VitePress 侧边栏配置对象。
+ * 扫描 docs/ 下的 dynasties、figures、battles 目录，
+ * 自动根据 frontmatter 元数据构建侧边栏结构。
+ *
+ * @returns {Object} VitePress 侧边栏配置对象，结构为：
+ *   { '/dynasties/': [...], '/figures/': [...], '/battles/': [...], ... }
+ *
+ * 使用方式：在 config.mts 中：
+ * ```js
+ * import { generateSidebar } from './sidebar-gen.mjs'
+ * export default defineConfig({
+ *   themeConfig: {
+ *     sidebar: generateSidebar(),
+ *   }
+ * })
+ * ```
+ */
+export function generateSidebar() {
+  const sidebar = {}
+
+  // ════════════════════════════════════════════════════════════
+  // 朝代板块 (/dynasties/)
+  // 按 period 字段分组：上古 → 春秋战国 → 帝国初立 → 分裂融合 → 隋唐盛世 → 宋元明清
+  // 支持父子层级：如「三国」可展开为「曹魏 / 蜀汉 / 孙吴」
+  // ════════════════════════════════════════════════════════════
+  const dynastyDir = path.join(docsDir, 'dynasties')
+  if (fs.existsSync(dynastyDir)) {
+    const dynastyFiles = scanDir(dynastyDir, 'dynasties', PERIOD_TO_GROUP)
+    const grouped = groupBy(dynastyFiles, DYNASTIES_PERIOD_ORDER)
+
+    // 构建子朝代 → 父朝代 的反向映射，用于判断一个文件是否为子朝代
+    const childToParent = {}
+    for (const [parent, children] of Object.entries(DYNASTY_HIERARCHY)) {
+      for (const child of children) {
+        childToParent[child] = parent
+      }
+    }
+
+    sidebar['/dynasties/'] = [
+      // "朝代总览" 固定放在最前
+      { text: '🏯 朝代', items: [{ text: '朝代总览', link: '/dynasties/' }] },
+      // 自动生成各时期分组，支持父子层级展开
+      ...Object.entries(grouped).map(([group, items]) => {
+        const result = []
+        const processed = new Set()
+
+        for (const item of items) {
+          // 已处理的子朝代跳过
+          if (processed.has(item.slug)) continue
+          // 子朝代会跟随父朝代显示，此处跳过
+          if (childToParent[item.slug]) continue
+
+          // 判断是否为父朝代（总览页）
+          if (DYNASTY_HIERARCHY[item.slug]) {
+            // 构建可展开的二级菜单：父朝代页面 + 各子朝代
+            const childSlugs = DYNASTY_HIERARCHY[item.slug]
+            const childItems = childSlugs
+              .map(s => items.find(i => i.slug === s))
+              .filter(Boolean)
+              .map(c => ({ text: c.text, link: c.link }))
+
+            childSlugs.forEach(s => processed.add(s))
+            processed.add(item.slug)
+
+            result.push({
+              text: item.text,
+              collapsed: false,
+              items: [
+                { text: `${item.text}总览`, link: item.link },
+                ...childItems
+              ]
+            })
+          } else {
+            // 独立朝代，直接作为链接
+            result.push({ text: item.text, link: item.link })
+          }
+        }
+
+        return {
+          text: `🏛️ ${group}`,
+          collapsed: false,
+          items: result
+        }
+      })
+    ]
+  }
+
+  // ════════════════════════════════════════════════════════════
+  // 人物板块 (/figures/)
+  // 包含三个子分类：帝王、武将、谋臣
+  // 每个子分类按 era 字段分组，各时期进一步按子分组（如 曹魏/蜀汉/孙吴）做二级菜单
+  // ════════════════════════════════════════════════════════════
+  const figuresDir = path.join(docsDir, 'figures')
+  if (fs.existsSync(figuresDir)) {
+    // 定义人物的三个子分类及其对应的目录路径和标签
+    const figureGroups = [
+      { dir: 'emperors', label: '👑 帝王' },
+      { dir: 'generals', label: '⚔️ 武将' },
+      { dir: 'strategists', label: '📜 谋臣' }
+    ]
+
+    // 人物总览作为固定的第一项
+    const figureSections = [
+      { text: '👤 人物总览', items: [{ text: '人物总览', link: '/figures/' }] }
+    ]
+
+    // 遍历处理每个子分类（帝王/武将/谋臣）
+    for (const group of figureGroups) {
+      const subDir = path.join(figuresDir, group.dir)
+      if (!fs.existsSync(subDir)) continue
+
+      // 扫描子目录中的所有人物文件
+      const files = scanDir(subDir, `figures/${group.dir}`, ERA_TO_GROUP)
+      const grouped = groupBy(files, FIGURES_ERA_ORDER)
+
+      // 构建子分类的侧边栏节点
+      const groupSection = {
+        text: group.label,
+        items: [{ text: `${group.label}总览`, link: `/figures/${group.dir}/` }]
+      }
+
+      // 为每个历史时期创建可折叠的子分组
+      for (const [era, items] of Object.entries(grouped)) {
+        // 尝试将每个人物按 rawEra 映射到二级子分组
+        const subGroups = {}  // { 子分组名: [items] }
+        const noSubGroup = [] // 无法映射到子分组的人物
+
+        for (const item of items) {
+          const sub = ERA_SUBGROUP_MAP[item.rawEra]
+          if (sub) {
+            if (!subGroups[sub]) subGroups[sub] = []
+            subGroups[sub].push(item)
+          } else {
+            noSubGroup.push(item)
+          }
+        }
+
+        const subGroupNames = Object.keys(subGroups)
+
+        if (subGroupNames.length > 1) {
+          // 有多个子分组 → 构建二级菜单
+          // 按 SUBGROUP_ORDER 排序子分组
+          subGroupNames.sort((a, b) => {
+            const oa = SUBGROUP_ORDER[a] ?? 99
+            const ob = SUBGROUP_ORDER[b] ?? 99
+            return oa - ob
+          })
+
+          const subItems = subGroupNames.map(sg => ({
+            text: sg,
+            collapsed: true,
+            items: subGroups[sg].map(item => ({ text: item.text, link: item.link }))
+          }))
+          // 无法分类的人物直接列出
+          for (const item of noSubGroup) {
+            subItems.push({ text: item.text, link: item.link })
+          }
+
+          groupSection.items.push({
+            text: era,
+            collapsed: true,
+            items: subItems
+          })
+        } else {
+          // 只有一个或零个子分组 → 保持扁平列表
+          groupSection.items.push({
+            text: era,
+            collapsed: true,
+            items: items.map(item => ({ text: item.text, link: item.link }))
+          })
+        }
+      }
+      figureSections.push(groupSection)
+    }
+    sidebar['/figures/'] = figureSections
+  }
+
+  // ════════════════════════════════════════════════════════════
+  // 战役板块 (/battles/)
+  // 按 era 字段分组：上古先秦 → 秦汉 → 三国 → 两晋南北朝 → 隋唐 → 宋元明清
+  // ════════════════════════════════════════════════════════════
+  const battleDir = path.join(docsDir, 'battles')
+  if (fs.existsSync(battleDir)) {
+    const battleFiles = scanDir(battleDir, 'battles', BATTLES_ERA_TO_GROUP)
+    const grouped = groupBy(battleFiles, BATTLES_ERA_ORDER)
+    sidebar['/battles/'] = [
+      // "战役总览" 固定放在最前
+      { text: '⚔️ 战役总览', items: [{ text: '战役总览', link: '/battles/' }] },
+      // 自动生成各时期分组
+      ...Object.entries(grouped).map(([group, items]) => ({
+        text: `⚔️ ${group}`,
+        collapsed: true,
+        items: items.map(item => ({ text: item.text, link: item.link }))
+      }))
+    ]
+  }
+
+  // ════════════════════════════════════════════════════════════
+  // 文化板块 (/culture/) — 结构简单，手动定义
+  // ════════════════════════════════════════════════════════════
+  sidebar['/culture/'] = [
+    {
+      text: '📚 文化科技',
+      items: [
+        { text: '文化总览', link: '/culture/' },
+        { text: '文学', link: '/culture/literature' },
+        { text: '思想哲学', link: '/culture/philosophy' },
+        { text: '科技发明', link: '/culture/inventions' },
+        { text: '艺术', link: '/culture/art' }
+      ]
+    }
+  ]
+
+  // ════════════════════════════════════════════════════════════
+  // 时间线 (/timeline) — 单页，手动定义
+  // ════════════════════════════════════════════════════════════
+  sidebar['/timeline'] = [
+    { text: '🕐 时间线', items: [{ text: '历史时间线', link: '/timeline' }] }
+  ]
+
+  return sidebar
+}
+
+// ── 直接运行支持 ─────────────────────────────────────────────
+// 当使用 `node docs/.vitepress/sidebar-gen.mjs` 直接运行本脚本时，
+// 会在控制台打印生成的侧边栏 JSON 结构，便于调试和检查。
+// 在 config.mts 中通过 import 引用时，此段代码不会执行。
+
+const isMainModule = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])
+if (isMainModule) {
+  console.log(JSON.stringify(generateSidebar(), null, 2))
+}

@@ -1,6 +1,7 @@
 ---
 title: 东晋
 period: 分裂融合
+order: 7
 start: '317'
 end: '420'
 capital: 建康

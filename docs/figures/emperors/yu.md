@@ -3,6 +3,7 @@ title: 禹
 dynasty: 上古
 type: emperor
 era: 夏
+order: 1
 ---
 
 # 禹

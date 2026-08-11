@@ -1,6 +1,7 @@
 ---
 title: 秦朝
 period: 帝国初立
+order: 1
 start: '前221'
 end: '前207'
 capital: 咸阳

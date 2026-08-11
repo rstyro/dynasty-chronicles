@@ -1,6 +1,7 @@
 ---
 title: 蜀汉
 period: 分裂融合
+order: 3
 start: '221'
 end: '263'
 capital: 成都

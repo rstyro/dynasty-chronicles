@@ -1,6 +1,7 @@
 ---
 title: 唐朝
 period: 隋唐盛世
+order: 2
 start: '618'
 end: '907'
 capital: 长安

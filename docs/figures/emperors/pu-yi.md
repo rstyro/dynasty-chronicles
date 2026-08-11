@@ -2,7 +2,8 @@
 title: 宣统帝
 dynasty: 宋元明清
 type: emperor
-era: 清末
+era: 清
+order: 12
 ---
 
 # 宣统帝

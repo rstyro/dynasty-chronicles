@@ -1,6 +1,7 @@
 ---
 title: 春秋
 period: 春秋战国
+order: 2
 start: '前770'
 end: '前476'
 capital: 洛邑

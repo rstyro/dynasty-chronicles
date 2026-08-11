@@ -3,6 +3,7 @@ title: 汤
 dynasty: 上古
 type: emperor
 era: 商
+order: 1
 ---
 
 # 汤

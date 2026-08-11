@@ -1,3 +1,9 @@
+---
+title: 张良
+dynasty: 秦汉
+type: strategist
+era: 西汉
+---
 # 张良
 
 > **"运筹帷幄之中，决胜千里之外。"**

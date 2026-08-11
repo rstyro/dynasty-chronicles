@@ -1,3 +1,9 @@
+---
+title: 诸葛亮
+dynasty: 三国
+type: strategist
+era: 蜀汉
+---
 # 诸葛亮
 
 > **"鞠躬尽瘁，死而后已。"**

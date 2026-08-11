@@ -2,7 +2,7 @@
 title: 张飞
 dynasty: 三国
 type: general
-era: 东汉末
+era: 蜀汉
 ---
 
 # 张飞

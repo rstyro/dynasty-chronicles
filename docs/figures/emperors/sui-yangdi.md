@@ -3,6 +3,7 @@ title: 隋炀帝
 dynasty: 隋唐
 type: emperor
 era: 隋
+order: 2
 ---
 
 # 隋炀帝

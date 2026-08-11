@@ -1,6 +1,7 @@
 ---
 title: 明朝
 period: 宋元明清
+order: 8
 start: '1368'
 end: '1644'
 capital: '南京→北京'

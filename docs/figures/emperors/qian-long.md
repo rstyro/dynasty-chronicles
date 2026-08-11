@@ -3,6 +3,7 @@ title: 乾隆帝
 dynasty: 宋元明清
 type: emperor
 era: 清
+order: 6
 ---
 
 # 乾隆帝

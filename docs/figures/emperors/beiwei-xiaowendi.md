@@ -3,6 +3,7 @@ title: 北魏孝文帝
 dynasty: 两晋南北朝
 type: emperor
 era: 北朝-北魏
+order: 2
 ---
 
 # 北魏孝文帝

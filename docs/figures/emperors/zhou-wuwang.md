@@ -3,6 +3,7 @@ title: 周武王
 dynasty: 上古
 type: emperor
 era: 西周
+order: 2
 ---
 
 # 周武王

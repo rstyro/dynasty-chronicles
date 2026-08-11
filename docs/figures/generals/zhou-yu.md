@@ -2,7 +2,7 @@
 title: 周瑜
 dynasty: 三国
 type: general
-era: 东汉末
+era: 孙吴
 ---
 
 # 周瑜

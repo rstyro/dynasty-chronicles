@@ -1,3 +1,10 @@
+---
+title: 汉武帝
+dynasty: 秦汉
+type: emperor
+era: 西汉
+order: 4
+---
 # 汉武帝 · 刘彻
 
 > **"犯我强汉者，虽远必诛。"**

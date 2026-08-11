@@ -1,3 +1,9 @@
+---
+title: 尉迟恭
+dynasty: 隋唐
+type: general
+era: 唐
+---
 # 尉迟恭
 
 > **门神——"单鞭救主，忠勇无双。"**

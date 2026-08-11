@@ -1,6 +1,7 @@
 ---
 title: 三皇五帝
 period: 上古
+order: 1
 start: '传说时代'
 end: '前2070'
 capital: '—'

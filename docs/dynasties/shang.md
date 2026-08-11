@@ -1,6 +1,7 @@
 ---
 title: 商朝
 period: 上古
+order: 3
 start: '前1600'
 end: '前1046'
 capital: 殷

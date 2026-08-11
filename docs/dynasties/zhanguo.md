@@ -1,6 +1,7 @@
 ---
 title: 战国
 period: 春秋战国
+order: 3
 start: '前475'
 end: '前221'
 capital: '—'

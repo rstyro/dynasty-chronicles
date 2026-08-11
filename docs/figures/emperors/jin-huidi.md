@@ -3,6 +3,7 @@ title: 晋惠帝
 dynasty: 两晋南北朝
 type: emperor
 era: 西晋
+order: 2
 ---
 
 # 晋惠帝

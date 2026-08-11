@@ -1,6 +1,7 @@
 ---
 title: 南宋
 period: 宋元明清
+order: 3
 start: '1127'
 end: '1279'
 capital: 临安

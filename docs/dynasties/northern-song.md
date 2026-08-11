@@ -1,6 +1,7 @@
 ---
 title: 北宋
 period: 宋元明清
+order: 2
 start: '960'
 end: '1127'
 capital: 开封

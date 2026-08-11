@@ -1,6 +1,7 @@
 ---
 title: 西晋
 period: 分裂融合
+order: 6
 start: '265'
 end: '316'
 capital: 洛阳

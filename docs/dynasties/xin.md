@@ -1,6 +1,7 @@
 ---
 title: 新朝
 period: 帝国初立
+order: 6
 start: '9'
 end: '23'
 capital: 常安

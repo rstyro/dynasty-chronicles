@@ -3,6 +3,7 @@ title: 元世祖
 dynasty: 宋元明清
 type: emperor
 era: 元
+order: 5
 ---
 
 # 元世祖

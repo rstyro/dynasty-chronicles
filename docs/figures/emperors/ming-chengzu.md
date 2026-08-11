@@ -3,6 +3,7 @@ title: 明成祖
 dynasty: 宋元明清
 type: emperor
 era: 明
+order: 3
 ---
 
 # 明成祖

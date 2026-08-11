@@ -3,6 +3,7 @@ title: 孙权
 dynasty: 三国
 type: emperor
 era: 孙吴
+order: 1
 ---
 
 # 孙权

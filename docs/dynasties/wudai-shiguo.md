@@ -1,6 +1,7 @@
 ---
 title: 五代十国
 period: 隋唐盛世
+order: 3
 start: '907'
 end: '960'
 capital: '—'

@@ -1,6 +1,7 @@
 ---
 title: 三国
 period: 分裂融合
+order: 1
 start: '220'
 end: '280'
 capital: '—'

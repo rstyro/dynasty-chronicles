@@ -3,6 +3,7 @@ title: 梁武帝
 dynasty: 两晋南北朝
 type: emperor
 era: 南朝-梁
+order: 3
 ---
 
 # 梁武帝

@@ -1,6 +1,7 @@
 ---
 title: 北朝
 period: 分裂融合
+order: 11
 start: '386'
 end: '581'
 capital: 平城/洛阳/长安

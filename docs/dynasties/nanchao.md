@@ -1,6 +1,7 @@
 ---
 title: 南朝
 period: 分裂融合
+order: 10
 start: '420'
 end: '589'
 capital: 建康

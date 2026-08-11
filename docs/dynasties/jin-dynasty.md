@@ -1,6 +1,7 @@
 ---
 title: 金朝
 period: 宋元明清
+order: 6
 start: '1115'
 end: '1234'
 capital: 中都/开封

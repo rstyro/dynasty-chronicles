@@ -1,6 +1,7 @@
 ---
 title: 东周
 period: 春秋战国
+order: 1
 start: '前770'
 end: '前256'
 capital: 洛邑

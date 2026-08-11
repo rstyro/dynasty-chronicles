@@ -1,6 +1,7 @@
 ---
 title: 曹魏
 period: 分裂融合
+order: 2
 start: '220'
 end: '265'
 capital: 洛阳

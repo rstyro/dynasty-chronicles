@@ -1,6 +1,7 @@
 ---
 title: 元朝
 period: 宋元明清
+order: 7
 start: '1271'
 end: '1368'
 capital: 大都

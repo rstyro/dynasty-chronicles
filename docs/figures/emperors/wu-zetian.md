@@ -3,6 +3,7 @@ title: 武则天
 dynasty: 隋唐
 type: emperor
 era: 唐-武周
+order: 4
 ---
 
 # 武则天

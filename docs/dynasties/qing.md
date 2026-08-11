@@ -1,6 +1,7 @@
 ---
 title: 清朝
 period: 宋元明清
+order: 9
 start: '1644'
 end: '1912'
 capital: 北京

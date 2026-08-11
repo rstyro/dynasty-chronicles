@@ -3,6 +3,7 @@ title: 宋太祖
 dynasty: 宋元明清
 type: emperor
 era: 北宋
+order: 1
 ---
 
 # 宋太祖

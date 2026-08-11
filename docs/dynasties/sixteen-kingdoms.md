@@ -1,6 +1,7 @@
 ---
 title: 十六国
 period: 分裂融合
+order: 8
 start: '304'
 end: '439'
 capital: '—'

@@ -2,7 +2,7 @@
 title: 赵云
 dynasty: 三国
 type: general
-era: 东汉末
+era: 蜀汉
 ---
 
 # 赵云
