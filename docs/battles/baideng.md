@@ -20,7 +20,7 @@ era: 西汉
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 汉军 | [刘邦](/figures/emperors/han-gaozu) | 约三十二万（刘邦被围仅先锋数万） |
+| 汉军 | [刘邦](/figures/emperors/qinhan/xihan/han-gaozu) | 约三十二万（刘邦被围仅先锋数万） |
 | 匈奴 | 冒顿单于 | 约四十万骑兵 |
 
 ---
@@ -43,9 +43,9 @@ era: 西汉
 
 ## 🔗 相关人物
 
-- [刘邦](/figures/emperors/han-gaozu) — 汉高祖
+- [刘邦](/figures/emperors/qinhan/xihan/han-gaozu) — 汉高祖
 - [冒顿单于](/figures/generals/) — 匈奴开国英主
-- [陈平](/figures/strategists/chen-ping) — 献解围奇计
+- [陈平](/figures/strategists/qinhan/xihan/chen-ping) — 献解围奇计
 
 ---
 

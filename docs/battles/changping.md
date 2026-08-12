@@ -10,7 +10,7 @@
 |------|------|
 | **时间** | 前260年（战国末期） |
 | **交战方** | 秦国 vs 赵国 |
-| **秦军统帅** | [白起](/figures/generals/bai-qi)（后期）、王龁（前期） |
+| **秦军统帅** | [白起](/figures/generals/dongzhou/zhanguo/bai-qi)（后期）、王龁（前期） |
 | **赵军统帅** | 赵括（后期）、廉颇（前期） |
 | **兵力** | 秦约60万 vs 赵约45万 |
 | **结果** | 秦军大胜，坑杀赵军降卒约40万 |
@@ -42,9 +42,9 @@
 
 ## 🔗 相关链接
 
-- [白起](/figures/generals/bai-qi)
-- [秦朝](/dynasties/qin)
-- [先秦时期](/dynasties/pre-qin)
+- [白起](/figures/generals/dongzhou/zhanguo/bai-qi)
+- [秦朝](/dynasties/qinhan/qin)
+- [先秦时期](/dynasties/dongzhou/zhanguo)
 
 ---
 

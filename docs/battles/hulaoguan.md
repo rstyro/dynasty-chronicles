@@ -20,7 +20,7 @@ era: 唐初
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 唐军 | [李世民](/figures/emperors/tang-taizong) | 约三千五百（虎牢关守军） |
+| 唐军 | [李世民](/figures/emperors/suitang/tang/tang-taizong) | 约三千五百（虎牢关守军） |
 | 夏军 | 窦建德 | 约十万 |
 
 ---
@@ -43,7 +43,7 @@ era: 唐初
 
 ## 🔗 相关人物
 
-- [李世民](/figures/emperors/tang-taizong) — 唐太宗
+- [李世民](/figures/emperors/suitang/tang/tang-taizong) — 唐太宗
 - [窦建德](/figures/generals/) — 夏王
 - [王世充](/figures/generals/) — 郑王
 

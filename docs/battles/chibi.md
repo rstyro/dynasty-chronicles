@@ -20,7 +20,7 @@
 
 ## 📖 战役背景
 
-曹操统一北方后，率大军南下。荆州刘琮投降，刘备败退。曹操欲一举吞并江东。孙权在[诸葛亮](/figures/strategists/zhuge-liang)和鲁肃劝说下，决定联合刘备抗曹。
+曹操统一北方后，率大军南下。荆州刘琮投降，刘备败退。曹操欲一举吞并江东。孙权在[诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang)和鲁肃劝说下，决定联合刘备抗曹。
 
 ---
 
@@ -42,9 +42,9 @@
 
 ## 🔗 相关链接
 
-- [三国](/dynasties/sanguo)
-- [诸葛亮](/figures/strategists/zhuge-liang)
-- [关羽](/figures/generals/guan-yu)
+- [三国](/dynasties/weijin/sanguo)
+- [诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang)
+- [关羽](/figures/generals/sanguo/shu/guan-yu)
 
 ---
 

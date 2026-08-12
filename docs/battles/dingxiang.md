@@ -20,7 +20,7 @@ era: 唐初
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 唐军 | [李靖](/figures/generals/li-jing) | 十万（李靖率三千先锋） |
+| 唐军 | [李靖](/figures/generals/suitang/tang/li-jing) | 十万（李靖率三千先锋） |
 | 突厥 | 颉利可汗 | 约十万骑兵 |
 
 ---
@@ -43,8 +43,8 @@ era: 唐初
 
 ## 🔗 相关人物
 
-- [李靖](/figures/generals/li-jing) — 大唐军神
-- [唐太宗](/figures/emperors/tang-taizong)
+- [李靖](/figures/generals/suitang/tang/li-jing) — 大唐军神
+- [唐太宗](/figures/emperors/suitang/tang/tang-taizong)
 - [颉利可汗](/figures/generals/) — 东突厥末代可汗
 
 ---

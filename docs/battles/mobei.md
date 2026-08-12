@@ -36,9 +36,9 @@ era: 西汉
 
 ## 🔗 相关人物
 
-- [卫青](/figures/generals/wei-qing)
-- [霍去病](/figures/generals/huo-qu-bing)
-- [汉武帝](/figures/emperors/han-wudi)
+- [卫青](/figures/generals/qinhan/xihan/wei-qing)
+- [霍去病](/figures/generals/qinhan/xihan/huo-qu-bing)
+- [汉武帝](/figures/emperors/qinhan/xihan/han-wudi)
 
 ---
 

@@ -20,7 +20,7 @@ era: 三国初年
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 蜀汉 | [刘备](/figures/emperors/liu-bei) | 约四万（一说八万） |
+| 蜀汉 | [刘备](/figures/emperors/sanguo/shu/liu-bei) | 约四万（一说八万） |
 | 东吴 | [陆逊](/figures/generals/) | 约五万 |
 
 ---
@@ -43,10 +43,10 @@ era: 三国初年
 
 ## 🔗 相关人物
 
-- [刘备](/figures/emperors/liu-bei) — 蜀汉昭烈帝
+- [刘备](/figures/emperors/sanguo/shu/liu-bei) — 蜀汉昭烈帝
 - [陆逊](/figures/generals/) — 东吴大都督
-- [关羽](/figures/generals/guan-yu) — 刘备义弟，此战因他而起
-- [诸葛亮](/figures/strategists/zhuge-liang) — 留守成都
+- [关羽](/figures/generals/sanguo/shu/guan-yu) — 刘备义弟，此战因他而起
+- [诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang) — 留守成都
 
 ---
 

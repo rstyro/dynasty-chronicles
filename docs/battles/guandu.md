@@ -20,7 +20,7 @@ era: 东汉末年
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 曹操军 | [曹操](/figures/emperors/cao-cao) | 不足一万 |
+| 曹操军 | [曹操](/figures/emperors/qinhan/donghanmo/cao-cao) | 不足一万 |
 | 袁绍军 | 袁绍 | 约十万 |
 
 ---
@@ -42,7 +42,7 @@ era: 东汉末年
 
 ## 🔗 相关人物
 
-- [曹操](/figures/emperors/cao-cao)
+- [曹操](/figures/emperors/qinhan/donghanmo/cao-cao)
 - [袁绍](/figures/generals/)
 - [荀彧](/figures/strategists/) — 曹操谋士
 - [许攸](/figures/strategists/) — 从袁绍阵营叛逃

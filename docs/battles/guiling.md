@@ -35,7 +35,7 @@ era: 战国
 
 ## 🔗 相关人物
 
-- [孙膑](/figures/strategists/sun-bin)
+- [孙膑](/figures/strategists/dongzhou/zhanguo/sun-bin)
 - [庞涓](/figures/generals/) — 魏将
 
 ---

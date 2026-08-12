@@ -45,8 +45,8 @@
 
 ## 🔗 相关链接
 
-- [晋朝](/dynasties/jin)
-- [南北朝](/dynasties/nanbei-chao)
+- [晋朝](/dynasties/weijin/jin)
+- [南北朝](/dynasties/nanbei/nanbei-chao)
 
 ---
 

@@ -33,9 +33,9 @@ era: 商末
 
 ## 🔗 相关人物
 
-- [周武王](/figures/emperors/zhou-wuwang)
-- [姜子牙](/figures/strategists/jiang-zi-ya)
-- [商纣王](/figures/emperors/shang-zhowang)
+- [周武王](/figures/emperors/shanggu/xizhou/zhou-wuwang)
+- [姜子牙](/figures/strategists/shanggu/xizhou/jiang-zi-ya)
+- [商纣王](/figures/emperors/shanggu/shang/shang-zhowang)
 
 ---
 

@@ -34,8 +34,8 @@ era: 元末
 
 ## 🔗 相关人物
 
-- [明太祖](/figures/emperors/ming-taizu)
-- [徐达](/figures/generals/xu-da)
+- [明太祖](/figures/emperors/ming/ming-taizu)
+- [徐达](/figures/generals/ming/xu-da)
 
 ---
 

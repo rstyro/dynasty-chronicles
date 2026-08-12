@@ -20,7 +20,7 @@ era: 战国
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 秦国 | [白起](/figures/generals/bai-qi) | 约十万 |
+| 秦国 | [白起](/figures/generals/dongzhou/zhanguo/bai-qi) | 约十万 |
 | 楚国 | 楚顷襄王、唐昧 | 约三十万 |
 
 ---
@@ -43,7 +43,7 @@ era: 战国
 
 ## 🔗 相关人物
 
-- [白起](/figures/generals/bai-qi) — 战国第一名将
+- [白起](/figures/generals/dongzhou/zhanguo/bai-qi) — 战国第一名将
 - [屈原](/figures/strategists/) — 楚大夫，郢都破后投汨罗江
 
 ---

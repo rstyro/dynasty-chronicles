@@ -20,7 +20,7 @@ era: 楚汉之争
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 汉军 | [韩信](/figures/generals/han-xin) | 约数万 |
+| 汉军 | [韩信](/figures/generals/qinhan/xihan/han-xin) | 约数万 |
 | 赵军 | 陈馀、赵王歇 | 约二十万 |
 
 ---
@@ -43,7 +43,7 @@ era: 楚汉之争
 
 ## 🔗 相关人物
 
-- [韩信](/figures/generals/han-xin) — 汉初三杰之一
+- [韩信](/figures/generals/qinhan/xihan/han-xin) — 汉初三杰之一
 - [陈馀](/figures/generals/) — 赵军统帅
 
 ---

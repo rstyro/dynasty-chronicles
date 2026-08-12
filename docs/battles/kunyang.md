@@ -27,7 +27,7 @@ era: 新莽末年
 
 ## 🔗 相关人物
 
-- [汉光武帝](/figures/emperors/han-guangwudi) — 刘秀
+- [汉光武帝](/figures/emperors/qinhan/donghan/han-guangwudi) — 刘秀
 
 ---
 

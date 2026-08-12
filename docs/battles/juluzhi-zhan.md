@@ -42,7 +42,7 @@
 
 ## 🔗 相关链接
 
-- [秦朝](/dynasties/qin)
+- [秦朝](/dynasties/qinhan/qin)
 
 ---
 

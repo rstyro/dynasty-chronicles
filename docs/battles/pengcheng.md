@@ -20,8 +20,8 @@ era: 楚汉之争
 
 | 阵营 | 统帅 | 兵力 |
 |------|------|------|
-| 楚军 | [项羽](/figures/generals/xiang-yu) | 约三万精锐骑兵 |
-| 汉军 | [刘邦](/figures/emperors/han-gaozu) | 约五十六万（诸侯联军） |
+| 楚军 | [项羽](/figures/generals/qinhan/qin/xiang-yu) | 约三万精锐骑兵 |
+| 汉军 | [刘邦](/figures/emperors/qinhan/xihan/han-gaozu) | 约五十六万（诸侯联军） |
 
 ---
 
@@ -44,9 +44,9 @@ era: 楚汉之争
 
 ## 🔗 相关人物
 
-- [项羽](/figures/generals/xiang-yu)
-- [刘邦](/figures/emperors/han-gaozu)
-- [韩信](/figures/generals/han-xin) — 当时未随军
+- [项羽](/figures/generals/qinhan/qin/xiang-yu)
+- [刘邦](/figures/emperors/qinhan/xihan/han-gaozu)
+- [韩信](/figures/generals/qinhan/xihan/han-xin) — 当时未随军
 
 ---
 

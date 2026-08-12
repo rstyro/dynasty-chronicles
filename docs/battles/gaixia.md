@@ -35,9 +35,9 @@ era: 楚汉之争
 
 ## 🔗 相关人物
 
-- [项羽](/figures/generals/xiang-yu) — 西楚霸王
-- [韩信](/figures/generals/han-xin) — 总指挥
-- [刘邦](/figures/emperors/han-gaozu)
+- [项羽](/figures/generals/qinhan/qin/xiang-yu) — 西楚霸王
+- [韩信](/figures/generals/qinhan/xihan/han-xin) — 总指挥
+- [刘邦](/figures/emperors/qinhan/xihan/han-gaozu)
 
 ---
 

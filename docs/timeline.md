@@ -89,7 +89,7 @@ export default {
 | **商朝** | 甲骨文证实了信史的开端，青铜文明达到鼎盛 |
 | **西周** | 周公制礼作乐，奠定中国政治文化的"礼治"传统 |
 
-**关联人物**：[姜子牙](/figures/strategists/jiang-zi-ya) · [周武王](/figures/emperors/zhou-wuwang)
+**关联人物**：[姜子牙](/figures/strategists/shanggu/xizhou/jiang-zi-ya) · [周武王](/figures/emperors/shanggu/xizhou/zhou-wuwang) · [周文王](/figures/emperors/shanggu/xizhou/zhou-wenwang) · [周成王](/figures/emperors/shanggu/xizhou/zhou-chengwang) · [周康王](/figures/emperors/shanggu/xizhou/zhou-kangwang) · [周穆王](/figures/emperors/shanggu/xizhou/zhou-muwang) · [周厉王](/figures/emperors/shanggu/xizhou/zhou-liwang) · [周宣王](/figures/emperors/shanggu/xizhou/zhou-xuanwang) · [周幽王](/figures/emperors/shanggu/xizhou/zhou-youwang)
 
 ---
 
@@ -106,9 +106,9 @@ export default {
 | **新朝** | 王莽托古改制，理想主义者的悲剧 |
 | **东汉** | 光武中兴、班超定远，造纸术改进，佛教传入 |
 
-**关联帝王**：[秦始皇](/figures/emperors/qin-shi-huang) · [汉武帝](/figures/emperors/han-wudi) · [汉光武帝](/figures/emperors/han-guangwudi)  
-**关联武将**：[蒙恬](/figures/generals/meng-tian) · [白起](/figures/generals/bai-qi) · [韩信](/figures/generals/han-xin) · [李广](/figures/generals/li-guang) · [卫青](/figures/generals/wei-qing) · [霍去病](/figures/generals/huo-qu-bing)  
-**关联谋臣**：[张良](/figures/strategists/zhang-liang)  
+**关联帝王**：[秦始皇](/figures/emperors/qinhan/qin/qin-shi-huang) · [汉武帝](/figures/emperors/qinhan/xihan/han-wudi) · [汉光武帝](/figures/emperors/qinhan/donghan/han-guangwudi)  
+**关联武将**：[蒙恬](/figures/generals/qinhan/qin/meng-tian) · [白起](/figures/generals/dongzhou/zhanguo/bai-qi) · [韩信](/figures/generals/qinhan/xihan/han-xin) · [李广](/figures/generals/qinhan/xihan/li-guang) · [卫青](/figures/generals/qinhan/xihan/wei-qing) · [霍去病](/figures/generals/qinhan/xihan/huo-qu-bing)  
+**关联谋臣**：[张良](/figures/strategists/qinhan/xihan/zhang-liang)  
 **关联战役**：[长平之战](/battles/changping) · [巨鹿之战](/battles/juluzhi-zhan)
 
 ---
@@ -125,9 +125,9 @@ export default {
 | **五胡十六国** | 匈奴、鲜卑、羯、氐、羌逐鹿中原——空前的民族大融合 |
 | **南北朝对峙** | 北朝鲜卑汉化改革，南朝宋齐梁陈——佛教兴盛于乱世 |
 
-**关联帝王**：[汉献帝](/figures/emperors/han-xiandi)  
-**关联武将**：[吕布](/figures/generals/lv-bu) · [关羽](/figures/generals/guan-yu) · [祖逖](/figures/generals/zu-ti)  
-**关联谋臣**：[诸葛亮](/figures/strategists/zhuge-liang)  
+**关联帝王**：[汉献帝](/figures/emperors/qinhan/donghan/han-xiandi)  
+**关联武将**：[吕布](/figures/generals/qinhan/donghanmo/lv-bu) · [关羽](/figures/generals/sanguo/shu/guan-yu) · [祖逖](/figures/generals/jinchao/dongjin/zu-ti)  
+**关联谋臣**：[诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang)  
 **关联战役**：[赤壁之战](/battles/chibi) · [淝水之战](/battles/feishui)
 
 ---
@@ -143,9 +143,9 @@ export default {
 | **开元盛世** | 玄宗前期，经济文化达到顶峰 |
 | **安史之乱** | 盛极而衰，藩镇割据的导火索 |
 
-**关联帝王**：[隋文帝](/figures/emperors/sui-wendi) · [唐太宗](/figures/emperors/tang-taizong)  
-**关联武将**：[李靖](/figures/generals/li-jing) · [秦叔宝](/figures/generals/qin-shu-bao) · [尉迟恭](/figures/generals/wei-chi-gong) · [苏定方](/figures/generals/su-ding-fang) · [薛仁贵](/figures/generals/xue-ren-gui)  
-**关联谋臣**：[房玄龄](/figures/strategists/fang-xuanling) · **杜如晦**
+**关联帝王**：[隋文帝](/figures/emperors/suitang/sui/sui-wendi) · [唐太宗](/figures/emperors/suitang/tang/tang-taizong)  
+**关联武将**：[李靖](/figures/generals/suitang/tang/li-jing) · [秦叔宝](/figures/generals/suitang/tang/qin-shu-bao) · [尉迟恭](/figures/generals/suitang/tang/wei-chi-gong) · [苏定方](/figures/generals/suitang/tang/su-ding-fang) · [薛仁贵](/figures/generals/suitang/tang/xue-ren-gui)  
+**关联谋臣**：[房玄龄](/figures/strategists/suitang/tang/fang-xuanling) · **杜如晦**
 
 ---
 
@@ -163,9 +163,9 @@ export default {
 | **朱明王朝** | 驱逐蒙元，恢复华夏——郑和下西洋，资本主义萌芽 |
 | **大清帝国** | 奠定现代中国疆域，晚清面临三千年未有之变局 |
 
-**关联帝王**：[宋太祖](/figures/emperors/song-taizu) · [明太祖](/figures/emperors/ming-taizu) · [康熙帝](/figures/emperors/kangxi)  
-**关联武将**：[岳飞](/figures/generals/yue-fei) · [徐达](/figures/generals/xu-da) · [戚继光](/figures/generals/qi-ji-guang) · [袁崇焕](/figures/generals/yuan-chong-huan)  
-**关联谋臣**：[刘基](/figures/strategists/liu-ji) · [张居正](/figures/strategists/zhang-ju-zheng)
+**关联帝王**：[宋太祖](/figures/emperors/songliao/beisong/song-taizu) · [明太祖](/figures/emperors/ming/ming-taizu) · [康熙帝](/figures/emperors/qing/kangxi)  
+**关联武将**：[岳飞](/figures/generals/songliao/nansong/yue-fei) · [徐达](/figures/generals/ming/xu-da) · [戚继光](/figures/generals/ming/qi-ji-guang) · [袁崇焕](/figures/generals/ming/yuan-chong-huan)  
+**关联谋臣**：[刘基](/figures/strategists/ming/liu-ji) · [张居正](/figures/strategists/ming/zhang-ju-zheng)
 
 ---
 
