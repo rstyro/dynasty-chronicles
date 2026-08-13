@@ -1,6 +1,6 @@
 ---
 title: 朝代总览
-description: "import { ref } from 'vue' import { withBase } from 'vitepress'"
+description: "从夏商周到元明清，完整梳理每一个朝代的兴衰脉络、制度创新与历史遗产。"
 ---
 
 <script setup>

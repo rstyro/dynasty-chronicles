@@ -37,8 +37,18 @@ function truncate(text) {
   return last > 40 ? cut.slice(0, last + 1) : cut + '……'
 }
 
+// 预处理：移除 script/style 块、HTML 注释与行内标签（保留标签内文本），
+// 避免把代码提取成 description
+function preprocess(body) {
+  return body
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<[^>]+>/g, ' ')
+}
+
 function extract(body) {
-  const lines = body.split(/\r?\n/)
+  const lines = preprocess(body).split(/\r?\n/)
   let quote = null
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim()

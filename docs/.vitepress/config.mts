@@ -8,9 +8,17 @@ export default defineConfig({
   lang: 'zh-CN',
   assetsDir: 'assets',
   base: '/dynasty-chronicles/',
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/dynasty-chronicles/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/dynasty-chronicles/favicon-32.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/dynasty-chronicles/apple-touch-icon.png' }],
+    ['meta', { name: 'theme-color', content: '#8E2323' }],
+  ],
   
   // 本地搜索
   themeConfig: {
+    logo: '/logo.svg',
     search: {
       provider: 'local',
       options: {

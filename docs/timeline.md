@@ -1,6 +1,6 @@
 ---
 title: 中华历史时间线
-description: "import { eras } from './utils/eras.js' import { dynasties } from './utils/dynasties.js'"
+description: "约公元前2070年至公元1912年——从三皇五帝的传说到最后一个封建王朝落幕，中华五千年历史脉络速览。"
 ---
 
 <script>
