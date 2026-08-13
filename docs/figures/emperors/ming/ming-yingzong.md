@@ -4,6 +4,7 @@ dynasty: 宋元明清
 type: emperor
 era: 明
 order: 6
+description: "明英宗朱祁镇，宣宗长子。九岁即位，由三杨和太皇太后张氏辅政，前期政治清明。正统末年宠信宦官王振。"
 ---
 
 # 明英宗

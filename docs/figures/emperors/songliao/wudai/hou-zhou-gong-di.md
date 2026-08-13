@@ -4,6 +4,7 @@ dynasty: 宋元明清
 type: emperor
 era: 五代-后周
 order: 14
+description: "后周恭帝柴宗训，世宗柴荣第四子。959年柴荣病逝，七岁的柴宗训即位，由宰相范质辅政。"
 ---
 
 # 后周恭帝 · 柴宗训

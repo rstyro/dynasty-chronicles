@@ -4,6 +4,7 @@ dynasty: 秦汉
 type: emperor
 era: 西汉
 order: 6
+description: "汉景帝刘启，汉文帝长子。即位后采纳御史大夫晁错建议削藩，引发吴王刘濞联合七国以\"清君侧\"为名叛乱。"
 ---
 
 # 汉景帝

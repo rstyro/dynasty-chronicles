@@ -8,6 +8,7 @@ capital: '—'
 founder: '—'
 last: '—'
 keyword: 民族大融
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 南北朝

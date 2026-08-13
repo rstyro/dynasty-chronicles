@@ -8,6 +8,7 @@ capital: 咸阳
 founder: 秦始皇
 last: 子婴
 keyword: 书同文
+description: "秦朝是中国历史上第一个统一的中央集权制封建国家。秦始皇嬴政用十年时间先后灭韩、赵、魏、楚、燕、齐六国，建立起大秦帝国。虽然国祚仅十五年，但秦朝开创的郡县制、统一文字/度量衡/车轨等制度深远影响了此后两千年的中国历史。"
 ---
 
 # 秦朝
@@ -63,8 +64,8 @@ keyword: 书同文
 
 ## 🔗 相关战役
 
-- [长平之战](/battles/changping) — 秦赵决战
-- [巨鹿之战](/battles/juluzhi-zhan) — 项羽破釜沉舟，灭秦军主力
+- [长平之战](/battles/dongzhou/zhanguo/changping) — 秦赵决战
+- [巨鹿之战](/battles/qinhan/qin/juluzhi-zhan) — 项羽破釜沉舟，灭秦军主力
 
 ---
 

@@ -3,6 +3,7 @@ title: 周泰
 dynasty: 三国
 type: general
 era: 孙吴
+description: "周泰是九江下蔡（今安徽凤台）人。与蒋钦一同随孙策起兵，后留事孙权。"
 ---
 # 周泰
 

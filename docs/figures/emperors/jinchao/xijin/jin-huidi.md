@@ -4,6 +4,7 @@ dynasty: 两晋南北朝
 type: emperor
 era: 西晋
 order: 2
+description: "司马衷，晋武帝司马炎之子。天生智力低下，但因司马炎偏爱皇孙司马遹（惠帝之子）而坚持不废太子。"
 ---
 
 # 晋惠帝

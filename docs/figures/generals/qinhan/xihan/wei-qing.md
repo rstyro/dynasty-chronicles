@@ -3,6 +3,7 @@ title: 卫青
 dynasty: 秦汉
 type: general
 era: 西汉
+description: "卫青，字仲卿，河东平阳人。出身卑微，原为平阳公主府骑奴，因姐姐卫子夫被汉武帝立为皇后而得到提拔。"
 ---
 
 # 卫青

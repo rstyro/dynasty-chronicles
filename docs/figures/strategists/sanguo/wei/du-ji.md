@@ -3,6 +3,7 @@ title: 杜畿
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "杜畿，京兆杜陵人。镇守河东十六年，政绩为天下第一。曹操征汉中时，杜畿为前线输送大量粮草。后在试船时溺水而亡。"
 ---
 
 # 杜畿

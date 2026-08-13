@@ -1,5 +1,6 @@
 ---
 title: 朝代总览
+description: "import { ref } from 'vue' import { withBase } from 'vitepress'"
 ---
 
 <script setup>

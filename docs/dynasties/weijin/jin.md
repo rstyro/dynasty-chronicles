@@ -8,6 +8,7 @@ capital: '洛阳/建康'
 founder: 晋武帝
 last: 晋恭帝
 keyword: 衣冠南渡
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 晋朝
@@ -89,7 +90,7 @@ keyword: 衣冠南渡
 
 ## 🔗 相关战役
 
-- [淝水之战](/battles/feishui) — 风声鹤唳，草木皆兵
+- [淝水之战](/battles/jinchao/dongjin/feishui) — 风声鹤唳，草木皆兵
 
 ---
 

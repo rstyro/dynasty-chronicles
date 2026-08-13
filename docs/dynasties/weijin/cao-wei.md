@@ -8,6 +8,7 @@ capital: 洛阳
 founder: 曹丕
 last: 曹奂
 keyword: 三分天下
+description: "曹魏是三国时期最强大的政权，占据中原核心区域。曹操\"挟天子以令诸侯\"，在官渡之战击败袁绍后统一北方。220年曹操病逝后，其子曹丕逼迫汉献帝禅让，建立魏国。"
 ---
 
 # 曹魏
@@ -68,7 +69,7 @@ keyword: 三分天下
 
 ## 🔗 相关战役
 
-- [赤壁之战](/battles/chibi) — 奠定三分格局
+- [赤壁之战](/battles/sanguo/qunxiong/chibi) — 奠定三分格局
 
 ---
 

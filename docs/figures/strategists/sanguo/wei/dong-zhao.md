@@ -3,6 +3,7 @@ title: 董昭
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "董昭，济阴定陶人。曹操崛起的关键推手，建议曹操迁都许县\"奉天子以令不臣\"。后又劝曹操进封魏公、魏王，为曹魏代汉铺路。"
 ---
 
 # 董昭

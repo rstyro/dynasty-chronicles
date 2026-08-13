@@ -4,6 +4,7 @@ dynasty: 上古先秦
 type: emperor
 era: 夏
 order: 16
+description: "帝发，姒姓，帝皋之子，夏朝第十六位君主，夏桀之父。发继位于孔甲、皋两代衰乱之后，夏朝已积重难返。"
 ---
 
 # 帝发 · 姒发

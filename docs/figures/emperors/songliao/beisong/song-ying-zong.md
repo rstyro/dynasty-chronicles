@@ -4,6 +4,7 @@ dynasty: 宋元明清
 type: emperor
 era: 北宋
 order: 5
+description: "宋英宗赵曙，太宗曾孙，濮王赵允让之子，因仁宗无子被养入宫中。1063年仁宗驾崩后继位。"
 ---
 
 # 宋英宗

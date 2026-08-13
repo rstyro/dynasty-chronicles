@@ -8,6 +8,7 @@ capital: '开封/临安'
 founder: 宋太祖
 last: 宋少帝
 keyword: 文治巅峰
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 宋朝

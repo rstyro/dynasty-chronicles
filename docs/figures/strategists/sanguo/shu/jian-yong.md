@@ -3,6 +3,7 @@ title: 简雍
 dynasty: 三国
 type: strategist
 era: 蜀汉
+description: "简雍，涿郡人，刘备同乡。自少年起便随刘备，常为说客。刘备围成都时，简雍入城说降刘璋。为人放达不羁，与刘备坐时亦不拘礼节。"
 ---
 
 # 简雍

@@ -4,6 +4,7 @@ dynasty: 上古先秦
 type: emperor
 era: 夏
 order: 7
+description: "帝杼，姒姓，少康之子，夏朝第七位君主。杼在少康复国过程中便已崭露头角，曾协助父亲灭寒浞、复夏室。"
 ---
 
 # 帝杼 · 姒杼

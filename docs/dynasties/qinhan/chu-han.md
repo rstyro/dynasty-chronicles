@@ -8,6 +8,7 @@ capital: 彭城/汉中
 founder: 项羽
 last: 项羽
 keyword: 楚汉争霸
+description: "秦朝覆灭后，项羽以\"西楚霸王\"身份分封十八路诸侯，刘邦被封汉王、远赴汉中。仅仅四个月后，刘邦明修栈道暗度陈仓，还定三秦，拉开了楚汉争霸的序幕。"
 ---
 
 # 楚汉之争
@@ -78,7 +79,7 @@ keyword: 楚汉争霸
 
 ## 🔗 相关战役
 
-- [巨鹿之战](/battles/juluzhi-zhan) — 破釜沉舟
+- [巨鹿之战](/battles/qinhan/qin/juluzhi-zhan) — 破釜沉舟
 
 ---
 

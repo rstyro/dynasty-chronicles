@@ -4,6 +4,7 @@ dynasty: 隋唐
 type: emperor
 era: 唐
 order: 13
+description: "唐穆宗李恒，唐宪宗第三子，初名李宥。820年，宪宗为宦官陈弘志等所弑，宦官集团拥立太子李恒即位，改元长庆。"
 ---
 
 # 唐穆宗

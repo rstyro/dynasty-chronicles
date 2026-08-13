@@ -4,6 +4,7 @@ dynasty: 上古
 type: emperor
 era: 西周
 order: 5
+description: "周昭王姬瑕，西周第四位天子，周康王之子。昭王在位期间，南方荆楚（楚国）日渐强盛，不朝周室。"
 ---
 
 # 周昭王 · 姬瑕

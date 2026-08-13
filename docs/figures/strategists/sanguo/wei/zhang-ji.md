@@ -3,6 +3,7 @@ title: 张既
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "张既，冯翊高陵人。曹操平定关中时归附，善治地方。曹丕时期，张既平定凉州卢水胡叛乱，安定西北。临阵指挥有方，出奇制胜。"
 ---
 
 # 张既

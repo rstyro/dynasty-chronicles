@@ -3,6 +3,7 @@ title: 诸葛亮
 dynasty: 三国
 type: strategist
 era: 蜀汉
+description: "诸葛亮隐居隆中，刘备三顾茅庐请其出山。他提出\"隆中对\"战略规划，辅佐刘备建立蜀汉政权。刘备去世后受托孤之重，六出祁山北伐中原，最终病逝于五丈原。"
 ---
 # 诸葛亮
 
@@ -41,7 +42,7 @@ era: 蜀汉
 ## 🔗 相关链接
 
 - [三国](/dynasties/weijin/sanguo)
-- [赤壁之战](/battles/chibi)
+- [赤壁之战](/battles/sanguo/qunxiong/chibi)
 - [关羽](/figures/generals/sanguo/shu/guan-yu)
 
 ---

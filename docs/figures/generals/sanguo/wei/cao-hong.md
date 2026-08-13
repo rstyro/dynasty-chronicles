@@ -3,6 +3,7 @@ title: 曹洪
 dynasty: 三国
 type: general
 era: 曹魏
+description: "曹洪是沛国谯县（今安徽亳州）人，曹操从弟。早年随曹操起兵讨董卓。"
 ---
 # 曹洪
 

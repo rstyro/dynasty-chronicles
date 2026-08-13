@@ -3,6 +3,7 @@ title: 谢玄
 dynasty: 两晋南北朝
 type: general
 era: 东晋
+description: "谢玄，字幼度，陈郡阳夏人，谢安之侄。东晋名将，创建的\"北府兵\"是东晋最精锐的军事力量。"
 ---
 
 # 谢玄

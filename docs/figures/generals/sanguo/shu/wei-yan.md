@@ -3,6 +3,7 @@ title: 魏延
 dynasty: 三国
 type: general
 era: 蜀汉
+description: "魏延是义阳（今河南桐柏）人。早年以部曲随刘备入蜀，因屡立战功升为牙门将军。"
 ---
 # 魏延
 

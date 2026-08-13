@@ -3,6 +3,7 @@ title: 陆逊
 dynasty: 三国
 type: general
 era: 孙吴
+description: "陆逊是吴郡吴县（今江苏苏州）人，出身江东大族吴郡陆氏。他本名陆议，后改名陆逊。孙策死后，孙权继领江东，陆逊二十一岁时入孙权幕府，历任东西曹令史、海昌屯田都尉等职。"
 ---
 # 陆逊
 
@@ -66,7 +67,7 @@ era: 孙吴
 - [孙权](/figures/emperors/sanguo/wu/sun-quan)
 - [周瑜](/figures/generals/sanguo/wu/zhou-yu)
 - [吕蒙](/figures/generals/sanguo/wu/lv-meng)
-- [夷陵之战](/battles/yiling)
+- [夷陵之战](/battles/sanguo/qunxiong/yiling)
 
 ---
 

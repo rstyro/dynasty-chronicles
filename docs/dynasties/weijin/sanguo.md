@@ -8,6 +8,7 @@ capital: '—'
 founder: '—'
 last: '—'
 keyword: 群星闪耀
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 三国
@@ -44,7 +45,7 @@ keyword: 群星闪耀
 |------|------|
 | 184 | 黄巾起义，天下大乱 |
 | 200 | 官渡之战，曹操击败袁绍 |
-| 208 | [赤壁之战](/battles/chibi)，孙刘联军大败曹操 |
+| 208 | [赤壁之战](/battles/sanguo/qunxiong/chibi)，孙刘联军大败曹操 |
 | 220 | 曹操病逝，曹丕篡汉建立魏国 |
 | 221 | 刘备称帝，建立蜀汉 |
 | 229 | 孙权称帝，建立东吴 |
@@ -63,7 +64,7 @@ keyword: 群星闪耀
 
 ## 🔗 相关战役
 
-- [赤壁之战](/battles/chibi) — 奠定三国鼎立格局
+- [赤壁之战](/battles/sanguo/qunxiong/chibi) — 奠定三国鼎立格局
 
 ---
 

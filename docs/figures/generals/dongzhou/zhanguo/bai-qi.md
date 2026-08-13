@@ -3,6 +3,7 @@ title: 白起
 dynasty: 先秦
 type: general
 era: 战国
+description: "白起是秦昭襄王时期的军事统帅，一生指挥大小战役七十余次，从无败绩。其指挥风格以大规模歼灭战著称，长平之战坑杀赵军四十余万，震惊天下。"
 ---
 # 白起
 
@@ -33,7 +34,7 @@ era: 战国
 - **伊阙之战**（前293）：大破韩魏联军，斩首二十四万
 - **鄢郢之战**（前279–278）：攻破楚国都城郢
 - **华阳之战**（前273）：大败赵魏联军
-- **[长平之战](/battles/changping)**（前260）：坑杀赵军四十余万
+- **[长平之战](/battles/dongzhou/zhanguo/changping)**（前260）：坑杀赵军四十余万
 
 ---
 
@@ -45,7 +46,7 @@ era: 战国
 
 ## 🔗 相关链接
 
-- [长平之战](/battles/changping)
+- [长平之战](/battles/dongzhou/zhanguo/changping)
 - [秦朝](/dynasties/qinhan/qin)
 
 ---

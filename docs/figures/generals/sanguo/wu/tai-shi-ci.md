@@ -3,6 +3,7 @@ title: 太史慈
 dynasty: 三国
 type: general
 era: 孙吴
+description: "太史慈是东莱黄（今山东龙口）人。少年好学，武艺超群。早年任本郡奏曹史，后因故避祸辽东。"
 ---
 # 太史慈
 

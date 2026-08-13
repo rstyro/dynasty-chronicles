@@ -3,6 +3,7 @@ title: 文丑
 dynasty: 三国
 type: general
 era: 东汉末
+description: "文丑是河北名将，与颜良并称\"河北双雄\"，为袁绍麾下第二大将。"
 ---
 # 文丑
 

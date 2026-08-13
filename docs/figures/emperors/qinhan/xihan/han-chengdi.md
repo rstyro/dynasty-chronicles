@@ -4,6 +4,7 @@ dynasty: 秦汉
 type: emperor
 era: 西汉
 order: 12
+description: "汉成帝刘骜，汉元帝长子，字太孙（宣帝在世时亲自带大，寄予厚望）。即位初期还算勤政，后期沉湎酒色。"
 ---
 
 # 汉成帝 · 刘骜

@@ -3,6 +3,7 @@ title: 杨阜
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "杨阜，天水冀县人。马超叛乱时，杨阜起兵复仇，身受重伤仍力战不退，最终驱逐马超。为官刚直，多次进谏曹叡大兴宫室之弊。"
 ---
 
 # 杨阜

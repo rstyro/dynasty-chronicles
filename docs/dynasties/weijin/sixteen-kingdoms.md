@@ -8,6 +8,7 @@ capital: '—'
 founder: '—'
 last: '—'
 keyword: 五胡乱华
+description: "十六国时期是指西晋末年至北魏统一北方期间，主要由匈奴、鲜卑、羯、氐、羌五个少数民族（史称\"五胡\"）在中国北方建立的诸多政权。"
 ---
 
 # 十六国
@@ -85,7 +86,7 @@ keyword: 五胡乱华
 
 ## 🔗 相关战役
 
-- [淝水之战](/battles/feishui) — 决定南北格局的关键战役
+- [淝水之战](/battles/jinchao/dongjin/feishui) — 决定南北格局的关键战役
 
 ---
 

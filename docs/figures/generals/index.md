@@ -1,3 +1,8 @@
+---
+title: "武将"
+description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙场猛将的热血传奇。"
+---
+
 # ⚔️ 武将
 
 > 一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙场猛将的热血传奇。
@@ -10,12 +15,17 @@
 |------|------|------|--------|
 | [蚩尤](/figures/generals/shanggu/sanhuang-wudi/chi-you) | 五帝 | 传说时代 | 战神、兵主，涿鹿之战 |
 | [力牧](/figures/generals/shanggu/sanhuang-wudi/li-mu-shanggu) | 五帝 | 传说时代 | 黄帝首席大将，千钧之弩 |
+| [应龙](/figures/generals/shanggu/sanhuang-wudi/ying-long) | 五帝 | 传说时代 | 黄帝第一大将，涿鹿诛蚩尤 |
 | [共工](/figures/generals/shanggu/sanhuang-wudi/gong-gong) | 五帝 | 传说时代 | 水师之祖，怒触不周山 |
 | [后羿](/figures/generals/shanggu/xia/hou-yi) | 夏 | 约前2040前后 | 善射无双，后羿代夏 |
 | [妇好](/figures/generals/shanggu/shang/fu-hao) | 商 | 商武丁时期 | 中国第一位女将军，统兵一万三千 |
 | [飞廉](/figures/generals/shanggu/shang/fei-lian) | 商末 | ?–? | 善走如风，秦赵先祖 |
 | [恶来](/figures/generals/shanggu/shang/e-lai) | 商末 | ?–前1046 | 商末第一勇士，力裂虎犀 |
 | [南宫括](/figures/generals/shanggu/xizhou/nan-gong-kuo) | 商末周初 | ?–? | 西周开国功臣，散财安民 |
+| [尹吉甫](/figures/generals/shanggu/xizhou/yin-ji-fu) | 西周 | ?–? | 宣王中兴名将，北伐猃狁，万邦为宪 |
+| [召虎](/figures/generals/shanggu/xizhou/zhao-hu) | 西周 | ?–? | 召穆公，南征淮夷，舍子存孤 |
+| [方叔](/figures/generals/shanggu/xizhou/fang-shu) | 西周 | ?–? | 宣王南征荆蛮，《采芑》之师 |
+| [南仲](/figures/generals/shanggu/xizhou/nan-zhong) | 西周 | ?–? | 宣王北伐猃狁，《出车》筑城 |
 
 ---
 
@@ -23,12 +33,27 @@
 
 | 武将 | 时代 | 生卒 | 关键词 |
 |------|------|------|--------|
-| [孙武](/figures/generals/dongzhou/chunqiu/sun-wu) | 春秋 | 约前545–前470 | 兵圣，《孙子兵法》 |
-| [吴起](/figures/generals/dongzhou/zhanguo/wu-qi) | 战国 | 约前440–前381 | 魏武卒缔造者，七十六战六十四胜 |
+| [孙武](/figures/generals/dongzhou/chunqiu/sun-wu) | 春秋·吴 | 约前545–前470 | 兵圣，《孙子兵法》 |
+| [先轸](/figures/generals/dongzhou/chunqiu/xian-zhen) | 春秋·晋 | ?–前627 | 中国第一位元帅，城濮之战退避三舍 |
+| [司马穰苴](/figures/generals/dongzhou/chunqiu/si-ma-rangju) | 春秋·齐 | 约前6世纪 | 《司马法》作者，斩庄贾立威 |
+| [养由基](/figures/generals/dongzhou/chunqiu/yang-youji) | 春秋·楚 | ?–? | 百步穿杨，神射无双 |
+| [伍子胥](/figures/generals/dongzhou/chunqiu/wu-zixu) | 春秋·吴 | ?–前484 | 破郢鞭尸，兴吴功臣 |
+| [吴起](/figures/generals/dongzhou/zhanguo/wu-qi) | 战国·魏 | 约前440–前381 | 魏武卒缔造者，七十六战六十四胜 |
 | [白起](/figures/generals/dongzhou/zhanguo/bai-qi) | 战国·秦 | ?–前257 | 人屠，长平之战坑杀赵军四十万 |
 | [王翦](/figures/generals/dongzhou/zhanguo/wang-jian) | 战国·秦 | ?–? | 灭赵破燕平楚，功成身退 |
+| [王贲](/figures/generals/dongzhou/zhanguo/wang-ben) | 战国·秦 | ?–? | 父子两代灭五国，水淹大梁灭魏 |
+| [李信](/figures/generals/dongzhou/zhanguo/li-xin) | 战国·秦 | ?–? | 追太子丹于衍水，伐楚败于项燕 |
+| [蒙骜](/figures/generals/dongzhou/zhanguo/meng-ao) | 战国·秦 | 约前270–前240 | 蒙恬祖父，连取三川太原东郡 |
+| [司马错](/figures/generals/dongzhou/zhanguo/si-ma-cuo) | 战国·秦 | ?–? | 灭巴蜀，"得蜀则得楚" |
+| [乐毅](/figures/generals/dongzhou/zhanguo/le-yi) | 战国·燕 | ?–? | 五国伐齐，连下七十余城 |
+| [田单](/figures/generals/dongzhou/zhanguo/tian-dan) | 战国·齐 | ?–? | 火牛阵复国，出奇无穷 |
+| [田忌](/figures/generals/dongzhou/zhanguo/tian-ji) | 战国·齐 | ?–? | 田忌赛马，桂陵马陵两败魏师 |
 | [廉颇](/figures/generals/dongzhou/zhanguo/lian-po) | 战国·赵 | 约前327–前243 | 负荆请罪，战国四大名将 |
+| [赵奢](/figures/generals/dongzhou/zhanguo/zhao-she) | 战国·赵 | ?–? | 阏与之战大破秦军 |
+| [赵括](/figures/generals/dongzhou/zhanguo/zhao-kuo) | 战国·赵 | ?–前260 | 纸上谈兵，长平之败 |
 | [李牧](/figures/generals/dongzhou/zhanguo/li-mu) | 战国·赵 | ?–前229 | 北击匈奴，赵国最后的长城 |
+| [庞涓](/figures/generals/dongzhou/zhanguo/pang-juan) | 战国·魏 | ?–前341 | 马陵之战败亡 |
+| [项燕](/figures/generals/dongzhou/zhanguo/xiang-yan) | 战国·楚 | ?–前223 | 楚国最后名将，城父大捷 |
 | [蒙恬](/figures/generals/qinhan/qin/meng-tian) | 秦 | 约前250–前210 | 中华第一勇士，北击匈奴修长城 |
 
 ---

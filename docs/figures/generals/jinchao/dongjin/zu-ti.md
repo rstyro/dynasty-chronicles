@@ -3,6 +3,7 @@ title: 祖逖
 dynasty: 两晋南北朝
 type: general
 era: 东晋
+description: "祖逖是范阳遒县（今河北涞水）人，出身士族。他少年时不爱读书，后发奋勤学，与好友刘琨同寝。夜半闻鸡鸣，祖逖踢醒刘琨说：\"此非恶声也。\"于是起舞练剑，这就是\"闻鸡起舞\"的由来。"
 ---
 # 祖逖
 
@@ -63,7 +64,7 @@ era: 东晋
 
 - [东晋](/dynasties/weijin/eastern-jin)
 - [西晋](/dynasties/weijin/western-jin)
-- [淝水之战](/battles/feishui)
+- [淝水之战](/battles/jinchao/dongjin/feishui)
 
 ---
 

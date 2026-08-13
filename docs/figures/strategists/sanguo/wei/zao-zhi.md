@@ -3,6 +3,7 @@ title: 枣祗
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "枣祗，颍川人。曹操早期重要谋士，最早提出屯田制。建议曹操在许都周边实行民屯，解决了军粮问题，为曹操统一北方奠定经济基础。"
 ---
 
 # 枣祗

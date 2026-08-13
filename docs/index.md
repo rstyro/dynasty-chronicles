@@ -33,6 +33,7 @@ features:
     title: 文化瑰宝
     details: 诗词歌赋、四大发明、百家争鸣——探寻延续五千年的中华文化根脉
     link: /culture/
+description: ":root { --vp-home-hero-name-color: transparent; --vp-home-hero-name-background: -webkit-linear-gradi……"
 ---
 
 <style>

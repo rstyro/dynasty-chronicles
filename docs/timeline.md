@@ -1,5 +1,6 @@
 ---
 title: 中华历史时间线
+description: "import { eras } from './utils/eras.js' import { dynasties } from './utils/dynasties.js'"
 ---
 
 <script>
@@ -109,7 +110,7 @@ export default {
 **关联帝王**：[秦始皇](/figures/emperors/qinhan/qin/qin-shi-huang) · [汉武帝](/figures/emperors/qinhan/xihan/han-wudi) · [汉光武帝](/figures/emperors/qinhan/donghan/han-guangwudi)  
 **关联武将**：[蒙恬](/figures/generals/qinhan/qin/meng-tian) · [白起](/figures/generals/dongzhou/zhanguo/bai-qi) · [韩信](/figures/generals/qinhan/xihan/han-xin) · [李广](/figures/generals/qinhan/xihan/li-guang) · [卫青](/figures/generals/qinhan/xihan/wei-qing) · [霍去病](/figures/generals/qinhan/xihan/huo-qu-bing)  
 **关联谋臣**：[张良](/figures/strategists/qinhan/xihan/zhang-liang)  
-**关联战役**：[长平之战](/battles/changping) · [巨鹿之战](/battles/juluzhi-zhan)
+**关联战役**：[长平之战](/battles/dongzhou/zhanguo/changping) · [巨鹿之战](/battles/qinhan/qin/juluzhi-zhan)
 
 ---
 
@@ -128,7 +129,7 @@ export default {
 **关联帝王**：[汉献帝](/figures/emperors/qinhan/donghan/han-xiandi)  
 **关联武将**：[吕布](/figures/generals/qinhan/donghanmo/lv-bu) · [关羽](/figures/generals/sanguo/shu/guan-yu) · [祖逖](/figures/generals/jinchao/dongjin/zu-ti)  
 **关联谋臣**：[诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang)  
-**关联战役**：[赤壁之战](/battles/chibi) · [淝水之战](/battles/feishui)
+**关联战役**：[赤壁之战](/battles/sanguo/qunxiong/chibi) · [淝水之战](/battles/jinchao/dongjin/feishui)
 
 ---
 

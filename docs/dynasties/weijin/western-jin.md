@@ -8,6 +8,7 @@ capital: 洛阳
 founder: 晋武帝
 last: 晋愍帝
 keyword: 太康之治
+description: "西晋由司马炎建立，继承曹魏基业。280年灭东吴，结束三国分裂局面，实现短暂统一。太康年间一度呈现繁荣景象，史称\"太康之治\"。但晋武帝大封宗室诸王，种下祸根。"
 ---
 
 # 西晋
@@ -63,7 +64,7 @@ keyword: 太康之治
 
 ## 🔗 相关战役
 
-- [淝水之战](/battles/feishui) — 东晋谢安大破前秦
+- [淝水之战](/battles/jinchao/dongjin/feishui) — 东晋谢安大破前秦
 
 ---
 

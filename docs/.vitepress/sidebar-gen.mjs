@@ -46,9 +46,6 @@ const FIGURES_ERA_ORDER = ['上古', '东周', '秦汉', '三国', '晋朝', '�
 /** 朝代板块的时期分组排序（多民族政权并立视角） */
 const DYNASTIES_PERIOD_ORDER = ['上古·文明起源', '东周·诸侯割据', '秦汉·大一统', '三国·两晋·十六国', '南北朝·民族融合', '隋唐盛世', '多民族政权并立', '大一统皇朝']
 
-/** 战役板块的时期分组排序 */
-const BATTLES_ERA_ORDER = ['上古先秦', '秦汉', '三国', '两晋南北朝', '隋唐', '宋元明清']
-
 // ── Era → 侧边栏分组 映射 ──────────────────────────────────
 // 将文件中具体的、细粒度的 era 值映射为侧边栏的大分组名。
 // 新增人物/战役时，只需在其 frontmatter 中填入 era 值，
@@ -197,14 +194,16 @@ const ERA_SUBGROUP_MAP = {
   '战国': '战国',
   // ── 秦汉 ──
   '秦': '秦朝', '秦末': '秦朝', '秦末汉初': '秦朝',
+  '楚汉之争': '楚汉',
   '西汉': '西汉',
-  '新': '新朝', '新莽': '新朝',
+  '新': '新朝', '新莽': '新朝', '新莽末年': '新朝',
   '东汉': '东汉',
   // ── 三国 ──
   '曹魏': '魏',
   '蜀汉': '蜀',
   '孙吴': '吴',
-  '东汉末': '群雄', '东汉末-蜀汉': '蜀',
+  '东汉末': '群雄', '东汉末-蜀汉': '蜀', '东汉末年': '群雄',
+  '三国初年': '三国',
   // ── 晋朝 ──
   '西晋': '西晋',
   '东晋': '东晋',
@@ -220,7 +219,7 @@ const ERA_SUBGROUP_MAP = {
   '北魏': '北朝',
   // ── 隋唐 ──
   '隋': '隋朝',
-  '唐': '唐朝', '唐初': '唐朝', '唐中期': '唐朝', '唐-武周': '唐朝',
+  '唐': '唐朝', '唐初': '唐朝', '唐中期': '唐朝', '唐-武周': '唐朝', '安史之乱': '唐朝',
   // ── 五代十国宋辽金夏 ──
   '五代': '五代', '五代十国': '五代', '五代-后周': '五代', '五代-后梁': '五代',
   '五代-后唐': '五代', '五代-后晋': '五代', '五代-后汉': '五代', '后周': '五代',
@@ -248,10 +247,10 @@ const SUBGROUP_ORDER = {
   '三皇五帝': 0, '上古': 1, '夏': 2, '商': 3, '西周': 4,
   // ── 东周：春秋 → 战国 ──
   '春秋': 1, '战国': 2,
-  // ── 秦汉：秦朝 → 西汉 → 新朝 → 东汉 ──
-  '秦朝': 1, '西汉': 2, '新朝': 3, '东汉': 4,
-  // ── 三国：魏 → 蜀 → 吴 → 群雄 ──
-  '魏': 1, '蜀': 2, '吴': 3, '群雄': 4,
+  // ── 秦汉：秦朝 → 楚汉 → 西汉 → 新朝 → 东汉 ──
+  '秦朝': 1, '楚汉': 2, '西汉': 3, '新朝': 4, '东汉': 5,
+  // ── 三国：魏 → 蜀 → 吴 → 群雄 → 三国 ──
+  '魏': 1, '蜀': 2, '吴': 3, '群雄': 4, '三国': 5,
   // ── 晋朝：西晋 → 东晋 → 十六国 ──
   '西晋': 1, '东晋': 2, '十六国': 3,
   // ── 南北朝：南朝 → 北朝 ──
@@ -274,33 +273,6 @@ const DYNASTY_HIERARCHY = {
   'jin': ['western-jin', 'eastern-jin'],                // 晋朝 → 西晋、东晋
   'nanbei-chao': ['nanchao', 'beichao'],                // 南北朝 → 南朝、北朝
   'song': ['northern-song', 'southern-song']            // 宋朝 → 北宋、南宋
-}
-
-/** 战役类的 era 映射表 */
-const BATTLES_ERA_TO_GROUP = {
-  '传说时代': '上古先秦',
-  '上古': '上古先秦',
-  '先秦': '上古先秦',
-  '上古先秦': '上古先秦',
-  '春秋': '上古先秦',
-  '战国': '上古先秦',
-  '商末': '上古先秦',
-  '秦汉': '秦汉',
-  '秦末': '秦汉',
-  '西汉': '秦汉',
-  '东汉末年': '三国',
-  '三国': '三国',
-  '三国初年': '三国',
-  '两晋南北朝': '两晋南北朝',
-  '隋唐': '隋唐',
-  '唐初': '隋唐',
-  '安史之乱': '隋唐',
-  '宋元明清': '宋元明清',
-  '明': '宋元明清',
-  '明末': '宋元明清',
-  '元末': '宋元明清',
-  '楚汉之争': '秦汉',
-  '新莽末年': '秦汉'
 }
 
 // ── Frontmatter 解析 ────────────────────────────────────────
@@ -433,6 +405,7 @@ function scanDir(dir, basePath = '', mapping = {}) {
         rawEra,
         type: fm.type || '',
         order: parseInt(fm.order || '0', 10),
+        start: fm.start !== undefined ? parseInt(fm.start, 10) : undefined,
         dynasty: fm.dynasty || ''
       })
     }
@@ -570,37 +543,42 @@ export function generateSidebar() {
   }
 
   // ════════════════════════════════════════════════════════════
-  // 人物板块 (/figures/)
-  // 包含三个子分类：帝王、武将、谋臣
-  // 每个子分类按 era 字段分组，各时期进一步按子分组（如 曹魏/蜀汉/孙吴）做二级菜单
+  // 人物板块 (/figures/) —— 按类型拆分为独立侧边栏
+  // 每个子分类（帝王/武将/谋臣）按 era 字段分组，
+  // 各时期进一步按子分组（如 曹魏/蜀汉/孙吴）做二级菜单。
+  //
+  // 拆分策略（降低单页 HTML 体积，避免每页携带全量侧边栏）：
+  //   /figures/             → 全量侧边栏（人物总览页用，三类都在）
+  //   /figures/emperors/    → 仅帝王侧边栏
+  //   /figures/generals/    → 仅武将侧边栏
+  //   /figures/strategists/ → 仅谋臣侧边栏
+  // VitePress 按最长路径前缀匹配，各类型页面只会命中自己的侧边栏。
   // ════════════════════════════════════════════════════════════
   const figuresDir = path.join(docsDir, 'figures')
   if (fs.existsSync(figuresDir)) {
     // 定义人物的三个子分类及其对应的目录路径和标签
-    const figureGroups = [
+    const figureTypes = [
       { dir: 'emperors', label: '👑 帝王' },
       { dir: 'generals', label: '⚔️ 武将' },
       { dir: 'strategists', label: '📜 谋臣' }
     ]
 
-    // 人物总览作为固定的第一项
-    const figureSections = [
-      { text: '👤 人物总览', items: [{ text: '人物总览', link: '/figures/' }] }
-    ]
-
-    // 遍历处理每个子分类（帝王/武将/谋臣）
-    for (const group of figureGroups) {
-      const subDir = path.join(figuresDir, group.dir)
-      if (!fs.existsSync(subDir)) continue
+    /**
+     * 构建单个类型（帝王/武将/谋臣）的侧边栏主体
+     * @returns {Object|null} 侧边栏节点，结构 { text: 类型标签, items: [总览, 各时期分组...] }
+     */
+    const buildTypeSection = ({ dir, label }) => {
+      const subDir = path.join(figuresDir, dir)
+      if (!fs.existsSync(subDir)) return null
 
       // 扫描子目录中的所有人物文件
-      const files = scanDir(subDir, `figures/${group.dir}`, ERA_TO_GROUP)
+      const files = scanDir(subDir, `figures/${dir}`, ERA_TO_GROUP)
       const grouped = groupBy(files, FIGURES_ERA_ORDER)
 
       // 构建子分类的侧边栏节点
       const groupSection = {
-        text: group.label,
-        items: [{ text: `${group.label}总览`, link: `/figures/${group.dir}/` }]
+        text: label,
+        items: [{ text: `${label}总览`, link: `/figures/${dir}/` }]
       }
 
       // 为每个历史时期创建可折叠的子分组
@@ -633,7 +611,7 @@ export function generateSidebar() {
           const subItems = subGroupNames.map(sg => ({
             text: sg,
             collapsed: true,
-            // 每个子分组内的帝王再按 order（主）+ 中文拼音（次）排序，
+            // 每个子分组内的人物再按 order（主）+ 中文拼音（次）排序，
             // 避免因跨朝代的 order 值冲突而退化为错误的拼音先后
             items: subGroups[sg]
               .sort((a, b) => {
@@ -661,28 +639,113 @@ export function generateSidebar() {
           })
         }
       }
-      figureSections.push(groupSection)
+      return groupSection
     }
-    sidebar['/figures/'] = figureSections
+
+    // ── 1) 人物总览页 (/figures/)：全量侧边栏（三类都在） ──
+    const fullSidebar = [
+      { text: '👤 人物总览', items: [{ text: '人物总览', link: '/figures/' }] }
+    ]
+    for (const t of figureTypes) {
+      const sec = buildTypeSection(t)
+      if (sec) fullSidebar.push(sec)
+    }
+    sidebar['/figures/'] = fullSidebar
+
+    // ── 2) 各类型路径段：只带本类型侧边栏 + 顶部跨类型入口 ──
+    for (const t of figureTypes) {
+      const sec = buildTypeSection(t)
+      if (!sec) continue
+      sidebar[`/figures/${t.dir}/`] = [
+        {
+          text: '👤 人物',
+          items: [
+            { text: '人物总览', link: '/figures/' },
+            { text: `${t.label}总览`, link: `/figures/${t.dir}/` }
+          ]
+        },
+        // 去掉主体内重复的"类型总览"项，只保留各时期分组
+        ...sec.items.slice(1)
+      ]
+    }
   }
 
   // ════════════════════════════════════════════════════════════
   // 战役板块 (/battles/)
-  // 按 era 字段分组：上古先秦 → 秦汉 → 三国 → 两晋南北朝 → 隋唐 → 宋元明清
+  // 与人物板块同构：一级按时代分组（复用 FIGURES_ERA_ORDER + ERA_TO_GROUP），
+  // 二级按具体朝代/时期子分组（复用 ERA_SUBGROUP_MAP + SUBGROUP_ORDER）。
+  // 战役文件 era 值已规范化对齐人物体系（如 战国/楚汉之争/东汉末年/东晋/唐初）。
   // ════════════════════════════════════════════════════════════
   const battleDir = path.join(docsDir, 'battles')
   if (fs.existsSync(battleDir)) {
-    const battleFiles = scanDir(battleDir, 'battles', BATTLES_ERA_TO_GROUP)
-    const grouped = groupBy(battleFiles, BATTLES_ERA_ORDER)
+    const battleFiles = scanDir(battleDir, 'battles', ERA_TO_GROUP)
+    const grouped = groupBy(battleFiles, FIGURES_ERA_ORDER)
+
+    const battleSections = []
+    for (const [era, items] of Object.entries(grouped)) {
+      // 二级子分组：按 rawEra 映射到具体朝代/时期
+      const subGroups = {}
+      const noSubGroup = []
+      for (const item of items) {
+        const sub = ERA_SUBGROUP_MAP[item.rawEra]
+        if (sub) {
+          if (!subGroups[sub]) subGroups[sub] = []
+          subGroups[sub].push(item)
+        } else {
+          noSubGroup.push(item)
+        }
+      }
+
+      const subGroupNames = Object.keys(subGroups)
+
+      // 战役组内排序：先按 start 年份（无 start 的排最后），再 order，再拼音
+      const sortByTime = (a, b) => {
+        const sa = a.start ?? Number.MAX_SAFE_INTEGER
+        const sb = b.start ?? Number.MAX_SAFE_INTEGER
+        if (sa !== sb) return sa - sb
+        if (a.order !== b.order) return a.order - b.order
+        return a.text.localeCompare(b.text, 'zh-CN')
+      }
+
+      if (subGroupNames.length > 1) {
+        // 有多个子分组 → 构建二级菜单
+        subGroupNames.sort((a, b) => {
+          const oa = SUBGROUP_ORDER[a] ?? 99
+          const ob = SUBGROUP_ORDER[b] ?? 99
+          return oa - ob
+        })
+
+        const subItems = subGroupNames.map(sg => ({
+          text: sg,
+          collapsed: true,
+          items: subGroups[sg]
+            .sort(sortByTime)
+            .map(item => ({ text: item.text, link: item.link }))
+        }))
+        // 无法归入子分组的战役直接列出
+        for (const item of noSubGroup) {
+          subItems.push({ text: item.text, link: item.link })
+        }
+
+        battleSections.push({
+          text: `⚔️ ${era}`,
+          collapsed: true,
+          items: subItems
+        })
+      } else {
+        // 只有一个或零个子分组 → 保持扁平列表
+        battleSections.push({
+          text: `⚔️ ${era}`,
+          collapsed: true,
+          items: items.slice().sort(sortByTime).map(item => ({ text: item.text, link: item.link }))
+        })
+      }
+    }
+
     sidebar['/battles/'] = [
       // "战役总览" 固定放在最前
       { text: '⚔️ 战役总览', items: [{ text: '战役总览', link: '/battles/' }] },
-      // 自动生成各时期分组
-      ...Object.entries(grouped).map(([group, items]) => ({
-        text: `⚔️ ${group}`,
-        collapsed: true,
-        items: items.map(item => ({ text: item.text, link: item.link }))
-      }))
+      ...battleSections
     ]
   }
 

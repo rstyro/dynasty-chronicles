@@ -3,6 +3,7 @@ title: 高览
 dynasty: 三国
 type: general
 era: 东汉末
+description: "高览是河北名将，与颜良、文丑、张郃并称\"河北四庭柱\"。"
 ---
 # 高览
 

@@ -3,6 +3,7 @@ title: 满宠
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "满宠，山阳昌邑人，曹魏名将兼谋臣。执法严明，不避权贵。镇守合肥期间，满宠改革防御策略，以新城替代旧城，多次抵御东吴进攻。"
 ---
 
 # 满宠

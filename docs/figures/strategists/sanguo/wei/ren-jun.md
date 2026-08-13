@@ -3,6 +3,7 @@ title: 任峻
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "任峻，河南中牟人。曹操早期功臣，迎曹操入兖州。后负责实施屯田制，数年间仓廪皆满。曹操将宗族之女嫁之，甚见亲信。"
 ---
 
 # 任峻

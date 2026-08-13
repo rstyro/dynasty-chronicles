@@ -3,6 +3,7 @@ title: 文鸯
 dynasty: 三国
 type: general
 era: 曹魏
+description: "文鸯是沛国谯县（今安徽亳州）人，文钦之子。文钦与曹爽亲近，高平陵之变后被司马氏清算。"
 ---
 # 文鸯
 

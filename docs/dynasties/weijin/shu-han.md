@@ -8,6 +8,7 @@ capital: 成都
 founder: 刘备
 last: 刘禅
 keyword: 汉室正统
+description: "蜀汉由刘备建立，以\"兴复汉室\"为旗帜，占据益州（今四川、重庆及云贵部分地区）。诸葛亮辅政时期，内修政理、外联孙吴，先后五次北伐曹魏，鞠躬尽瘁死而后已。"
 ---
 
 # 蜀汉
@@ -68,7 +69,7 @@ keyword: 汉室正统
 
 ## 🔗 相关战役
 
-- [赤壁之战](/battles/chibi) — 三分天下
+- [赤壁之战](/battles/sanguo/qunxiong/chibi) — 三分天下
 
 ---
 

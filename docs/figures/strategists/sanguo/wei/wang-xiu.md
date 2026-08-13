@@ -3,6 +3,7 @@ title: 王修
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "王修，北海营陵人。先仕孔融，后归袁谭、曹操。执法严明，敢于直言。曹操破袁氏后，王修冒死收葬袁谭，曹操嘉其义气而用之。"
 ---
 
 # 王修

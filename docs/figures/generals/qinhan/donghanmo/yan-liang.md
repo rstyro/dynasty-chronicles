@@ -3,6 +3,7 @@ title: 颜良
 dynasty: 三国
 type: general
 era: 东汉末
+description: "颜良是河北名将，与文丑并称\"河北双雄\"，为袁绍麾下第一大将。"
 ---
 # 颜良
 

@@ -3,6 +3,7 @@ title: 关平
 dynasty: 三国
 type: general
 era: 蜀汉
+description: "关平是关羽的义子（《三国演义》中为关羽收的义子，正史中为关羽长子）。"
 ---
 # 关平
 

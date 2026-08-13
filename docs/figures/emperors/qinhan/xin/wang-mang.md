@@ -4,6 +4,7 @@ dynasty: 秦汉
 type: emperor
 era: 新
 order: 1
+description: "王莽字巨君，魏郡元城人，西汉外戚王氏家族的核心人物。其姑母王政君为汉元帝皇后，家族显赫一时。王莽早年以谦恭俭朴、礼贤下士闻名，折节下交名士，声名远超诸叔伯。成帝时历任黄门郎、射声校尉，封新都侯。"
 ---
 # 王莽 · 王巨君
 
@@ -80,7 +81,7 @@ order: 1
 - [汉平帝](/figures/emperors/qinhan/xihan/han-pingdi) — 王莽辅政，大权独揽
 - [孺子婴](/figures/emperors/qinhan/xihan/han-ruziying) — 王莽摄政，西汉灭亡
 - [汉光武帝](/figures/emperors/qinhan/donghan/han-guangwudi) — 起兵反莽，建立东汉
-- [昆阳之战](/battles/kunyang) — 刘秀大破新朝主力
+- [昆阳之战](/battles/qinhan/xin/kunyang) — 刘秀大破新朝主力
 
 ---
 

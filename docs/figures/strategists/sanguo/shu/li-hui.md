@@ -3,6 +3,7 @@ title: 李恢
 dynasty: 三国
 type: strategist
 era: 蜀汉
+description: "李恢，建宁俞元人。自荐于刘备，被任为庲降都督。诸葛亮南征时，李恢从平夷道入，大破叛军。后镇守南中十余年，安定一方。"
 ---
 
 # 李恢

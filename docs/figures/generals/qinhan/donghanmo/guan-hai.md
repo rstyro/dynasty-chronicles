@@ -3,6 +3,7 @@ title: 管亥
 dynasty: 三国
 type: general
 era: 东汉末
+description: "管亥是东汉末年黄巾军的渠帅。"
 ---
 # 管亥
 

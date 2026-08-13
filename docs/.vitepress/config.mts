@@ -37,7 +37,15 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '时间线', link: '/timeline' },
       { text: '朝代', link: '/dynasties/' },
-      { text: '人物', link: '/figures/' },
+      {
+        text: '人物',
+        items: [
+          { text: '人物总览', link: '/figures/' },
+          { text: '帝王', link: '/figures/emperors/' },
+          { text: '武将', link: '/figures/generals/' },
+          { text: '谋臣', link: '/figures/strategists/' }
+        ]
+      },
       { text: '战役', link: '/battles/' },
       { text: '文化', link: '/culture/' }
     ],

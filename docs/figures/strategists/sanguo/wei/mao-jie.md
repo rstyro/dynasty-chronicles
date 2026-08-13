@@ -3,6 +3,7 @@ title: 毛玠
 dynasty: 三国
 type: strategist
 era: 曹魏
+description: "毛玠，陈留平丘人。最早向曹操提出\"奉天子以令不臣\"战略。与崔琰共同主持选举，以清廉为先。后因崔琰案受牵连被免官。"
 ---
 
 # 毛玠

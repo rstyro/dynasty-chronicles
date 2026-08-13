@@ -4,6 +4,7 @@ dynasty: 宋元明清
 type: emperor
 era: 清（后金）
 order: 1
+description: "清太祖努尔哈赤，建州女真首领，后金开国之君。出身赫图阿拉贵族，少年丧母，以采参为生。"
 ---
 
 # 清太祖 · 努尔哈赤

@@ -4,6 +4,7 @@ dynasty: 秦汉
 type: emperor
 era: 秦
 order: 1
+description: "嬴政十三岁即位为秦王，二十二岁亲政。用十年时间先后灭韩、赵、魏、楚、燕、齐六国，完成统一大业。建立中国历史上第一个大一统帝国，自称\"始皇帝\"。"
 ---
 # 秦始皇 · 嬴政
 
@@ -52,7 +53,7 @@ order: 1
 ## 🔗 相关链接
 
 - [秦朝](/dynasties/qinhan/qin)
-- [长平之战](/battles/changping)
+- [长平之战](/battles/dongzhou/zhanguo/changping)
 - [白起](/figures/generals/dongzhou/zhanguo/bai-qi)
 
 ---

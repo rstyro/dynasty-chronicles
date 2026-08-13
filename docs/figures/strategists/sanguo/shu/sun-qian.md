@@ -3,6 +3,7 @@ title: 孙乾
 dynasty: 三国
 type: strategist
 era: 蜀汉
+description: "孙乾，北海人。刘备自徐州时期便以其为从事，常负责外交使命。多次出使袁绍、刘表等诸侯，皆能完成任务。刘备取蜀后任秉忠将军。"
 ---
 
 # 孙乾

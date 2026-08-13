@@ -8,6 +8,7 @@ capital: '—'
 founder: '—'
 last: '—'
 keyword: 百家争鸣
+description: "战国时期是中国历史上列国兼并最剧烈的时代。经过春秋时期的兼并，到战国初期形成齐、楚、燕、韩、赵、魏、秦七雄并立的格局。各国先后推行变法图强，合纵连横的外交与大规模战争交织。"
 ---
 
 # 战国时期
@@ -75,7 +76,7 @@ keyword: 百家争鸣
 
 ## 🔗 相关战役
 
-- [长平之战](/battles/changping) — 秦赵决战
+- [长平之战](/battles/dongzhou/zhanguo/changping) — 秦赵决战
 
 ---
 

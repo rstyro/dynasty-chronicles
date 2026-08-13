@@ -3,6 +3,7 @@ title: 关羽
 dynasty: 三国
 type: general
 era: 蜀汉
+description: "关羽早年与刘备、张飞桃园结义，一生追随刘备。曾在曹操麾下效力期间阵斩颜良，后千里走单骑回归刘备。镇守荆州期间威震华夏，水淹七军擒于禁、斩庞德。最终因东吴吕蒙白衣渡江偷袭，败走麦城被杀。"
 ---
 # 关羽
 
@@ -46,7 +47,7 @@ era: 蜀汉
 ## 🔗 相关链接
 
 - [三国](/dynasties/weijin/sanguo)
-- [赤壁之战](/battles/chibi)
+- [赤壁之战](/battles/sanguo/qunxiong/chibi)
 
 ---
 

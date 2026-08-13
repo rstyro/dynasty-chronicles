@@ -8,6 +8,7 @@ capital: '长安/洛阳'
 founder: 汉高祖
 last: 汉献帝
 keyword: 丝绸之路
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 汉朝

@@ -8,6 +8,7 @@ capital: 洛邑
 founder: 周平王
 last: 周赧王
 keyword: 百家争鸣
+description: "::: tip 📌 详细内容请查看子页面"
 ---
 
 # 东周（春秋战国）
