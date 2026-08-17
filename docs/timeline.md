@@ -4,14 +4,41 @@ description: "约公元前2070年至公元1912年——从三皇五帝的传说�
 ---
 
 <script>
+import { withBase } from 'vitepress'
 import { eras } from './utils/eras.js'
 import { dynasties } from './utils/dynasties.js'
 
+// 全局时间轴锚点：以夏朝建立（前2070）为起点，清帝退位（1912）为终点
+const MIN_YEAR = -2070
+const MAX_YEAR = 1912
+const TOTAL_SPAN = MAX_YEAR - MIN_YEAR
+
+// 并行政权的手工分行表（0 = 主线，1/2/3 = 并行线）
+// 其余时期默认全部放在主线行
+const ROW_MAP = {
+  '分裂融合': { '曹魏': 0, '西晋': 0, '东晋': 0, '南朝': 0, '蜀汉': 1, '十六国': 1, '孙吴': 2, '北朝': 2 },
+  '宋元明清': { '北宋': 0, '南宋': 0, '元朝': 0, '明朝': 0, '清朝': 0, '辽朝': 1, '西夏': 2, '金朝': 3 }
+}
+
+// 各时期主题色（与文明演进卡片呼应）
+const PERIOD_COLORS = {
+  '上古': '#8a7a63',
+  '春秋战国': '#4e8a7e',
+  '帝国初立': '#b5442f',
+  '分裂融合': '#7d5ba6',
+  '隋唐盛世': '#c08f1e',
+  '宋元明清': '#3d6b99'
+}
+
+// 时间轴刻度（每 500 年一条）
+const TICKS = [-2000, -1500, -1000, -500, 0, 500, 1000, 1500]
+
 export default {
   data() {
-    return { eras, dynasties }
+    return { eras, dynasties, ticks: TICKS, withBase }
   },
   computed: {
+    // 速览表：按时期分组
     groupedDynasties() {
       const groups = {}
       for (const d of this.dynasties) {
@@ -19,32 +46,119 @@ export default {
         groups[d.period].push(d)
       }
       return Object.entries(groups).map(([period, items]) => ({ period, items }))
+    },
+    // 时间轴：按时期分组 + 行分配 + 比例定位
+    tlGroups() {
+      const pos = y => ((y - MIN_YEAR) / TOTAL_SPAN) * 100
+      return this.groupedDynasties.map(({ period, items }) => {
+        const lanes = {}
+        for (const d of items) {
+          const row = (ROW_MAP[period] && ROW_MAP[period][d.name]) || 0
+          if (!lanes[row]) lanes[row] = []
+          const s = this.parseYear(d.start)
+          const e = this.parseYear(d.end)
+          d._myth = s === null
+          if (!d._myth) {
+            d._left = pos(s)
+            d._w = pos(e) - pos(s)
+          }
+          lanes[row].push(d)
+        }
+        return {
+          period,
+          color: PERIOD_COLORS[period],
+          min: items[0].start,
+          max: items[items.length - 1].end,
+          lanes: Object.keys(lanes).sort((a, b) => a - b).map(k => lanes[k])
+        }
+      })
+    },
+    statDynasties() {
+      return this.dynasties.length
+    }
+  },
+  methods: {
+    parseYear(y) {
+      if (typeof y === 'number') return y
+      const s = String(y)
+      if (s === '传说时代') return null
+      if (s.startsWith('前')) return -parseInt(s.slice(1), 10)
+      return parseInt(s, 10)
+    },
+    pos(y) {
+      return ((y - MIN_YEAR) / TOTAL_SPAN) * 100
+    },
+    tickLabel(y) {
+      if (y === 0) return '公元1年'
+      return y < 0 ? `前${-y}` : `${y}年`
+    },
+    barStyle(d) {
+      if (d._myth) return { left: 0, width: '1.6%', minWidth: '10px' }
+      return { left: d._left + '%', width: Math.max(d._w, 1.2) + '%' }
+    },
+    barTitle(d) {
+      const period = this.groupedDynasties.find(g => g.items.includes(d))?.period || ''
+      return `${d.name}（${d.start} — ${d.end}）｜${d.keyword}｜${period}`
+    },
+    showName(d) {
+      return !d._myth && d._w > 5
     }
   }
 }
 </script>
 
+<!-- ============ 顶部英雄区 ============ -->
 <div class="timeline-hero">
-  <p class="hero-sub">约公元前 2070 年 — 公元 1912 年</p>
+  <p class="hero-kicker">GENEALOGY OF CHINA · 公元前 2070 — 公元 1912</p>
   <h1 class="hero-title">中华历史时间线</h1>
   <p class="hero-desc">纵览华夏五千年，从三皇五帝的传说，到最后一个封建王朝的落幕。</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><b>{{ statDynasties }}</b><span>个朝代</span></div>
+    <div class="hero-stat"><b>6</b><span>大历史时期</span></div>
+    <div class="hero-stat"><b>近 4000</b><span>年岁月</span></div>
+  </div>
 </div>
 
+## 🗺️ 朝代时间轴
+
+> 条宽按**真实年代比例**绘制，并行的政权分行展示；将鼠标悬停在色条上可查看朝代详情，点击可跳转对应朝代页面。
+
+<div class="tl-scroll">
+<div class="tl-chart">
+
+<div class="tl-ruler">
+<span v-for="t in ticks" :key="t" class="tl-tick" :style="{ left: pos(t) + '%' }"><i></i>{{ tickLabel(t) }}</span>
+</div>
+
+<div v-for="g in tlGroups" :key="g.period" class="tl-group" :style="{ '--gcolor': g.color }">
+<div class="tl-group-title"><span class="dot"></span>{{ g.period }}<span class="range">{{ g.min }} — {{ g.max }}</span></div>
+<div v-for="(lane, li) in g.lanes" :key="li" class="tl-lane" :class="{ 'tl-lane--main': li === 0 }">
+<a v-for="d in lane" :key="d.url" class="tl-bar" :class="{ 'tl-bar--myth': d._myth }" :style="barStyle(d)" :href="withBase(d.url)" :title="barTitle(d)"><span v-if="showName(d)" class="tl-bar-name">{{ d.name }}</span></a>
+</div>
+</div>
+
+<div class="tl-legend">
+<span>▍条宽 = 真实年代长度</span>
+<span>▍并行政权分行</span>
+<span>▍窄条 / 虚线框 = 年代模糊或过短，悬停查看</span>
+</div>
+
+</div>
+</div>
 
 ## 🌍 文明演进总览
 
 <div class="era-grid">
 
-<div v-for="era in eras" :key="era.cls" :class="['era-card', era.cls]">
-  <span class="era-badge">{{ era.badge }}</span>
+<div v-for="(era, i) in eras" :key="era.cls" :class="['era-card', era.cls]">
+  <span class="era-num">{{ String(i + 1).padStart(2, '0') }}</span>
+  <div class="era-icon">{{ era.badge }}</div>
   <h3>{{ era.title }}</h3>
   <p>{{ era.desc }}</p>
   <small>{{ era.range }}</small>
 </div>
 
 </div>
-
-
 
 ## 📋 朝代速览（完整版）
 
@@ -64,7 +178,7 @@ export default {
     <template v-for="group in groupedDynasties" :key="group.period">
       <tr v-for="(d, i) in group.items" :key="d.url">
         <td>{{ i === 0 ? group.period : '' }}</td>
-        <td><a :href="d.url">{{ d.name }}</a></td>
+        <td><a :href="withBase(d.url)">{{ d.name }}</a></td>
         <td style="text-align:center">{{ d.start }}–{{ d.end }}</td>
         <td>{{ d.capital }}</td>
         <td>{{ d.founder }}</td>
@@ -183,34 +297,215 @@ export default {
 <style scoped>
 /* ===== 顶部英雄区 ===== */
 .timeline-hero {
+  position: relative;
   text-align: center;
-  padding: 2rem 0 1.5rem 0;
-  border-bottom: 2px solid var(--vp-c-divider);
-  margin-bottom: 2rem;
+  padding: 3rem 1.5rem 2.2rem;
+  margin-bottom: 2.5rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  background:
+    radial-gradient(560px 220px at 15% -10%, rgba(240, 199, 94, 0.12), transparent 60%),
+    radial-gradient(520px 240px at 110% 120%, rgba(142, 35, 35, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--vp-c-bg-soft), var(--vp-c-bg) 55%);
 }
 
-.hero-sub {
-  font-size: 0.9rem;
-  letter-spacing: 0.3em;
-  color: var(--vp-c-text-2);
-  margin-bottom: 0.5rem;
+.timeline-hero::before,
+.timeline-hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.timeline-hero::before {
+  width: 180px;
+  height: 180px;
+  right: -60px;
+  bottom: -80px;
+  border: 2px dashed rgba(142, 35, 35, 0.18);
+}
+
+.timeline-hero::after {
+  width: 90px;
+  height: 90px;
+  left: -30px;
+  top: -30px;
+  border: 1.5px solid rgba(240, 199, 94, 0.3);
+}
+
+.hero-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.42em;
+  color: var(--vp-c-text-3);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
 }
 
 .hero-title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin: 0.2rem 0 0.5rem 0;
-  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  margin: 0.2rem 0 0.6rem;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), #bd6b2e 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-desc {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--vp-c-text-2);
-  max-width: 600px;
+  max-width: 560px;
   margin: 0 auto;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem;
+  margin-top: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.hero-stat b {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  line-height: 1.2;
+}
+
+.hero-stat span {
+  font-size: 0.75rem;
+  color: var(--vp-c-text-2);
+  letter-spacing: 0.15em;
+}
+
+/* ===== 时间轴 ===== */
+.tl-scroll {
+  overflow-x: auto;
+  margin: 1.2rem 0 2rem;
+}
+
+.tl-chart {
+  min-width: 720px;
+  padding: 0.4rem 0.6rem 0.2rem;
+}
+
+.tl-ruler {
+  position: relative;
+  height: 24px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.tl-tick {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  color: var(--vp-c-text-3);
+  white-space: nowrap;
+}
+
+.tl-tick i {
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: var(--vp-c-divider);
+  margin: 0 auto 3px;
+}
+
+.tl-group {
+  margin-bottom: 12px;
+}
+
+.tl-group-title {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0.35rem;
+}
+
+.tl-group-title .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gcolor);
+  margin-right: 0.45rem;
+  flex-shrink: 0;
+}
+
+.tl-group-title .range {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--vp-c-text-3);
+  margin-left: 0.5rem;
+}
+
+.tl-lane {
+  position: relative;
+  height: 26px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: var(--vp-c-bg-soft);
+}
+
+.tl-lane--main {
+  background: color-mix(in srgb, var(--gcolor) 7%, var(--vp-c-bg-soft));
+}
+
+.tl-bar {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--gcolor) 88%, white), var(--gcolor));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: filter 0.15s, box-shadow 0.15s, transform 0.15s;
+  z-index: 1;
+}
+
+.tl-bar:hover {
+  filter: brightness(1.12) saturate(1.1);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+  z-index: 2;
+}
+
+.tl-bar--myth {
+  background: repeating-linear-gradient(45deg, transparent 0 4px, rgba(255, 255, 255, 0.16) 4px 8px),
+    var(--gcolor);
+  border: 1px dashed color-mix(in srgb, var(--gcolor) 60%, white);
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.tl-bar-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 4px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tl-legend {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: var(--vp-c-text-3);
+  margin: 0.6rem 0 0.2rem;
 }
 
 /* ===== 六时期网格卡片 ===== */
@@ -218,37 +513,45 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 1.5rem 0 2.5rem 0;
+  margin: 1.5rem 0 2.5rem;
 }
 
 .era-card {
-  padding: 1.2rem 0.8rem;
-  border-radius: 12px;
+  position: relative;
+  padding: 1.4rem 1rem 1.1rem;
+  border-radius: 14px;
   text-align: center;
-  background: var(--vp-c-bg-soft);
+  background: linear-gradient(180deg, var(--vp-c-bg-soft), var(--vp-c-bg));
   border: 1px solid var(--vp-c-divider);
+  border-top: 3px solid transparent;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .era-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
 }
 
-.era-badge {
-  display: inline-block;
-  font-size: 0.75rem;
+.era-num {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  padding: 0.15rem 0.8rem;
-  border-radius: 20px;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  margin-bottom: 0.4rem;
+  letter-spacing: 0.1em;
+  color: var(--vp-c-text-3);
+  opacity: 0.55;
+}
+
+.era-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.45rem;
 }
 
 .era-card h3 {
   font-size: 1.1rem;
-  margin: 0.2rem 0;
+  margin: 0.25rem 0;
 }
 
 .era-card p {
@@ -262,17 +565,37 @@ export default {
   color: var(--vp-c-text-3);
 }
 
-/* 各时期主题色点缀（可选） */
-.era-myth     { border-top: 4px solid #7c6a4f; }
-.era-ancient  { border-top: 4px solid #b8860b; }
-.era-imperial { border-top: 4px solid #c0392b; }
-.era-turbulent { border-top: 4px solid #8e44ad; }
-.era-golden { border-top: 4px solid #d4a017; }
-.era-late { border-top: 4px solid #2c3e50; }
+/* 各时期主题色点缀 */
+.era-myth     { border-top-color: #7c6a4f; }
+.era-ancient  { border-top-color: #b8860b; }
+.era-imperial { border-top-color: #c0392b; }
+.era-turbulent { border-top-color: #8e44ad; }
+.era-golden   { border-top-color: #d4a017; }
+.era-late     { border-top-color: #2c3e50; }
 
 /* ===== 表格优化 ===== */
 table {
   font-size: 0.9rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+table thead th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--vp-c-bg-soft);
+}
+
+table tbody tr:hover {
+  background: color-mix(in srgb, var(--vp-c-brand-1) 8%, var(--vp-c-bg));
 }
 
 table th:first-child,
@@ -300,6 +623,9 @@ blockquote {
   .hero-title {
     font-size: 2rem;
   }
+  .hero-stats {
+    gap: 1.6rem;
+  }
   table {
     font-size: 0.75rem;
   }
@@ -313,7 +639,7 @@ blockquote {
     grid-template-columns: 1fr 1fr;
   }
   .era-card {
-    padding: 0.8rem 0.4rem;
+    padding: 1rem 0.5rem;
   }
 }
 </style>

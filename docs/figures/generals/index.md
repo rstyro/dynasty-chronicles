@@ -38,6 +38,15 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | [司马穰苴](/figures/generals/dongzhou/chunqiu/si-ma-rangju) | 春秋·齐 | 约前6世纪 | 《司马法》作者，斩庄贾立威 |
 | [养由基](/figures/generals/dongzhou/chunqiu/yang-youji) | 春秋·楚 | ?–? | 百步穿杨，神射无双 |
 | [伍子胥](/figures/generals/dongzhou/chunqiu/wu-zixu) | 春秋·吴 | ?–前484 | 破郢鞭尸，兴吴功臣 |
+| [曹刿](/figures/generals/dongzhou/chunqiu/cao-gui) | 春秋·鲁 | ?–? | 一鼓作气，长勺之战以弱胜强 |
+| [孟明视](/figures/generals/dongzhou/chunqiu/meng-ming-shi) | 春秋·秦 | ?–约前610 | 崤之战三败，渡河焚舟雪耻 |
+| [荀林父](/figures/generals/dongzhou/chunqiu/xun-lin-fu) | 春秋·晋 | ?–约前592 | 邲之战主帅，灭赤狄潞氏 |
+| [郤克](/figures/generals/dongzhou/chunqiu/xi-ke) | 春秋·晋 | ?–约前587 | 鞍之战大破齐军，晋复霸中原 |
+| [子玉](/figures/generals/dongzhou/chunqiu/zi-yu) | 春秋·楚 | ?–前632 | 城濮之战主帅，轻敌致败 |
+| [庆忌](/figures/generals/dongzhou/chunqiu/qing-ji) | 春秋·吴 | ?–约前513 | 天下勇士，要离刺庆忌 |
+| [栾书](/figures/generals/dongzhou/chunqiu/luan-shu) | 春秋·晋 | ?–约前573 | 四朝重臣，灭狄败秦克楚 |
+| [韩厥](/figures/generals/dongzhou/chunqiu/han-jue) | 春秋·晋 | ?–约前566 | 鞍之战功臣，存赵氏孤儿 |
+| [赵盾](/figures/generals/dongzhou/chunqiu/zhao-dun) | 春秋·晋 | 约前655–前601 | 晋国执政正卿，"赵氏孤儿"之源 |
 | [吴起](/figures/generals/dongzhou/zhanguo/wu-qi) | 战国·魏 | 约前440–前381 | 魏武卒缔造者，七十六战六十四胜 |
 | [白起](/figures/generals/dongzhou/zhanguo/bai-qi) | 战国·秦 | ?–前257 | 人屠，长平之战坑杀赵军四十万 |
 | [王翦](/figures/generals/dongzhou/zhanguo/wang-jian) | 战国·秦 | ?–? | 灭赵破燕平楚，功成身退 |
@@ -54,6 +63,18 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | [李牧](/figures/generals/dongzhou/zhanguo/li-mu) | 战国·赵 | ?–前229 | 北击匈奴，赵国最后的长城 |
 | [庞涓](/figures/generals/dongzhou/zhanguo/pang-juan) | 战国·魏 | ?–前341 | 马陵之战败亡 |
 | [项燕](/figures/generals/dongzhou/zhanguo/xiang-yan) | 战国·楚 | ?–前223 | 楚国最后名将，城父大捷 |
+| [匡章](/figures/generals/dongzhou/zhanguo/kuang-zhang) | 战国·齐 | 约前360–前280 | 垂沙之战败楚，五十日灭燕 |
+| [秦开](/figures/generals/dongzhou/zhanguo/qin-kai) | 战国·燕 | ?–? | 破东胡拓地千里，置辽东五郡 |
+| [樗里疾](/figures/generals/dongzhou/zhanguo/chu-li-ji) | 战国·秦 | ?–前300 | 智囊名将，伐义渠取二十五城 |
+| [甘茂](/figures/generals/dongzhou/zhanguo/gan-mao) | 战国·秦 | 约前360–前301 | 宜阳之战，息壤之盟 |
+| [王龁](/figures/generals/dongzhou/zhanguo/wang-he) | 战国·秦 | ?–约前243 | 长平之战前期主帅，取野王 |
+| [蒙武](/figures/generals/dongzhou/zhanguo/meng-wu) | 战国·秦 | ?–约前220 | 与王翦灭楚，擒项燕 |
+| [司马尚](/figures/generals/dongzhou/zhanguo/si-ma-shang) | 战国·赵 | ?–? | 李牧副将，赵国最后良将 |
+| [信陵君](/figures/generals/dongzhou/zhanguo/xin-ling-jun) | 战国·魏 | ?–前243 | 窃符救赵，五国败秦 |
+| [庞煖](/figures/generals/dongzhou/zhanguo/pang-nuan) | 战国·赵 | 约前290–前236 | 赵国最后名将，五国合纵攻秦 |
+| [剧辛](/figures/generals/dongzhou/zhanguo/ju-xin) | 战国·燕 | ?–前243 | 伐齐名将，轻敌败亡于赵 |
+| [田盼](/figures/generals/dongzhou/zhanguo/tian-pan) | 战国·齐 | 约前360–前300 | 桂陵马陵两战的关键将领 |
+| [乐乘](/figures/generals/dongzhou/zhanguo/le-cheng) | 战国·赵 | 约前300–前250 | 乐毅族人，鄗代破燕 |
 | [蒙恬](/figures/generals/qinhan/qin/meng-tian) | 秦 | 约前250–前210 | 中华第一勇士，北击匈奴修长城 |
 
 ---

@@ -26,6 +26,14 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 - [白起](/figures/generals/dongzhou/zhanguo/bai-qi) — 战国四大名将之首
 - [韩信](/figures/generals/qinhan/xihan/han-xin) — 兵仙神帅，国士无双
 - [关羽](/figures/generals/sanguo/shu/guan-yu) — 忠义化身，武圣
+- [吕布](/figures/generals/qinhan/donghanmo/lv-bu) — 人中吕布，马中赤兔
+- [邓艾](/figures/generals/sanguo/wei/deng-ai) — 偷渡阴平，灭蜀首功
+- [黄盖](/figures/generals/sanguo/wu/huang-gai) — 赤壁火攻，苦肉断腕
+- [羊祜](/figures/generals/jinchao/xijin/yang-hu) — 怀柔安边，遗策灭吴
+- [陶侃](/figures/generals/jinchao/dongjin/tao-kan) — 运甓自砺，东晋柱石
+- [韩擒虎](/figures/generals/suitang/sui/han-qin-hu) — 生擒陈后主，灭陈先锋
+- [李勣](/figures/generals/suitang/tang/li-ji) — 三朝元勋，灭高句丽
+- [杨业](/figures/generals/songliao/beisong/yang-ye) — 杨无敌，杨家将始祖
 - [岳飞](/figures/generals/songliao/nansong/yue-fei) — 精忠报国，收拾旧山河
 
 ### 📜 [谋臣](/figures/strategists/)
@@ -33,6 +41,12 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 
 - [张良](/figures/strategists/qinhan/xihan/zhang-liang) — 运筹帷幄，决胜千里
 - [诸葛亮](/figures/strategists/sanguo/shu/zhuge-liang) — 鞠躬尽瘁，死而后已
+- [陈宫](/figures/strategists/sanguo/qunxiong/chen-gong) — 白门楼前，宁死不降
+- [王导](/figures/strategists/jinchao/dongjin/wang-dao) — 王与马，共天下
+- [高颎](/figures/strategists/suitang/sui/gao-jiong) — 开皇之治，灭陈谋主
+- [姚崇](/figures/strategists/suitang/tang/yao-chong) — 十事要说，开元盛世
+- [赵普](/figures/strategists/songliao/beisong/zhao-pu) — 半部论语治天下
+- [文天祥](/figures/strategists/songliao/nansong/wen-tian-xiang) — 人生自古谁无死
 - [刘基](/figures/strategists/ming/liu-ji) — 明朝开国第一谋臣
 
 ---
