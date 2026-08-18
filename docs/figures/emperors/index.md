@@ -259,6 +259,7 @@ description: "\"溥天之下，莫非王土；率土之滨，莫非王臣。\"�
 | [慕容垂](/figures/emperors/jinchao/shiliuguo/mu-rong-chui) | 后燕 | 384–396 | 后燕开国；十三岁从军；**参合陂之战**被北魏击败国势衰 |
 | [姚苌](/figures/emperors/jinchao/shiliuguo/yao-chang) | 后秦 | 384–393 | 后秦开国；**弑杀苻坚**于新平佛寺，恩将仇报 |
 | [姚兴](/figures/emperors/jinchao/shiliuguo/yao-xing) | 后秦 | 393–416 | 后秦鼎盛；迎**鸠摩罗什**译经，儒释并兴 |
+| [姚泓](/figures/emperors/jinchao/shiliuguo/yao-hong) | 后秦 | 416–417 | 后秦末主；刘裕北伐，出降而国亡 |
 | [赫连勃勃](/figures/emperors/jinchao/shiliuguo/he-lian-bo-bo) | 胡夏 | 407–425 | 筑**统万城**；残暴嗜杀；攻陷长安，大败东晋 |
 
 ### 南朝
@@ -512,6 +513,7 @@ description: "\"溥天之下，莫非王土；率土之滨，莫非王臣。\"�
 | 帝王 | 朝代 | 在位 | 关键词 |
 |------|------|------|--------|
 | [成吉思汗](/figures/emperors/yuan/genghis-khan) | 蒙古 | 1206–1227 | 蒙古帝国创建者，一代天骄 |
+| [元睿宗](/figures/emperors/yuan/tuo-lei) | 蒙古 | 1227–1229（监国） | 拖雷；三峰山破金，忽必烈之父 |
 | [元世祖](/figures/emperors/yuan/hubilie) | 元 | 1260–1294 | 大元建立者，行省制 |
 | [元仁宗](/figures/emperors/yuan/yuan-renzong) | 元 | 1311–1320 | 延祐复科，恢复科举，推行汉法 |
 

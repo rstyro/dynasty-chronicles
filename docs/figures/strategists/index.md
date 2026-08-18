@@ -33,6 +33,7 @@ description: "运筹帷幄之中，决胜千里之外——以一己之智改变
 | [文种](/figures/strategists/dongzhou/chunqiu/wen-zhong) | 春秋·越 | ?–前472 | 伐吴七术，鸟尽弓藏 |
 | [晏婴](/figures/strategists/dongzhou/chunqiu/yan-ying) | 春秋·齐 | 前578–前500 | 晏子使楚，二桃杀三士 |
 | [百里奚](/figures/strategists/dongzhou/chunqiu/bai-li-xi) | 春秋·秦 | 约前725–前621 | 五羖大夫，七十相秦 |
+| [申包胥](/figures/strategists/dongzhou/chunqiu/shen-bao-xu) | 春秋·楚 | ?–? | 哭秦庭七日，乞师复楚 |
 | [蹇叔](/figures/strategists/dongzhou/chunqiu/jian-shu) | 春秋·秦 | 约前690–前610 | 哭师东门，崤山预言 |
 | [商鞅](/figures/strategists/dongzhou/zhanguo/shang-yang) | 战国·秦 | 约前390–前338 | 变法强秦，奠定统一基础 |
 | [孙膑](/figures/strategists/dongzhou/zhanguo/sun-bin) | 战国·齐 | ?–? | 围魏救赵，复仇庞涓 |
@@ -75,6 +76,7 @@ description: "运筹帷幄之中，决胜千里之外——以一己之智改变
 | [房玄龄](/figures/strategists/suitang/tang/fang-xuanling) | 唐初 | 579–648 | 房谋杜断，贞观第一相 |
 | [魏徵](/figures/strategists/suitang/tang/wei-zheng) | 唐初 | 580–643 | 千古谏臣，太宗之镜 |
 | [狄仁杰](/figures/strategists/suitang/tang/di-ren-jie) | 武周/唐 | 630–700 | 断案如神，劝武归唐 |
+| [裴度](/figures/strategists/suitang/tang/pei-du) | 唐中期 | 765–839 | 平定淮西，元和中兴名相 |
 
 ---
 

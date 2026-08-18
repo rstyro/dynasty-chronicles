@@ -51,7 +51,8 @@ export default defineConfig({
           { text: '人物总览', link: '/figures/' },
           { text: '帝王', link: '/figures/emperors/' },
           { text: '武将', link: '/figures/generals/' },
-          { text: '谋臣', link: '/figures/strategists/' }
+          { text: '谋臣', link: '/figures/strategists/' },
+          { text: '科学家', link: '/figures/scientists/' },
         ]
       },
       { text: '战役', link: '/battles/' },

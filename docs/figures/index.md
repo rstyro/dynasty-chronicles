@@ -59,6 +59,17 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 - [张之洞](/figures/strategists/qing/zhang-zhi-dong) — 中学为体，西学为用
 - [刘基](/figures/strategists/ming/liu-ji) — 明朝开国第一谋臣
 
+### 🔬 [科学家](/figures/scientists/)
+格物致知、开物成务——中华科技文明的智慧群像。
+
+- [张衡](/figures/scientists/qinhan/zhang-heng) — 浑天仪、地动仪，东汉科学巨匠
+- [祖冲之](/figures/scientists/nanbei/zu-chong-zhi) — 圆周率七位精度，领先世界千年
+- [沈括](/figures/scientists/songliao/shen-kuo) — 《梦溪笔谈》，北宋全才
+- [李时珍](/figures/scientists/ming/li-shi-zhen) — 《本草纲目》，药圣
+- [钱学森](/figures/scientists/xiandai/qian-xue-sen) — 中国航天之父，两弹一星
+- [袁隆平](/figures/scientists/xiandai/yuan-long-ping) — 杂交水稻之父，禾下乘凉梦
+- [屠呦呦](/figures/scientists/xiandai/tu-you-you) — 青蒿素，本土首位诺奖科学家
+
 ---
 
 ::: tip 📖 持续更新

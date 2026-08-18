@@ -144,6 +144,8 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | 武将 | 时代 | 生卒 | 关键词 |
 |------|------|------|--------|
 | [祖逖](/figures/generals/jinchao/dongjin/zu-ti) | 东晋 | 266–321 | 闻鸡起舞，中流击楫，北伐中原 |
+| [王镇恶](/figures/generals/jinchao/dongjin/wang-zhen-e) | 东晋 | 373–418 | 溯渭袭长安，灭后秦首功 |
+| [檀道济](/figures/generals/nanbei/nanchao/tan-dao-ji) | 南朝宋 | ?–436 | 唱筹量沙，万里长城 |
 | [谢玄](/figures/generals/jinchao/dongjin/xie-xuan) | 东晋 | 343–388 | 淝水之战的指挥官 |
 | [韦睿](/figures/generals/nanbei/nanchao/wei-rui) | 南朝梁 | 442–520 | 钟离之战大破北魏，"韦虎"之名 |
 | [曹景宗](/figures/generals/nanbei/nanchao/cao-jing-zong) | 南朝梁 | 457–508 | 钟离之战主帅，梁朝开国名将 |
@@ -155,6 +157,7 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | [高欢](/figures/generals/nanbei/beichao/gao-huan) | 北朝·东魏 | 496–547 | 东魏权臣，北齐奠基人 |
 | [宇文泰](/figures/generals/nanbei/beichao/yu-wen-tai) | 北朝·西魏 | 507–556 | 西魏权臣，府兵制开创者 |
 | [韦孝宽](/figures/generals/nanbei/beichao/wei-xiao-kuan) | 北朝·北周 | 509–580 | 玉璧战神，反间除斛律光 |
+| [李弼](/figures/generals/nanbei/beichao/li-bi) | 北朝·西魏 | 494–557 | 沙苑铁骑破东魏，八柱国之一 |
 | [斛律光](/figures/generals/nanbei/beichao/hu-lv-guang) | 北朝·北齐 | 515–572 | "落雕都督"，北齐第一名将 |
 
 ---
@@ -169,6 +172,9 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | [苏定方](/figures/generals/suitang/tang/su-ding-fang) | 唐 | 592–667 | 灭三国擒三主，开拓西域 |
 | [薛仁贵](/figures/generals/suitang/tang/xue-ren-gui) | 唐 | 614–683 | 三箭定天山，白袍小将 |
 | [郭子仪](/figures/generals/suitang/tang/guo-zi-yi) | 唐中期 | 697–781 | 再造大唐，功高不震主 |
+| [张巡](/figures/generals/suitang/tang/zhang-xun) | 唐中期 | 708–757 | 死守睢阳，保全江淮 |
+| [李嗣业](/figures/generals/suitang/tang/li-si-ye) | 唐中期 | ?–759 | 陌刀大将，香积寺力挽狂澜 |
+| [李愬](/figures/generals/suitang/tang/li-su) | 唐中期 | 773–821 | 雪夜入蔡州，奇袭擒吴元济 |
 
 ---
 
@@ -177,7 +183,16 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | 武将 | 时代 | 生卒 | 关键词 |
 |------|------|------|--------|
 | [岳飞](/figures/generals/songliao/nansong/yue-fei) | 南宋 | 1103–1142 | 精忠报国，直捣黄龙 |
+| [王坚](/figures/generals/songliao/nansong/wang-jian) | 南宋 | ?–1264 | 钓鱼城守将，蒙哥殒命城下 |
+| [张珏](/figures/generals/songliao/nansong/zhang-jue) | 南宋 | ?–1280 | "四川虓将"，继守钓鱼城 |
+| [吕文焕](/figures/generals/songliao/nansong/lv-wen-huan) | 南宋末 | ?–？ | 死守襄阳六年，降元致门户洞开 |
+| [张世杰](/figures/generals/songliao/nansong/zhang-shi-jie) | 南宋末 | ?–1279 | 宋末三杰，崖山之战殉国 |
 | [徐达](/figures/generals/ming/xu-da) | 明初 | 1332–1385 | 北伐灭元，开国第一功臣 |
+| [于谦](/figures/generals/ming/yu-qian) | 明 | 1398–1457 | 北京保卫战，救时宰相 |
+| [石亨](/figures/generals/ming/shi-heng) | 明 | ?–1460 | 德胜门破也先，夺门之变 |
+| [也先](/figures/generals/ming/ye-xian) | 明（瓦剌） | ?–1455 | 土木堡俘英宗，瓦剌雄主 |
 | [戚继光](/figures/generals/ming/qi-ji-guang) | 明 | 1528–1588 | 抗倭英雄，戚家军缔造者 |
 | [袁崇焕](/figures/generals/ming/yuan-chong-huan) | 明末 | 1584–1630 | 宁远大捷，辽东脊梁，千古奇冤 |
 | [郑成功](/figures/generals/ming/zheng-cheng-gong) | 明末清初 | 1624–1662 | 收复台湾，驱逐荷兰 |
+| [彭春](/figures/generals/qing/peng-chun) | 清初 | ?–1699 | 首克雅克萨，红衣炮破城 |
+| [萨布素](/figures/generals/qing/sa-bu-su) | 清初 | ?–1701 | 首任黑龙江将军，再围雅克萨 |
