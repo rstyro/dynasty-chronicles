@@ -35,6 +35,11 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 - [李勣](/figures/generals/suitang/tang/li-ji) — 三朝元勋，灭高句丽
 - [杨业](/figures/generals/songliao/beisong/yang-ye) — 杨无敌，杨家将始祖
 - [岳飞](/figures/generals/songliao/nansong/yue-fei) — 精忠报国，收拾旧山河
+- [常遇春](/figures/generals/ming/chang-yu-chun) — 常十万，开国虎将
+- [戚继光](/figures/generals/ming/qi-ji-guang) — 封侯非我意，但愿海波平
+- [左宗棠](/figures/generals/qing/zuo-zong-tang) — 收复新疆，抬棺出征
+- [邓世昌](/figures/generals/qing/deng-shi-chang) — 撞沉吉野，甲午殉国
+- [丁汝昌](/figures/generals/qing/ding-ru-chang) — 威海卫陷，以身殉国
 
 ### 📜 [谋臣](/figures/strategists/)
 运筹帷幄、决胜千里——智慧的较量与博弈。
@@ -47,6 +52,11 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 - [姚崇](/figures/strategists/suitang/tang/yao-chong) — 十事要说，开元盛世
 - [赵普](/figures/strategists/songliao/beisong/zhao-pu) — 半部论语治天下
 - [文天祥](/figures/strategists/songliao/nansong/wen-tian-xiang) — 人生自古谁无死
+- [耶律楚材](/figures/strategists/yuan/ye-lv-chu-cai) — 以儒治国，汉化第一人
+- [王守仁](/figures/strategists/ming/wang-yang-ming) — 知行合一，心学宗师
+- [张居正](/figures/strategists/ming/zhang-ju-zheng) — 万历首辅，改革家
+- [林则徐](/figures/strategists/qing/lin-ze-xu) — 苟利国家生死以
+- [张之洞](/figures/strategists/qing/zhang-zhi-dong) — 中学为体，西学为用
 - [刘基](/figures/strategists/ming/liu-ji) — 明朝开国第一谋臣
 
 ---

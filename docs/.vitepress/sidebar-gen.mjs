@@ -98,6 +98,7 @@ const ERA_TO_GROUP = {
   '十六国-前燕': '晋朝',
   '十六国-后秦': '晋朝',
   '十六国-胡夏': '晋朝',
+  '十六国-冉魏': '晋朝',
   '前秦': '晋朝',
   '后赵': '晋朝',
   // ── 南北朝 ──
@@ -211,6 +212,7 @@ const ERA_SUBGROUP_MAP = {
   '十六国-前赵': '十六国', '十六国-后燕': '十六国',
   '十六国-前燕': '十六国', '十六国-后秦': '十六国', '十六国-胡夏': '十六国',
   '前秦': '十六国', '后赵': '十六国',
+  '十六国-冉魏': '十六国',
   // ── 南北朝 ──
   '南朝': '南朝', '南朝-梁': '南朝', '南朝-宋': '南朝', '南朝-陈': '南朝',
   '南朝宋': '南朝', '南朝齐': '南朝', '南朝梁': '南朝', '南朝陈': '南朝',
@@ -270,7 +272,7 @@ const SUBGROUP_ORDER = {
 const DYNASTY_HIERARCHY = {
   'han': ['western-han', 'xin', 'eastern-han'],       // 汉朝 → 西汉、新朝、东汉
   'sanguo': ['cao-wei', 'shu-han', 'sun-wu'],          // 三国 → 曹魏、蜀汉、孙吴
-  'jin': ['western-jin', 'eastern-jin'],                // 晋朝 → 西晋、东晋
+  'jin': ['western-jin', 'eastern-jin','sixteen-kingdoms'],                // 晋朝 → 西晋、东晋
   'nanbei-chao': ['nanchao', 'beichao'],                // 南北朝 → 南朝、北朝
   'song': ['northern-song', 'southern-song']            // 宋朝 → 北宋、南宋
 }
@@ -750,17 +752,77 @@ export function generateSidebar() {
   }
 
   // ════════════════════════════════════════════════════════════
-  // 文化板块 (/culture/) — 结构简单，手动定义
+  // 文化板块 (/culture/) — 按类型→子类自动扫描
+  // 扫描 docs/culture/ 下每个子目录：
+  //   - 子目录 index.md 的 title 作为分组名
+  //   - 子目录下其余 .md 文件作为下级菜单项
+  //   - 子目录按 CULTURE_DIR_ORDER 排序，未列出的目录追加到末尾
+  //   - 子项支持 frontmatter 的 order 字段控制顺序（默认按中文拼音）
+  // 新增内容只需在对应目录添加 .md 文件，无需改此配置。
   // ════════════════════════════════════════════════════════════
+  const cultureDir = path.join(docsDir, 'culture')
+  const cultureSections = []
+  if (fs.existsSync(cultureDir)) {
+    const CULTURE_DIR_ORDER = ['literature', 'philosophy', 'inventions', 'art']
+    const dirs = fs.readdirSync(cultureDir, { withFileTypes: true })
+      .filter(e => e.isDirectory() && !e.name.startsWith('.'))
+      .sort((a, b) => {
+        const ia = CULTURE_DIR_ORDER.indexOf(a.name)
+        const ib = CULTURE_DIR_ORDER.indexOf(b.name)
+        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib)
+      })
+
+    for (const dir of dirs) {
+      const subDir = path.join(cultureDir, dir.name)
+      const indexPath = path.join(subDir, 'index.md')
+      if (!fs.existsSync(indexPath)) continue
+
+      // 分组名取自 index.md 的 title
+      const indexContent = fs.readFileSync(indexPath, 'utf-8')
+      const indexFm = parseFrontmatter(indexContent)
+      const sectionText = indexFm.title || extractTitle(indexContent, indexFm.title, dir.name)
+
+      // 扫描子目录下的 md 文件（排除 index.md 和隐藏文件）
+      const items = []
+      for (const entry of fs.readdirSync(subDir, { withFileTypes: true })) {
+        if (!entry.isFile() || !entry.name.endsWith('.md') || entry.name === 'index.md') continue
+        if (entry.name.startsWith('.')) continue
+        const fullPath = path.join(subDir, entry.name)
+        const content = fs.readFileSync(fullPath, 'utf-8')
+        const fm = parseFrontmatter(content)
+        const slug = entry.name.replace(/\.md$/, '')
+        items.push({
+          text: extractTitle(content, fm.title, slug),
+          link: `/culture/${dir.name}/${slug}`,
+          order: parseInt(fm.order || '0', 10)
+        })
+      }
+
+      // 子项排序：order 优先，其次中文拼音
+      items.sort((a, b) => {
+        if (a.order !== b.order) return a.order - b.order
+        return a.text.localeCompare(b.text, 'zh-CN')
+      })
+
+      if (items.length > 0) {
+        cultureSections.push({
+          text: sectionText,
+          collapsed: false,
+          items: [
+            { text: `${sectionText}总览`, link: `/culture/${dir.name}/` },
+            ...items.map(i => ({ text: i.text, link: i.link }))
+          ]
+        })
+      }
+    }
+  }
+
   sidebar['/culture/'] = [
     {
       text: '📚 文化科技',
       items: [
         { text: '文化总览', link: '/culture/' },
-        { text: '文学', link: '/culture/literature' },
-        { text: '思想哲学', link: '/culture/philosophy' },
-        { text: '科技发明', link: '/culture/inventions' },
-        { text: '艺术', link: '/culture/art' }
+        ...cultureSections
       ]
     }
   ]
