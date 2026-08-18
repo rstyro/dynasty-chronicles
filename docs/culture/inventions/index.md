@@ -27,6 +27,22 @@ description: "四大发明改变世界，天工开物匠心独运。"
 
 从雕版到活字——印刷术的起源与两套印刷工艺的完整工序。
 
+### 🔥 [古法生火](/culture/inventions/fire-making)
+
+从钻木取火到打火石——古人取火的原理、工具制作与完整的实操步骤。
+
+### 🧤 [皮革制作](/culture/inventions/leather-craft)
+
+从猎获兽皮到可穿的皮衣——兽皮挑选、鞣制工艺与皮衣制作的完整流程。
+
+### 🧂 [盐的提取](/culture/inventions/salt-making)
+
+从海水到盐田、从盐井到铁锅——古人获取食盐的四种方法与完整工序。
+
+### 🧼 [肥皂制作](/culture/inventions/soap-making)
+
+从草木灰到清洁皂——古人皂角、灰汁与油脂皂化的原理和完整制皂工序。
+
 ### 🔭 [天文历法与数学](/culture/inventions/astronomy-math)
 
 二十四节气、张衡地动仪、祖冲之圆周率、郭守敬授时历——《九章算术》与观天测地之学。
