@@ -19,7 +19,7 @@ description: "宋武帝刘裕，字德舆，小名寄奴，彭城绥舆里人。
 |------|------|
 | **姓名** | 刘裕（宋武帝） |
 | **生卒** | 363年–422年 |
-| **朝代** | [南朝·宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝·宋](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 420年–422年 |
 
@@ -42,7 +42,7 @@ description: "宋武帝刘裕，字德舆，小名寄奴，彭城绥舆里人。
 
 ## 🔗 相关链接
 
-- [南朝·宋](/dynasties/nanbei/nanbei-chao)
+- [南朝·宋](/dynasties/nanbei/nanchao)
 
 ---
 

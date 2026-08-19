@@ -20,7 +20,7 @@ description: "宋文帝刘义隆，南朝宋第三位皇帝，宋武帝刘裕第
 | **姓名** | 刘义隆 |
 | **生卒** | 407年–453年 |
 | **在位** | 424年–453年 |
-| **朝代** | [南朝](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝](/dynasties/nanbei/nanchao) |
 | **庙号** | 太祖 |
 | **谥号** | 文皇帝 |
 | **主要成就** | 元嘉之治，南朝文治巅峰；三次北伐惨败，「元嘉草草，封狼居胥」 |
@@ -50,7 +50,7 @@ description: "宋文帝刘义隆，南朝宋第三位皇帝，宋武帝刘裕第
 
 ## 🔗 相关链接
 
-- [南朝](/dynasties/nanbei/nanbei-chao)
+- [南朝](/dynasties/nanbei/nanchao)
 - [宋武帝刘裕](/figures/emperors/nanbei/nanchao/song-wudi)
 - [北魏太武帝拓跋焘](/figures/emperors/nanbei/beichao/beiwei-taiwudi)
 

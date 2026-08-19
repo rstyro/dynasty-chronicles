@@ -19,7 +19,7 @@ description: "陈文帝陈蒨，字子华，陈武帝陈霸先之侄。早年随
 |------|------|
 | **姓名** | 陈蒨（字子华） |
 | **生卒** | 522年–566年 |
-| **朝代** | [南朝陈](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝陈](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 559年–566年 |
 | **庙号** | 世祖 |
@@ -53,7 +53,7 @@ description: "陈文帝陈蒨，字子华，陈武帝陈霸先之侄。早年随
 
 ## 🔗 相关链接
 
-- [南朝陈](/dynasties/nanbei/nanbei-chao)
+- [南朝陈](/dynasties/nanbei/nanchao)
 - [陈武帝陈霸先](/figures/emperors/nanbei/nanchao/chen-wudi)
 - [陈废帝陈伯宗](/figures/emperors/nanbei/nanchao/chen-feidi)
 - [陈宣帝陈顼](/figures/emperors/nanbei/nanchao/chen-xuandi)

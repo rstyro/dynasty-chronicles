@@ -20,7 +20,7 @@ description: "宋明帝刘彧，南朝宋第六位皇帝，宋文帝刘义隆第
 | **姓名** | 刘彧 |
 | **生卒** | 439年–472年 |
 | **在位** | 465年–472年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 太宗 |
 | **谥号** | 明皇帝 |
 | **主要成就** | 杀前废帝自立；"泰始之治"；南朝疆域最大时期 |
@@ -51,7 +51,7 @@ description: "宋明帝刘彧，南朝宋第六位皇帝，宋文帝刘义隆第
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋前废帝刘子业](/figures/emperors/nanbei/nanchao/song-qian-feidi)
 - [宋后废帝刘昱](/figures/emperors/nanbei/nanchao/song-hou-feidi)
 

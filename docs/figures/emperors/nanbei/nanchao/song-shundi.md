@@ -20,7 +20,7 @@ description: "宋顺帝刘准，南朝宋第八位皇帝，宋明帝刘彧第三
 | **姓名** | 刘准 |
 | **生卒** | 469年–479年 |
 | **在位** | 477年–479年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（末代皇帝） |
 | **谥号** | 顺帝 |
 | **主要成就** | 无；南朝宋末代皇帝，禅位萧道成 |
@@ -52,7 +52,7 @@ description: "宋顺帝刘准，南朝宋第八位皇帝，宋明帝刘彧第三
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋后废帝刘昱](/figures/emperors/nanbei/nanchao/song-hou-feidi)
 - [齐高帝萧道成](/figures/emperors/nanbei/nanchao/qi-gaodi)
 

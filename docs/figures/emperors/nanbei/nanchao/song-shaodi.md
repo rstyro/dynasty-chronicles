@@ -20,7 +20,7 @@ description: "宋少帝刘义符，南朝宋第二位皇帝，宋武帝刘裕长
 | **姓名** | 刘义符 |
 | **生卒** | 406年–424年 |
 | **在位** | 422年–424年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 少帝 |
 | **主要成就** | 无；在位两年被废杀 |
@@ -50,7 +50,7 @@ description: "宋少帝刘义符，南朝宋第二位皇帝，宋武帝刘裕长
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋武帝刘裕](/figures/emperors/nanbei/nanchao/song-wudi)
 - [宋文帝刘义隆](/figures/emperors/nanbei/nanchao/song-wendi)
 

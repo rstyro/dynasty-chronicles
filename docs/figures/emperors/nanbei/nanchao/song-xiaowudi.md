@@ -20,7 +20,7 @@ description: "宋孝武帝刘骏，南朝宋第四位皇帝，宋文帝刘义隆
 | **姓名** | 刘骏 |
 | **生卒** | 430年–464年 |
 | **在位** | 453年–464年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 世祖 |
 | **谥号** | 孝武皇帝 |
 | **主要成就** | 平定刘劭之乱；大明改制；开创南朝文化盛世 |
@@ -52,7 +52,7 @@ description: "宋孝武帝刘骏，南朝宋第四位皇帝，宋文帝刘义隆
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋文帝刘义隆](/figures/emperors/nanbei/nanchao/song-wendi)
 
 ---

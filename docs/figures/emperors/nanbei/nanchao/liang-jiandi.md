@@ -19,7 +19,7 @@ description: "梁简文帝萧纲，字世缵，梁武帝萧衍第三子，昭明
 |------|------|
 | **姓名** | 萧纲（字世缵，小字六通） |
 | **生卒** | 503年–551年 |
-| **朝代** | [南朝梁](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝梁](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 549年–551年 |
 | **庙号** | 太宗 |
@@ -51,7 +51,7 @@ description: "梁简文帝萧纲，字世缵，梁武帝萧衍第三子，昭明
 
 ## 🔗 相关链接
 
-- [南朝梁](/dynasties/nanbei/nanbei-chao)
+- [南朝梁](/dynasties/nanbei/nanchao)
 - [梁武帝萧衍](/figures/emperors/nanbei/nanchao/liang-wudi)
 - [梁元帝萧绎](/figures/emperors/nanbei/nanchao/liang-yuandi)
 

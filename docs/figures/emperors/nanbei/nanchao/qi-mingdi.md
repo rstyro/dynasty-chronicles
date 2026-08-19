@@ -20,7 +20,7 @@ description: "齐明帝萧鸾，字景栖，南兰陵人。齐高帝萧道成次
 | **姓名** | 萧鸾 |
 | **生卒** | 452年–498年 |
 | **在位** | 494年–498年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 高宗 |
 | **谥号** | 明皇帝 |
 | **主要成就** | 篡夺帝位；大杀宗室；南朝齐内政混乱 |
@@ -53,7 +53,7 @@ description: "齐明帝萧鸾，字景栖，南兰陵人。齐高帝萧道成次
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐海陵王萧昭文](/figures/emperors/nanbei/nanchao/qi-hailingwang)
 - [齐东昏侯萧宝卷](/figures/emperors/nanbei/nanchao/qi-donghunhou)
 

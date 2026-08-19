@@ -20,7 +20,7 @@ description: "齐郁林王萧昭业，南朝齐第三任皇帝，齐武帝萧赜
 | **姓名** | 萧昭业 |
 | **生卒** | 473年–494年 |
 | **在位** | 493年–494年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 郁林王 |
 | **主要成就** | 无；荒唐腐化，终被废杀 |
@@ -52,7 +52,7 @@ description: "齐郁林王萧昭业，南朝齐第三任皇帝，齐武帝萧赜
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐武帝萧赜](/figures/emperors/nanbei/nanchao/qi-wudi)
 - [齐明帝萧鸾](/figures/emperors/nanbei/nanchao/qi-mingdi)
 

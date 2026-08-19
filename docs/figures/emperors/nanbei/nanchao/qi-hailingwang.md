@@ -20,7 +20,7 @@ description: "齐海陵王萧昭文，南朝齐第四任皇帝，齐武帝萧赜
 | **姓名** | 萧昭文 |
 | **生卒** | 480年–494年 |
 | **在位** | 494年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 海陵王 |
 | **主要成就** | 无；在位75天被废杀 |
@@ -51,7 +51,7 @@ description: "齐海陵王萧昭文，南朝齐第四任皇帝，齐武帝萧赜
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐郁林王萧昭业](/figures/emperors/nanbei/nanchao/qi-yulinwang)
 - [齐明帝萧鸾](/figures/emperors/nanbei/nanchao/qi-mingdi)
 

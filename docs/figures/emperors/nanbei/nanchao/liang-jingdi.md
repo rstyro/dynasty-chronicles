@@ -19,7 +19,7 @@ description: "梁敬帝萧方智，字慧相，梁元帝萧绎第九子。554年
 |------|------|
 | **姓名** | 萧方智（字慧相，小字法真） |
 | **生卒** | 543年–558年 |
-| **朝代** | [南朝梁](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝梁](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 555年–557年 |
 | **庙号** | 敬宗 |
@@ -50,7 +50,7 @@ description: "梁敬帝萧方智，字慧相，梁元帝萧绎第九子。554年
 
 ## 🔗 相关链接
 
-- [南朝梁](/dynasties/nanbei/nanbei-chao)
+- [南朝梁](/dynasties/nanbei/nanchao)
 - [梁元帝萧绎](/figures/emperors/nanbei/nanchao/liang-yuandi)
 - [陈武帝陈霸先](/figures/emperors/nanbei/nanchao/chen-wudi)
 

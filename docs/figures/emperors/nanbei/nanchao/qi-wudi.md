@@ -20,7 +20,7 @@ description: "齐武帝萧赜，字宣远，齐高帝萧道成长子。482年继
 | **姓名** | 萧赜 |
 | **生卒** | 440年–493年 |
 | **在位** | 482年–493年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 世祖 |
 | **谥号** | 武皇帝 |
 | **主要成就** | 永明之治；竟陵八友；文化繁荣 |
@@ -54,7 +54,7 @@ description: "齐武帝萧赜，字宣远，齐高帝萧道成长子。482年继
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐高帝萧道成](/figures/emperors/nanbei/nanchao/qi-gaodi)
 
 ---

@@ -20,7 +20,7 @@ description: "宋前废帝刘子业，南朝宋第五位皇帝，宋孝武帝刘
 | **姓名** | 刘子业 |
 | **生卒** | 449年–466年 |
 | **在位** | 464年–465年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 前废帝 |
 | **主要成就** | 无；以残暴荒唐著称 |
@@ -52,7 +52,7 @@ description: "宋前废帝刘子业，南朝宋第五位皇帝，宋孝武帝刘
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋孝武帝刘骏](/figures/emperors/nanbei/nanchao/song-xiaowudi)
 - [宋明帝刘彧](/figures/emperors/nanbei/nanchao/song-mingdi)
 

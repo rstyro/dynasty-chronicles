@@ -20,7 +20,7 @@ description: "齐高帝萧道成，字绍伯，小名斗将，南兰陵人。出
 | **姓名** | 萧道成 |
 | **生卒** | 427年–482年 |
 | **在位** | 479年–482年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 太祖 |
 | **谥号** | 高皇帝 |
 | **主要成就** | 建立南齐；节俭勤政；奠定"永明之治"基础 |
@@ -52,7 +52,7 @@ description: "齐高帝萧道成，字绍伯，小名斗将，南兰陵人。出
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [宋顺帝刘准](/figures/emperors/nanbei/nanchao/song-shundi)
 - [齐武帝萧赜](/figures/emperors/nanbei/nanchao/qi-wudi)
 

@@ -19,7 +19,7 @@ description: "陈废帝陈伯宗，字奉业，陈文帝陈蒨嫡长子。566年
 |------|------|
 | **姓名** | 陈伯宗（字奉业，小字药王） |
 | **生卒** | 554年–570年 |
-| **朝代** | [南朝陈](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝陈](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 566年–568年 |
 | **庙号** | 无（废帝无庙号） |
@@ -49,7 +49,7 @@ description: "陈废帝陈伯宗，字奉业，陈文帝陈蒨嫡长子。566年
 
 ## 🔗 相关链接
 
-- [南朝陈](/dynasties/nanbei/nanbei-chao)
+- [南朝陈](/dynasties/nanbei/nanchao)
 - [陈文帝陈蒨](/figures/emperors/nanbei/nanchao/chen-wendi)
 - [陈宣帝陈顼](/figures/emperors/nanbei/nanchao/chen-xuandi)
 

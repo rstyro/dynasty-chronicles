@@ -20,7 +20,7 @@ description: "陈后主陈叔宝，陈宣帝陈顼长子。即位前二弟陈叔
 | **姓名** | 陈叔宝（字元秀，小字黄奴） |
 | **生卒** | 553–604 |
 | **在位** | 582–589 |
-| **朝代** | [南朝](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（亡国之君，陈亡无庙号） |
 | **谥号** | 长城炀公（隋文帝赠） |
 | **主要成就** | 南朝末代皇帝；《玉树后庭花》（亡国之音）；与张丽华、孔贵嫔藏胭脂井 |
@@ -49,7 +49,7 @@ description: "陈后主陈叔宝，陈宣帝陈顼长子。即位前二弟陈叔
 
 ## 🔗 相关链接
 
-- [南朝](/dynasties/nanbei/nanbei-chao)
+- [南朝](/dynasties/nanbei/nanchao)
 - [陈武帝陈霸先](/figures/emperors/nanbei/nanchao/chen-wudi)
 - [隋文帝](/figures/emperors/suitang/sui/sui-wendi)
 

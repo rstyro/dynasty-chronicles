@@ -19,7 +19,7 @@ description: "陈武帝陈霸先，字兴国，吴兴长城人，出身寒微。
 |------|------|
 | **姓名** | 陈霸先（陈武帝） |
 | **生卒** | 503年–559年 |
-| **朝代** | [南朝·陈](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝·陈](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 557年–559年 |
 
@@ -41,7 +41,7 @@ description: "陈武帝陈霸先，字兴国，吴兴长城人，出身寒微。
 
 ## 🔗 相关链接
 
-- [南朝·陈](/dynasties/nanbei/nanbei-chao)
+- [南朝·陈](/dynasties/nanbei/nanchao)
 
 ---
 

@@ -19,7 +19,7 @@ description: "陈宣帝陈顼，字绍世，陈武帝陈霸先次子。早年随
 |------|------|
 | **姓名** | 陈顼（字绍世，小字师利） |
 | **生卒** | 530年–582年 |
-| **朝代** | [南朝陈](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝陈](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 569年–582年 |
 | **庙号** | 高宗 |
@@ -53,7 +53,7 @@ description: "陈宣帝陈顼，字绍世，陈武帝陈霸先次子。早年随
 
 ## 🔗 相关链接
 
-- [南朝陈](/dynasties/nanbei/nanbei-chao)
+- [南朝陈](/dynasties/nanbei/nanchao)
 - [陈文帝陈蒨](/figures/emperors/nanbei/nanchao/chen-wendi)
 - [陈废帝陈伯宗](/figures/emperors/nanbei/nanchao/chen-feidi)
 - [陈后主陈叔宝](/figures/emperors/nanbei/nanchao/chen-shu-bao)

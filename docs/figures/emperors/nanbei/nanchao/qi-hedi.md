@@ -20,7 +20,7 @@ description: "齐和帝萧宝融，南朝齐第七任（末代）皇帝，齐明
 | **姓名** | 萧宝融 |
 | **生卒** | 488年–502年 |
 | **在位** | 501年–502年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（末代皇帝） |
 | **谥号** | 和帝 |
 | **主要成就** | 无；南齐末代皇帝，禅位萧衍 |
@@ -52,7 +52,7 @@ description: "齐和帝萧宝融，南朝齐第七任（末代）皇帝，齐明
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐东昏侯萧宝卷](/figures/emperors/nanbei/nanchao/qi-donghunhou)
 - [梁武帝萧衍](/figures/emperors/nanbei/nanchao/liang-wudi)
 

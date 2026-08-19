@@ -20,7 +20,7 @@ description: "宋后废帝刘昱，南朝宋第七位皇帝，宋明帝刘彧长
 | **姓名** | 刘昱 |
 | **生卒** | 463年–477年 |
 | **在位** | 472年–477年 |
-| **朝代** | [南朝宋](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝宋](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 后废帝（苍梧王） |
 | **主要成就** | 无；以残暴荒唐著称 |
@@ -52,7 +52,7 @@ description: "宋后废帝刘昱，南朝宋第七位皇帝，宋明帝刘彧长
 
 ## 🔗 相关链接
 
-- [南朝宋](/dynasties/nanbei/nanbei-chao)
+- [南朝宋](/dynasties/nanbei/nanchao)
 - [宋明帝刘彧](/figures/emperors/nanbei/nanchao/song-mingdi)
 - [齐高帝萧道成](/figures/emperors/nanbei/nanchao/qi-gaodi)
 

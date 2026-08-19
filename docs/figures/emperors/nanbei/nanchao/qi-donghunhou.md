@@ -20,7 +20,7 @@ description: "齐东昏侯萧宝卷，南朝齐第六任皇帝，齐明帝萧鸾
 | **姓名** | 萧宝卷 |
 | **生卒** | 483年–501年 |
 | **在位** | 498年–501年 |
-| **朝代** | [南朝齐](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝齐](/dynasties/nanbei/nanchao) |
 | **庙号** | 无（被废） |
 | **谥号** | 东昏侯 |
 | **主要成就** | 无；以荒淫无道著称 |
@@ -54,7 +54,7 @@ description: "齐东昏侯萧宝卷，南朝齐第六任皇帝，齐明帝萧鸾
 
 ## 🔗 相关链接
 
-- [南朝齐](/dynasties/nanbei/nanbei-chao)
+- [南朝齐](/dynasties/nanbei/nanchao)
 - [齐明帝萧鸾](/figures/emperors/nanbei/nanchao/qi-mingdi)
 - [梁武帝萧衍](/figures/emperors/nanbei/nanchao/liang-wudi)
 

@@ -19,7 +19,7 @@ description: "梁元帝萧绎，字世诚，梁武帝萧衍第七子。初封湘
 |------|------|
 | **姓名** | 萧绎（字世诚，小字七符） |
 | **生卒** | 508年–555年 |
-| **朝代** | [南朝梁](/dynasties/nanbei/nanbei-chao) |
+| **朝代** | [南朝梁](/dynasties/nanbei/nanchao) |
 | **身份** | 皇帝 |
 | **在位** | 552年–555年 |
 | **庙号** | 世祖 |
@@ -54,7 +54,7 @@ description: "梁元帝萧绎，字世诚，梁武帝萧衍第七子。初封湘
 
 ## 🔗 相关链接
 
-- [南朝梁](/dynasties/nanbei/nanbei-chao)
+- [南朝梁](/dynasties/nanbei/nanchao)
 - [梁简文帝萧纲](/figures/emperors/nanbei/nanchao/liang-jiandi)
 - [梁敬帝萧方智](/figures/emperors/nanbei/nanchao/liang-jingdi)
 

@@ -126,8 +126,11 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | [郾城之战](/battles/songliao/nansong/yancheng-zhi-zhan) | 1140 | 南宋 vs 金 | 岳家军破铁浮图，直抵朱仙镇 |
 | [采石之战](/battles/songliao/nansong/caishi-zhi-zhan) | 1161 | 南宋 vs 金 | 虞允文一万八千却敌，完颜亮兵变身死 |
 | [三峰山之战](/battles/songliao/jin-dynasty/sanfengshan-zhi-zhan) | 1232 | 蒙古 vs 金 | 大雪中的围歼战，金军主力覆没 |
+| [野狐岭之战](/battles/yuan/yehuling-zhi-zhan) | 1211 | 蒙古 vs 金 | 成吉思汗十万破四十五万，金国精锐尽丧 |
+| [蒙古灭金之战](/battles/yuan/menggu-mie-jin-zhi-zhan) | 1234 | 蒙古+南宋 vs 金 | 蔡州城破，金哀宗自缢，金朝灭亡 |
 | [钓鱼城之战](/battles/songliao/nansong/diaoyucheng-zhi-zhan) | 1259 | 南宋 vs 蒙古 | 蒙哥殒命城下，"上帝折鞭处" |
 | [襄阳之战](/battles/songliao/nansong/xiangyang-zhi-zhan) | 1267–1273 | 南宋 vs 蒙元 | 六年围城终失守，南宋门户洞开 |
+| [伯颜下江南](/battles/yuan/bo-yan-xia-jiangnan) | 1275 | 元 vs 南宋 | 丁家洲溃贾似道主力，临安奉表出降 |
 | [崖山海战](/battles/songliao/nansong/yashan-zhi-zhan) | 1279 | 南宋 vs 蒙元 | 陆秀夫负帝蹈海，宋祚至此而终 |
 
 ## 元明清
@@ -140,4 +143,10 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | [萨尔浒之战](/battles/ming/sarhu) | 1619 | 明 vs 后金 | 努尔哈赤集中兵力各个击破 |
 | [宁远之战](/battles/ming/ningyuan-zhi-zhan) | 1626 | 明 vs 后金 | 袁崇焕凭坚城用大炮，首破八旗不败神话 |
 | [山海关大战](/battles/qing/shanhaiguan-da-zhan) | 1644 | 清+吴三桂 vs 大顺 | 清军入关，定鼎中原 |
+| [平定三藩之乱](/battles/qing/pingding-sanfan-zhi-zhan) | 1673–1681 | 清 vs 三藩 | 八年平叛，清朝确立全国直接统治 |
 | [雅克萨之战](/battles/qing/yakesa-zhi-zhan) | 1685 | 清 vs 沙俄 | 两克雅克萨，《尼布楚条约》定东北边界 |
+| [昭莫多之战](/battles/qing/zhaomo-du-zhi-zhan) | 1696 | 清 vs 准噶尔 | 康熙亲征大破噶尔丹，漠北纳入版图 |
+| [格登山之战](/battles/qing/pingding-zhun-ge-er-zhi-zhan) | 1755 | 清 vs 准噶尔 | 乾隆平准，阿玉锡二十二骑夜袭定伊犁 |
+| [第一次鸦片战争](/battles/qing/diyici-yapian-zhanzheng) | 1840–1842 | 清 vs 英国 | 虎门销烟引战，《南京条约》开近代百年屈辱 |
+| [镇南关之战](/battles/qing/zhennanguan-zhi-zhan) | 1885 | 清 vs 法国 | 冯子材大捷，"法国不胜而胜，中国不败而败" |
+| [黄海海战](/battles/qing/huanghai-haizhan) | 1894 | 清 vs 日本 | 邓世昌致远殉国，北洋水师自此避战 |
