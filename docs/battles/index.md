@@ -30,13 +30,17 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 |------|------|--------|------|
 | [城濮之战](/battles/dongzhou/chunqiu/chengpu) | 前632 | 晋 vs 楚 | 晋文公称霸，楚国北进受阻 |
 | [崤之战](/battles/dongzhou/chunqiu/xiao-zhi-zhan) | 前627 | 晋 vs 秦 | 晋设伏全歼秦军，秦晋争霸开端 |
+| [鄢陵之战](/battles/dongzhou/chunqiu/yanling-zhi-zhan) | 前575 | 晋 vs 楚 | 晋军破楚阵，楚共王中箭，晋国复霸 |
 | [柏举之战](/battles/dongzhou/chunqiu/baiju-zhi-zhan) | 前506 | 吴 vs 楚 | 孙武伍子胥破郢，楚国几乎亡国 |
 | [桂陵之战](/battles/dongzhou/zhanguo/guiling) | 前354 | 齐 vs 魏 | 孙膑围魏救赵，庞涓败逃 |
 | [马陵之战](/battles/dongzhou/zhanguo/maling) | 前341 | 齐 vs 魏 | 孙膑设伏杀庞涓，魏国霸权衰落 |
+| [宜阳之战](/battles/dongzhou/zhanguo/yiyang-zhi-zhan) | 前308 | 秦 vs 韩 | 甘茂攻取宜阳，秦打通东进中原之路 |
+| [华阳之战](/battles/dongzhou/zhanguo/huayang-zhi-zhan) | 前273 | 秦 vs 魏赵 | 白起避实击虚，斩首近三十万 |
 | [伊阙之战](/battles/dongzhou/zhanguo/yique-zhi-zhan) | 前293 | 秦 vs 韩魏 | 白起歼敌二十四万，韩魏精锐尽失 |
 | [即墨之战](/battles/dongzhou/zhanguo/jimo-zhi-zhan) | 前284 | 齐 vs 燕 | 田单火牛阵复国，乐毅功败垂成 |
 | [鄢郢之战](/battles/dongzhou/zhanguo/yanying) | 前278 | 秦 vs 楚 | 白起破楚都郢城，楚国元气大伤 |
 | [长平之战](/battles/dongzhou/zhanguo/changping) | 前260 | 秦 vs 赵 | 秦大胜，坑杀赵军四十余万 |
+| [邯郸之战](/battles/dongzhou/zhanguo/handan-zhi-zhan) | 前257 | 赵魏楚 vs 秦 | 信陵君窃符救赵，秦军大败，赵国转危为安 |
 
 ## 秦汉之际
 
@@ -54,6 +58,8 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | 战役 | 时间 | 交战方 | 结果 |
 |------|------|--------|------|
 | [白登之围](/battles/qinhan/xihan/baideng) | 前200 | 汉 vs 匈奴 | 刘邦被围，后用计脱险，开启和亲政策 |
+| [七国之乱](/battles/qinhan/xihan/qiguo-zhi-luan) | 前154 | 汉 vs 七国 | 周亚夫断粮道三月平叛，中央集权巩固 |
+| [河西之战](/battles/qinhan/xihan/hexi-zhi-zhan) | 前121 | 汉 vs 匈奴 | 霍去病两出河西，汉朝控制河西走廊 |
 | [漠北之战](/battles/qinhan/xihan/mobei) | 前119 | 汉 vs 匈奴 | 卫青霍去病远征，匈奴远遁漠南无王庭 |
 
 ## 新莽·东汉
@@ -85,6 +91,8 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | 战役 | 时间 | 交战方 | 结果 |
 |------|------|--------|------|
 | [晋灭吴之战](/battles/jinchao/western-jin/mie-wu-zhi-zhan) | 280 | 西晋 vs 东吴 | 三国归晋，全国重新统一 |
+| [永嘉之乱](/battles/jinchao/western-jin/yongjia-zhi-luan) | 311 | 汉赵 vs 西晋 | 洛阳陷落怀帝被俘，西晋名存实亡 |
+| [宁平城之战](/battles/jinchao/western-jin/ningpingcheng-zhi-zhan) | 311 | 后赵 vs 西晋 | 石勒全歼晋军主力，西晋北方荡然无存 |
 | [石勒灭前赵之战](/battles/jinchao/sixteen-kingdoms/shile-mie-qianzhao) | 329 | 后赵 vs 前赵 | 石勒擒刘曜，前赵灭亡 |
 | [淝水之战](/battles/jinchao/dongjin/feishui) | 383 | 东晋 vs 前秦 | 东晋以少胜多，前秦崩溃 |
 | [刘裕灭后秦之战](/battles/jinchao/dongjin/liu-yu-mie-hou-qin) | 417 | 东晋 vs 后秦 | 却月阵以步制骑，收复长安 |
@@ -95,6 +103,8 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 |------|------|--------|------|
 | [参合陂之战](/battles/nanbei/beichao/canhepo-zhi-zhan) | 395 | 北魏 vs 后燕 | 拓跋珪夜袭坑降，北魏崛起 |
 | [钟离之战](/battles/nanbei/nanchao/zhongli-zhi-zhan) | 507 | 南梁 vs 北魏 | 韦叡决堤破敌，南朝由守转攻 |
+| [河桥之战](/battles/nanbei/beichao/heqiao-zhi-zhan) | 538 | 西魏 vs 东魏 | 高敖曹轻敌战死，东西魏对峙成形 |
+| [邙山之战](/battles/nanbei/beichao/mangshan-zhi-zhan) | 543 | 西魏 vs 东魏 | 宇文泰几为所擒，西魏大败 |
 | [沙苑之战](/battles/nanbei/beichao/shayuan-zhi-zhan) | 537 | 西魏 vs 东魏 | 宇文泰万人破二十万，东西魏对峙成形 |
 | [玉壁之战](/battles/nanbei/beichao/yubi-zhi-zhan) | 546 | 西魏 vs 东魏 | 韦孝宽孤城却敌，高欢忧愤而终 |
 
@@ -105,6 +115,9 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | [隋灭陈之战](/battles/suitang/sui/mie-chen-zhi-zhan) | 589 | 隋 vs 南陈 | 三百年分裂终结，天下一统 |
 | [虎牢关之战](/battles/suitang/tang/hulaoguan) | 621 | 唐 vs 窦建德 | 李世民大破夏军，擒窦建德 |
 | [定襄之战](/battles/suitang/tang/dingxiang) | 630 | 唐 vs 突厥 | 李靖夜袭阴山，生擒颉利可汗 |
+| [吐谷浑之战](/battles/suitang/tang/tuyuhun-zhi-zhan) | 635 | 唐 vs 吐谷浑 | 李靖五路征讨，伏允兵败自杀 |
+| [安市城之战](/battles/suitang/tang/anshi-cheng-zhi-zhan) | 645 | 唐 vs 高句丽 | 唐军破援军却久攻安市不下，太宗班师 |
+| [怛罗斯之战](/battles/suitang/tang/daluosi-zhi-zhan) | 751 | 唐 vs 阿拉伯 | 葛逻禄倒戈唐军大败，造纸术随之西传 |
 | [睢阳之战](/battles/suitang/tang/suiyang) | 757 | 唐 vs 叛军 | 张巡死守睢阳，牵制叛军主力 |
 | [香积寺之战](/battles/suitang/tang/xiangjisi-zhi-zhan) | 757 | 唐 vs 燕叛军 | 郭子仪血战收复长安，安史之乱转折 |
 | [雪夜入蔡州](/battles/suitang/tang/xueye-ru-caizhou) | 817 | 唐 vs 淮西 | 李愬风雪奇袭，生擒吴元济平淮西 |
@@ -113,7 +126,10 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 
 | 战役 | 时间 | 交战方 | 结果 |
 |------|------|--------|------|
+| [清口之战](/battles/songliao/wudai/qingkou-zhi-zhan) | 899 | 杨行密 vs 朱温 | 决水灌营大破汴军，杨行密立足淮南 |
+| [柏乡之战](/battles/songliao/wudai/boxiang-zhi-zhan) | 910 | 晋 vs 后梁 | 李存勖诱敌深入大败梁军，奠定河北霸业 |
 | [高平之战](/battles/songliao/wudai/gaoping-zhi-zhan) | 954 | 后周 vs 北汉+契丹 | 柴荣亲征破敌，赵匡胤崭露头角 |
+| [契丹灭后晋之战](/battles/songliao/wudai/qidan-mie-houjin-zhi-zhan) | 946 | 契丹 vs 后晋 | 杜重威降敌，开封陷落后晋灭亡 |
 
 ## 宋辽金西夏
 
@@ -121,10 +137,12 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 |------|------|--------|------|
 | [高梁河之战](/battles/songliao/liao/gaolianghe-zhi-zhan) | 979 | 辽 vs 北宋 | 辽军大败宋军，燕云收复无望 |
 | [澶州之战](/battles/songliao/northern-song/chanzhou-zhi-zhan) | 1004 | 北宋 vs 辽 | 真宗亲征，澶渊之盟换百年和平 |
+| [三川口之战](/battles/songliao/western-xia/sanchuan-kou-zhi-zhan) | 1040 | 西夏 vs 北宋 | 李元昊设伏，宋军刘平被俘 |
 | [好水川之战](/battles/songliao/western-xia/haoshuichuan-zhi-zhan) | 1041 | 西夏 vs 北宋 | 李元昊设伏，宋军万人覆没 |
 | [护步答冈之战](/battles/songliao/jin-dynasty/hubudagang-zhi-zhan) | 1115 | 金 vs 辽 | 两万破七十万，金灭辽成定局 |
 | [郾城之战](/battles/songliao/nansong/yancheng-zhi-zhan) | 1140 | 南宋 vs 金 | 岳家军破铁浮图，直抵朱仙镇 |
 | [采石之战](/battles/songliao/nansong/caishi-zhi-zhan) | 1161 | 南宋 vs 金 | 虞允文一万八千却敌，完颜亮兵变身死 |
+| [唐岛海战](/battles/songliao/nansong/tangdao-haizhan) | 1161 | 南宋 vs 金 | 李宝火攻焚金水师，宋金最大海战之一 |
 | [三峰山之战](/battles/songliao/jin-dynasty/sanfengshan-zhi-zhan) | 1232 | 蒙古 vs 金 | 大雪中的围歼战，金军主力覆没 |
 | [野狐岭之战](/battles/yuan/yehuling-zhi-zhan) | 1211 | 蒙古 vs 金 | 成吉思汗十万破四十五万，金国精锐尽丧 |
 | [蒙古灭金之战](/battles/yuan/menggu-mie-jin-zhi-zhan) | 1234 | 蒙古+南宋 vs 金 | 蔡州城破，金哀宗自缢，金朝灭亡 |
@@ -138,11 +156,14 @@ description: "金戈铁马，气吞万里如虎——改变历史走向的关键
 | 战役 | 时间 | 交战方 | 结果 |
 |------|------|--------|------|
 | [鄱阳湖之战](/battles/yuan/poyang) | 1363 | 朱元璋 vs 陈友谅 | 二十万破六十万，奠定统一南方基础 |
+| [靖难之役](/battles/ming/jingnan-zhi-yi) | 1399 | 燕王朱棣 vs 建文帝 | 燕军直捣南京，朱棣夺位登基 |
 | [土木堡之变](/battles/ming/tumubao) | 1449 | 明 vs 瓦剌 | 五十万大军覆没，明英宗被俘 |
 | [北京保卫战](/battles/ming/beijing-baowei-zhan) | 1449 | 明 vs 瓦剌 | 于谦背城死战，京师转危为安 |
+| [台州之战](/battles/ming/qijiguang-kangwo-zhi-zhan) | 1561 | 明 vs 倭寇 | 戚家军九战九捷，浙东倭患基本肃清 |
 | [萨尔浒之战](/battles/ming/sarhu) | 1619 | 明 vs 后金 | 努尔哈赤集中兵力各个击破 |
 | [宁远之战](/battles/ming/ningyuan-zhi-zhan) | 1626 | 明 vs 后金 | 袁崇焕凭坚城用大炮，首破八旗不败神话 |
 | [山海关大战](/battles/qing/shanhaiguan-da-zhan) | 1644 | 清+吴三桂 vs 大顺 | 清军入关，定鼎中原 |
+| [收复台湾之战](/battles/qing/shoufu-taiwan-zhi-zhan) | 1661 | 郑成功 vs 荷兰 | 围困热兰遮城八月，台湾重归中国版图 |
 | [平定三藩之乱](/battles/qing/pingding-sanfan-zhi-zhan) | 1673–1681 | 清 vs 三藩 | 八年平叛，清朝确立全国直接统治 |
 | [雅克萨之战](/battles/qing/yakesa-zhi-zhan) | 1685 | 清 vs 沙俄 | 两克雅克萨，《尼布楚条约》定东北边界 |
 | [昭莫多之战](/battles/qing/zhaomo-du-zhi-zhan) | 1696 | 清 vs 准噶尔 | 康熙亲征大破噶尔丹，漠北纳入版图 |

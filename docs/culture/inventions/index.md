@@ -43,6 +43,34 @@ description: "四大发明改变世界，天工开物匠心独运。"
 
 从草木灰到清洁皂——古人皂角、灰汁与油脂皂化的原理和完整制皂工序。
 
+### ⚒ [炼铁炼钢](/culture/inventions/metallurgy)
+
+从块炼铁到灌钢法——中国古代冶铁技术的演进与炼钢的详细工艺。
+
+### 🔥 [熔炉制作](/culture/inventions/furnace-making)
+
+从耐火泥到鼓风箱——古代冶铁熔炉的选材、搭建与完整制作工艺。
+
+### 🏺 [青铜铸造](/culture/inventions/bronze-casting)
+
+从范铸到失蜡——中国古代青铜器铸造的完整工艺。
+
+### 🍶 [陶瓷烧制](/culture/inventions/ceramic-craft)
+
+从一团泥到一件瓷——选土、制坯、上釉、装窑、烧成的完整工艺。
+
+### 🧵 [纺织印染](/culture/inventions/textile-dyeing)
+
+从缫丝到织锦、从靛蓝到蜡染——古代纺织与印染的完整工艺。
+
+### 🍶 [酿酒](/culture/inventions/brewing)
+
+从曲蘖到蒸馏——中国古代酿酒原料、酒曲与酿造蒸馏的完整工艺。
+
+### 🏕️ [穿越生存手册](/culture/inventions/survival-handbook)
+
+火、水、食、衣、住、器、医——从零开始的古代生存技能全指南。
+
 ### 🔭 [天文历法与数学](/culture/inventions/astronomy-math)
 
 二十四节气、张衡地动仪、祖冲之圆周率、郭守敬授时历——《九章算术》与观天测地之学。
@@ -59,9 +87,9 @@ description: "四大发明改变世界，天工开物匠心独运。"
 
 万里长城、赵州桥、故宫、应县木塔、榫卯结构——土木兴邦的营造智慧。
 
-### ⚒ [制造工艺与冶金](/culture/inventions/craftsmanship)
+### ⚒ [制造工艺总览](/culture/inventions/craftsmanship)
 
-炼铁炼钢、青铜铸造、陶瓷烧制、皮革鞣制、纺织印染——百工之技的匠心所在。
+炼铁炼钢、青铜铸造、陶瓷烧制、纺织印染、皮革、酿酒、生火——百工之技的专题入口。
 
 ---
 

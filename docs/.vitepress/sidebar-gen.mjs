@@ -566,12 +566,13 @@ export function generateSidebar() {
   // ════════════════════════════════════════════════════════════
   const figuresDir = path.join(docsDir, 'figures')
   if (fs.existsSync(figuresDir)) {
-    // 定义人物的三个子分类及其对应的目录路径和标签
+    // 定义人物的子分类及其对应的目录路径和标签
     const figureTypes = [
       { dir: 'emperors', label: '👑 帝王' },
       { dir: 'generals', label: '⚔️ 武将' },
       { dir: 'strategists', label: '📜 谋臣' },
-      { dir: 'scientists', label: '🔬 科学家' }
+      { dir: 'scientists', label: '🔬 科学家' },
+      { dir: 'writers', label: '✍️ 文学家' }
     ]
 
     /**

@@ -88,6 +88,12 @@ description: "一将功成万骨枯——从兵圣孙武到抗倭戚继光，沙
 | [李广](/figures/generals/qinhan/xihan/li-guang) | 西汉 | ?–前119 | 飞将军，匈奴克星，一生未封侯 |
 | [卫青](/figures/generals/qinhan/xihan/wei-qing) | 西汉 | ?–前106 | 从骑奴到大将军，七战七捷 |
 | [霍去病](/figures/generals/qinhan/xihan/huo-qu-bing) | 西汉 | 前140–前117 | 封狼居胥，十八岁封冠军侯 |
+| [赵充国](/figures/generals/qinhan/xihan/zhao-chong-guo) | 西汉 | 前137–前52 | 七十六岁平西羌，屯田戍边 |
+| [陈汤](/figures/generals/qinhan/xihan/chen-tang) | 西汉 | ?–约前6 | 明犯强汉者，虽远必诛 |
+| [耿弇](/figures/generals/qinhan/donghan/geng-yan) | 东汉 | 3–58 | 平四十六郡，有志者事竟成 |
+| [马援](/figures/generals/qinhan/donghan/ma-yuan) | 东汉 | 前14–49 | 马革裹尸，老当益壮 |
+| [窦宪](/figures/generals/qinhan/donghan/dou-xian) | 东汉 | ?–92 | 燕然勒石，破北匈奴 |
+| [耿恭](/figures/generals/qinhan/donghan/geng-gong) | 东汉 | ?–81后 | 十三将士归玉门 |
 | [班超](/figures/generals/qinhan/donghan/ban-chao) | 东汉 | 32–102 | 三十六人定西域 |
 
 ---

@@ -48,11 +48,11 @@ description: "一句话简介"  # SEO/卡片摘要
 
 ## 新增人物的完整流程
 
-1. 类别与目录：帝王 `figures/emperors/`、武将 `figures/generals/`、谋臣 `figures/strategists/`、科学家 `figures/scientists/`，其下按时代 → 朝代子目录。
-2. 模板：武将参考 `generals/suitang/tang/zhang-xun.md`，谋臣参考 `strategists/songliao/nansong/yu-yun-wen.md`，帝王参考 `emperors/jinchao/shiliuguo/fu-jian.md`（帝王页含庙号/谥号/在位，标题格式"庙号 · 姓名"）。
-3. **手动同步各总览索引**（都是手写表格）：`figures/generals/index.md`、`figures/strategists/index.md`、`figures/emperors/index.md`（emperors 索引按朝代分小节、朝代内按在位时间排序）、`figures/scientists/index.md`（多一列"领域"，按 古代/民国/现代 分段）。
+1. 类别与目录：帝王 `figures/emperors/`、武将 `figures/generals/`、谋臣 `figures/strategists/`、科学家 `figures/scientists/`、文学家 `figures/writers/`，其下按时代 → 朝代子目录。
+2. 模板：武将参考 `generals/suitang/tang/zhang-xun.md`，谋臣参考 `strategists/songliao/nansong/yu-yun-wen.md`，帝王参考 `emperors/jinchao/shiliuguo/fu-jian.md`（帝王页含庙号/谥号/在位，标题格式"庙号 · 姓名"），科学家/文学家参考 `scientists/ming/li-shi-zhen.md`（type 用 scientist/writer，多 field 字段）。
+3. **手动同步各总览索引**（都是手写表格）：`figures/generals/index.md`、`figures/strategists/index.md`、`figures/emperors/index.md`（emperors 索引按朝代分小节、朝代内按在位时间排序）、`figures/scientists/index.md` 与 `figures/writers/index.md`（多一列"领域"，按时代分段）。
 4. 帝王板块东周部分**只收周天子，不收诸侯君主**（齐桓公、秦穆公、吴王阖闾等均不建页）——这是项目既定约定。
-5. 科学家板块：**按时代分组，不按学科分组**；学科用 frontmatter 的 `field` 字段 + 总览表"领域"列表达；1912 年后人物 era 用 `民国`（1912–1949）或 `现代`（1949 后），归入侧边栏"现代"一级分组；古代科学家复用现有 era 键（战国/东汉/北宋等）。
+5. 科学家/文学家板块：**按时代分组，不按学科/体裁分组**；学科用 frontmatter 的 `field` 字段 + 总览表"领域"列表达；1912 年后人物 era 用 `民国`（1912–1949）或 `现代`（1949 后），归入侧边栏"现代"一级分组；古代人物复用现有 era 键（战国/东汉/北宋等）。文学家页应链接对应的文学专题页（`/culture/literature/` 下诗词/词/赋/散文/小说/戏曲）。
 
 ## 关键约定与易错点
 

@@ -53,6 +53,7 @@ export default defineConfig({
           { text: '武将', link: '/figures/generals/' },
           { text: '谋臣', link: '/figures/strategists/' },
           { text: '科学家', link: '/figures/scientists/' },
+          { text: '文学家', link: '/figures/writers/' },
         ]
       },
       { text: '战役', link: '/battles/' },

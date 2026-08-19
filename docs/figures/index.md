@@ -70,6 +70,18 @@ description: "帝王将相、文臣武将——走进那些改变历史的鲜活
 - [袁隆平](/figures/scientists/xiandai/yuan-long-ping) — 杂交水稻之父，禾下乘凉梦
 - [屠呦呦](/figures/scientists/xiandai/tu-you-you) — 青蒿素，本土首位诺奖科学家
 
+### ✍️ [文学家](/figures/writers/)
+绣口一吐就是半个盛唐——三千年文脉的书写者。
+
+- [屈原](/figures/writers/dongzhou/qu-yuan) — 路漫漫其修远兮，楚辞之祖
+- [陶渊明](/figures/writers/qinhan/tao-yuan-ming) — 采菊东篱下，田园诗宗
+- [李白](/figures/writers/suitang/li-bai) — 诗仙，绣口吐出半个盛唐
+- [杜甫](/figures/writers/suitang/du-fu) — 诗圣，笔底波澜万方多难
+- [苏轼](/figures/writers/songliao/su-shi) — 大江东去，千古文人天花板
+- [李清照](/figures/writers/songliao/li-qing-zhao) — 千古第一才女
+- [曹雪芹](/figures/writers/ming/cao-xue-qin) — 《红楼梦》，中国小说巅峰
+- [鲁迅](/figures/writers/minguo/lu-xun) — 横眉冷对千夫指，现代文学之父
+
 ---
 
 ::: tip 📖 持续更新
