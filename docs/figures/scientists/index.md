@@ -62,9 +62,15 @@ description: "格物致知、开物成务——从张衡、祖冲之到钱学森
 | [吴有训](/figures/scientists/minguo/wu-you-xun) | 民国/新中国 | 物理学 | 1897–1977 | 康普顿效应关键验证者 |
 | [严济慈](/figures/scientists/minguo/yan-ji-ci) | 民国/新中国 | 物理学 | 1901–1996 | 压电效应精确测定，科大校长 |
 | [梁思成](/figures/scientists/minguo/liang-si-cheng) | 民国/新中国 | 建筑 | 1901–1972 | 《中国建筑史》，国徽设计主持 |
+| [俞大绂](/figures/scientists/minguo/yu-da-fu) | 民国/新中国 | 植物病理·农微 | 1901–1993 | 中国植物病理学奠基人，走到田间 |
 | [赵忠尧](/figures/scientists/minguo/zhao-zhong-yao) | 民国/新中国 | 核物理 | 1902–1998 | 正反物质湮没先驱观测者 |
 | [苏步青](/figures/scientists/minguo/su-bu-qing) | 民国/新中国 | 数学 | 1902–2003 | 微分几何学派创始人 |
+| [周培源](/figures/scientists/minguo/zhou-pei-yuan) | 民国/新中国 | 理论物理·力学 | 1902–1993 | 湍流理论奠基人，北大校长 |
+| [裴文中](/figures/scientists/minguo/pei-wen-zhong) | 民国/新中国 | 考古·古人类 | 1904–1982 | 发现第一个北京猿人头盖骨 |
+| [王应睐](/figures/scientists/minguo/wang-ying-lai) | 民国/新中国 | 生物化学 | 1907–2001 | 中国生化奠基人，牛胰岛素合成总指挥 |
 | [华罗庚](/figures/scientists/minguo/hua-luo-geng) | 民国/新中国 | 数学 | 1910–1985 | 解析数论学派，优选法推广 |
+| [汪猷](/figures/scientists/minguo/wang-you) | 民国/新中国 | 有机化学 | 1910–1997 | 抗生素研究开拓者，牛胰岛素与青蒿素 |
+| [卢嘉锡](/figures/scientists/minguo/lu-jia-xi) | 民国/新中国 | 物理化学·结构 | 1915–2001 | 固氮酶"卢氏结构"，中科院院长 |
 
 ---
 
@@ -74,7 +80,12 @@ description: "格物致知、开物成务——从张衡、祖冲之到钱学森
 |--------|------|------|------|--------|
 | [李四光](/figures/scientists/xiandai/li-si-guang) | 新中国 | 地质 | 1889–1971 | 地质力学，甩掉"贫油"帽子 |
 | [钱学森](/figures/scientists/xiandai/qian-xue-sen) | 新中国 | 航天·力学 | 1911–2009 | 中国航天之父，两弹一星 |
+| [侯祥麟](/figures/scientists/xiandai/hou-xiang-lin) | 新中国 | 石油化工·炼油 | 1912–2008 | 中国炼油技术奠基人，"五朵金花" |
 | [钱三强](/figures/scientists/xiandai/qian-san-qiang) | 新中国 | 核物理 | 1913–1992 | 中国原子能科学之父 |
+| [罗沛霖](/figures/scientists/xiandai/luo-pei-lin) | 新中国 | 电子学·电子工业 | 1913–2011 | 中国电子工业奠基人，延安通信厂 |
+| [何泽慧](/figures/scientists/xiandai/he-ze-hui) | 民国/新中国 | 核物理 | 1914–2011 | 中国居里夫人，铀核三分裂发现者 |
+| [林兰英](/figures/scientists/xiandai/lin-lan-ying) | 新中国 | 半导体材料 | 1918–2003 | 中国半导体材料之母，第一根硅单晶 |
+| [谢家麟](/figures/scientists/xiandai/xie-jia-lin) | 新中国 | 加速器物理 | 1920–2016 | 北京正负电子对撞机，国家最高科技奖 |
 | [邓稼先](/figures/scientists/xiandai/deng-jia-xian) | 新中国 | 核物理 | 1924–1986 | 两弹元勋，隐姓埋名二十八年 |
 | [袁隆平](/figures/scientists/xiandai/yuan-long-ping) | 新中国 | 农学 | 1930–2021 | 杂交水稻之父，禾下乘凉梦 |
 | [屠呦呦](/figures/scientists/xiandai/tu-you-you) | 新中国 | 医药 | 1930– | 青蒿素，本土首位诺奖科学家 |

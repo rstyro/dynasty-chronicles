@@ -6,6 +6,8 @@
 ![Node](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=node.js&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
+**内容规模**：🌍 37 个朝代专题 ｜ ⚔️ 99 篇战役实录 ｜ 👤 1000+ 人物传记 ｜ 📚 49 篇文化专题
+
 ---
 
 ## ✨ 项目特色
@@ -14,7 +16,7 @@
 |------|------|
 | 🏯 **朝代更迭** | 从夏商周到元明清，完整梳理每一个朝代的兴衰脉络、制度创新与历史遗产 |
 | ⚔️ **著名战役** | 长平之战、巨鹿之战、赤壁之战、淝水之战……还原改变历史走向的关键战役 |
-| 👤 **帝王将相** | 秦始皇、汉武帝、唐太宗、白起、诸葛亮——走进改变历史进程的风云人物 |
+| 👤 **帝王将相** | 秦始皇、汉武帝、唐太宗、白起、诸葛亮——走进那些改变历史进程的风云人物 |
 | 📚 **文化瑰宝** | 诗词歌赋、四大发明、百家争鸣——探寻延续五千年的中华文化根脉 |
 | 🕐 **时间线** | 交互式历史时间线，直观呈现五千年历史脉络 |
 
@@ -22,61 +24,41 @@
 
 ## 🛠️ 技术栈
 
-- **VitePress** — 基于 Vite & Vue 的静态站点生成器
-- **Markdown** — 所有内容以 Markdown 格式编写
-- **GitHub Pages** — 通过 GitHub Actions 自动部署
+- **VitePress 1.x** — 基于 Vite & Vue 的静态站点生成器
+- **Markdown** — 全部内容以 Markdown + YAML frontmatter 编写
+- **GitHub Pages** — 通过 GitHub Actions 自动构建与部署
 
 ---
 
 ## 📁 项目结构
 
+内容按「时代 → 朝代」的层级目录组织，与侧边栏分组一一对应：
+
 ```
 dynasty-chronicles/
 ├── docs/
 │   ├── .vitepress/
-│   │   ├── config.mts          # 站点配置（导航、侧边栏、搜索等）
-│   │   └── cache/              # VitePress 缓存
-│   ├── battles/                # ⚔️ 著名战役
-│   │   ├── index.md            #   战役总览
-│   │   ├── changping.md        #   长平之战
-│   │   ├── chibi.md            #   赤壁之战
-│   │   ├── feishui.md          #   淝水之战
-│   │   └── ...
-│   ├── culture/                # 📚 文化瑰宝
-│   │   ├── index.md            #   文化总览
-│   │   ├── literature.md       #   文学
-│   │   ├── philosophy.md       #   哲学思想
-│   │   ├── inventions.md       #   科技发明
-│   │   └── art.md              #   艺术
-│   ├── dynasties/              # 🏯 朝代
-│   │   ├── index.md            #   朝代总览
-│   │   ├── xia.md              #   夏朝
-│   │   ├── shang.md            #   商朝
-│   │   ├── qin.md              #   秦朝
-│   │   ├── han.md              #   汉朝
-│   │   ├── sanguo.md           #   三国
-│   │   ├── tang.md             #   唐朝
-│   │   ├── song.md             #   宋朝
-│   │   ├── yuan.md             #   元朝
-│   │   ├── ming.md             #   明朝
-│   │   ├── qing.md             #   清朝
-│   │   └── ...
-│   ├── figures/                # 👤 人物
-│   │   ├── emperors/           #   帝王
-│   │   ├── generals/           #   武将
-│   │   ├── strategists/        #   谋臣
-│   │   └── index.md
-│   ├── public/                 # 静态资源
-│   │   └── logo.svg
-│   ├── utils/                  # 工具脚本
-│   │   ├── dynasties.js
-│   │   ├── eras.js
-│   │   └── timeline.data.js
-│   ├── index.md                # 首页
-│   └── timeline.md             # 时间线
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions 部署配置
+│   │   ├── config.mts           # 站点配置（导航、搜索、主题等）
+│   │   ├── sidebar-gen.mjs      # 侧边栏自动生成脚本（扫描 frontmatter）
+│   │   ├── check-links.mjs      # 全站死链校验脚本
+│   │   ├── gen-random-pages.mjs # 随机页面生成（dev/build 前自动执行）
+│   │   └── theme/               # 自定义主题（RandomButton 组件等）
+│   ├── battles/                 # ⚔️ 战役，如 qinhan/chu-han/gaixia.md
+│   ├── dynasties/               # 🏯 朝代，如 imperial/ming.md
+│   ├── figures/                 # 👤 人物（各分类下再按时代→朝代细分）
+│   │   ├── emperors/            #   帝王
+│   │   ├── generals/            #   武将
+│   │   ├── strategists/         #   谋臣
+│   │   ├── scientists/          #   科学家
+│   │   └── writers/             #   文学家
+│   ├── culture/                 # 📚 文化（literature/philosophy/inventions/art）
+│   ├── public/                  # 静态资源（favicon、logo 等）
+│   ├── utils/                   # 朝代、年代等工具数据
+│   ├── index.md                 # 首页
+│   └── timeline.md              # 时间线页
+├── scripts/                     # 批量生成/整理内容的辅助脚本
+├── .github/workflows/
+│   └── deploy.yml               # GitHub Pages 部署配置
 ├── package.json
 └── README.md
 ```
@@ -110,7 +92,7 @@ npm run docs:dev
 npm run docs:build
 ```
 
-构建产物输出到 `docs/.vitepress/dist/`。
+构建产物输出到 `docs/.vitepress/dist/`。`docs:dev` 与 `docs:build` 都会先自动执行 `gen-random-pages.mjs` 生成随机页面数据。
 
 ### 预览生产构建
 
@@ -122,41 +104,29 @@ npm run docs:preview
 
 ## 📝 内容编写
 
-### 新增朝代
+### 通用流程
 
-在 `docs/dynasties/` 下创建 `.md` 文件，需包含 frontmatter：
-
-```markdown
----
-title: 夏朝
-dynasty: 上古
-era: 约前2070–前1600
----
-
-# 夏朝
-
-> 中国历史上第一个世袭制王朝。
-
----
-
-## 概述
-...
-```
+1. 按「时代 → 朝代」的目录层级放置文件（如 `docs/battles/qinhan/chu-han/`），子目录不存在时再创建。
+2. 每个页面必须包含 YAML frontmatter，其中 `era` 决定侧边栏分组归属。
+3. **侧边栏无需手动配置**：`sidebar-gen.mjs` 会在构建时扫描所有页面的 frontmatter 自动生成。
+4. 手动同步对应板块的 `index.md` 总览表（表格为手写，与侧边栏相互独立）。
 
 ### 新增战役
 
-在 `docs/battles/` 下创建 `.md` 文件，建议格式：
+参考 `docs/battles/qinhan/chu-han/gaixia.md` 的模板：
 
 ```markdown
 ---
-title: 战役名称
-dynasty: 所属朝代
-era: 历史时期
+title: 垓下之战
+dynasty: 秦汉
+era: 楚汉之争
+start: -202            # 公元前用负数
+description: "一句话简介"
 ---
 
-# 战役名称
+# 垓下之战
 
-> 时间 ｜ 交战方 ｜ 一句话概括。
+> 公元前202 ｜ 楚汉争霸的终局之战。
 
 ---
 
@@ -178,19 +148,66 @@ era: 历史时期
 
 ### 新增人物
 
-- **帝王**：`docs/figures/emperors/`
-- **武将**：`docs/figures/generals/`
-- **谋臣**：`docs/figures/strategists/`
+- **帝王** → `docs/figures/emperors/`（格式「庙号 · 姓名」）
+- **武将** → `docs/figures/generals/`
+- **谋臣** → `docs/figures/strategists/`
+- **科学家** → `docs/figures/scientists/`
+- **文学家** → `docs/figures/writers/`
 
-### 更新导航
+```markdown
+---
+title: 张巡
+dynasty: 隋唐
+type: general         # general / emperor / strategist / scientist / writer
+era: 安史之乱
+description: "一句话简介"
+---
 
-所有导航和侧边栏配置集中在 `docs/.vitepress/config.mts` 中修改。
+# 张巡
+...
+```
+
+### 新增朝代
+
+参考 `docs/dynasties/imperial/ming.md`：
+
+```markdown
+---
+title: 明朝
+period: 大一统皇朝
+order: 8
+start: '1368'
+end: '1644'
+capital: '南京→北京'
+founder: 明太祖
+last: 明思宗
+keyword: 七下西洋
+description: "一句话简介"
+---
+
+# 明朝
+...
+```
+
+> 💡 提示：`era` 值需要落在 `docs/.vitepress/sidebar-gen.mjs` 的映射表内，新增页面时先用该脚本确认分组归属。
+
+---
+
+## ✅ 提交前校验
+
+```bash
+# 全站死链校验（必须零断链）
+node docs/.vitepress/check-links.mjs
+
+# 构建验证
+npm run docs:build
+```
 
 ---
 
 ## 🚢 部署
 
-本项目使用 GitHub Actions 自动部署到 GitHub Pages。
+本项目通过 GitHub Actions 自动部署到 GitHub Pages。
 
 ### 触发条件
 
