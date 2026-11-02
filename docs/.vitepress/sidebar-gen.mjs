@@ -44,7 +44,7 @@ const docsDir = path.resolve(__dirname, '..')
 const FIGURES_ERA_ORDER = ['上古', '东周', '秦汉', '三国', '晋朝', '南北朝', '隋唐', '五代十国宋辽金夏', '元朝', '明朝', '清朝', '现代']
 
 /** 朝代板块的时期分组排序（多民族政权并立视角） */
-const DYNASTIES_PERIOD_ORDER = ['上古·文明起源', '东周·诸侯割据', '秦汉·大一统', '三国·两晋·十六国', '南北朝·民族融合', '隋唐盛世', '多民族政权并立', '大一统皇朝']
+const DYNASTIES_PERIOD_ORDER = ['上古·文明起源', '东周·诸侯割据', '秦汉·大一统', '三国·两晋·十六国', '南北朝·民族融合', '隋唐盛世', '多民族政权并立', '大一统皇朝', '近代·共和转型', '当代·复兴之路']
 
 // ── Era → 侧边栏分组 映射 ──────────────────────────────────
 // 将文件中具体的、细粒度的 era 值映射为侧边栏的大分组名。
@@ -172,7 +172,9 @@ const PERIOD_TO_GROUP = {
   '南北朝·民族融合': '南北朝·民族融合',
   '隋唐盛世': '隋唐盛世',
   '多民族政权并立': '多民族政权并立',
-  '大一统皇朝': '大一统皇朝'
+  '大一统皇朝': '大一统皇朝',
+  '近代·共和转型': '近代·共和转型',
+  '当代·复兴之路': '当代·复兴之路'
 }
 
 /**
@@ -833,6 +835,44 @@ export function generateSidebar() {
       items: [
         { text: '文化总览', link: '/culture/' },
         ...cultureSections
+      ]
+    }
+  ]
+
+  // ════════════════════════════════════════════════════════════
+  // 历史脉络 (/history/) — 按时代顺序编排的主线阅读
+  // ════════════════════════════════════════════════════════════
+  sidebar['/history/'] = [
+    {
+      text: '🧭 历史脉络',
+      items: [
+        { text: '脉络总览', link: '/history/' },
+        { text: '01 上古 · 文明起源', link: '/history/ancient' },
+        { text: '02 东周 · 诸侯割据', link: '/history/dongzhou' },
+        { text: '03 秦汉 · 大一统', link: '/history/qinhan' },
+        { text: '04 三国 · 两晋 · 十六国', link: '/history/weijin' },
+        { text: '05 南北朝 · 民族融合', link: '/history/nanbei' },
+        { text: '06 隋唐盛世', link: '/history/suitang' },
+        { text: '07 多民族政权并立', link: '/history/songliao' },
+        { text: '08 大一统皇朝', link: '/history/imperial' },
+        { text: '09 近代 · 共和转型', link: '/history/modern' },
+        { text: '10 当代 · 复兴之路', link: '/history/contemporary' }
+      ]
+    }
+  ]
+
+  // ════════════════════════════════════════════════════════════
+  // 横向专题 (/threads/) — 跨朝代的问题线
+  // ════════════════════════════════════════════════════════════
+  sidebar['/threads/'] = [
+    {
+      text: '🧵 横向专题',
+      items: [
+        { text: '专题总览', link: '/threads/' },
+        { text: '制度演变', link: '/threads/institutions' },
+        { text: '民族融合', link: '/threads/ethnic-fusion' },
+        { text: '经济重心南移', link: '/threads/economy-southward' },
+        { text: '技术传播', link: '/threads/technology' }
       ]
     }
   ]

@@ -1,6 +1,6 @@
 ---
 title: 朝代总览
-description: "从夏商周到元明清，完整梳理每一个朝代的兴衰脉络、制度创新与历史遗产。"
+description: "从夏商周到当代，完整梳理每一个朝代与政权的兴衰脉络、制度创新与历史遗产。"
 ---
 
 <script setup>
@@ -9,17 +9,19 @@ import { withBase } from 'vitepress'
 
 // ── 时期速览导航数据 ──
 const eraNav = [
-  { link: '/dynasties/ancient/three-sovereigns', icon: '🗿', name: '上古', period: '传说–前771', cls: 'era-ancient' },
-  { link: '/dynasties/dongzhou/chunqiu', icon: '🏛', name: '东周', period: '前770–前221', cls: 'era-dongzhou' },
-  { link: '/dynasties/qinhan/qin', icon: '⚔', name: '秦汉', period: '前221–220', cls: 'era-qinhan' },
-  { link: '/dynasties/weijin/sanguo', icon: '🏛', name: '魏晋', period: '220–439', cls: 'era-weijin' },
-  { link: '/dynasties/nanbei/nanbei-chao', icon: '🤝', name: '南北朝', period: '386–589', cls: 'era-nanbei' },
-  { link: '/dynasties/suitang/tang', icon: '🥇', name: '隋唐', period: '581–907', cls: 'era-suitang' },
-  { link: '/dynasties/songliao/song', icon: '🏰', name: '多民族', period: '907–1279', cls: 'era-multi' },
-  { link: '/dynasties/imperial/yuan', icon: '👑', name: '大一统', period: '1271–1912', cls: 'era-imperial' },
+  { link: '/history/ancient', icon: '🗿', name: '上古', period: '传说–前771', cls: 'era-ancient' },
+  { link: '/history/dongzhou', icon: '🏛', name: '东周', period: '前770–前221', cls: 'era-dongzhou' },
+  { link: '/history/qinhan', icon: '⚔', name: '秦汉', period: '前221–220', cls: 'era-qinhan' },
+  { link: '/history/weijin', icon: '🏛', name: '魏晋', period: '220–439', cls: 'era-weijin' },
+  { link: '/history/nanbei', icon: '🤝', name: '南北朝', period: '420–589', cls: 'era-nanbei' },
+  { link: '/history/suitang', icon: '🥇', name: '隋唐', period: '581–907', cls: 'era-suitang' },
+  { link: '/history/songliao', icon: '🏰', name: '多民族', period: '907–1279', cls: 'era-multi' },
+  { link: '/history/imperial', icon: '👑', name: '大一统', period: '1271–1912', cls: 'era-imperial' },
+  { link: '/history/modern', icon: '⚖️', name: '近代', period: '1912–1949', cls: 'era-modern' },
+  { link: '/history/contemporary', icon: '🚩', name: '当代', period: '1949–今', cls: 'era-contemporary' },
 ]
 
-// ── 朝代数据（按 8 大历史时期排列，与侧边栏分组一一对应）──
+// ── 朝代数据（按 10 大历史时期排列，与侧边栏分组一一对应）──
 const dynasties = ref([
   // ===== 上古·文明起源 (0-3) =====
   { name: '三皇五帝', link: '/dynasties/ancient/three-sovereigns', period: '传说时代–前2070', capital: '—', keyword: '文明起源', desc: '燧人钻火、伏羲画卦、神农尝草——黄帝一统华夏，尧舜禅让天下。文明的曙光从这里升起。' },
@@ -52,6 +54,10 @@ const dynasties = ref([
   { name: '元朝', link: '/dynasties/imperial/yuan', period: '1271–1368', capital: '大都', keyword: '蒙古铁骑', desc: '一代天骄成吉思汗，子孙马蹄踏遍欧亚。行省制度开先河，大都城中马可波罗惊叹东方繁华。' },
   { name: '明朝', link: '/dynasties/imperial/ming', period: '1368–1644', capital: '南京→北京', keyword: '七下西洋', desc: '驱逐胡虏恢复中华，天子守国门君王死社稷。郑和宝船下西洋，阳明心学照古今。' },
   { name: '清朝', link: '/dynasties/imperial/qing', period: '1644–1912', capital: '北京', keyword: '康乾盛世', desc: '白山黑水入中原，康雍乾三代拓疆定边。四库全书汇典籍，晚清变局三千年未有之大变。' },
+  // ===== 近代·共和转型 (23) =====
+  { name: '中华民国', link: '/dynasties/xiandai/republic', period: '1912–1949', capital: '南京/北京', keyword: '共和转型', desc: '帝制终结，亚洲第一个共和国在军阀混战、外敌入侵与内战中反复重塑，现代国家由此艰难起步。' },
+  // ===== 当代·复兴之路 (24) =====
+  { name: '中华人民共和国', link: '/dynasties/xiandai/prc', period: '1949–今', capital: '北京', keyword: '改革开放', desc: '从一穷二白到世界第二大经济体，七十余年间完成工业化、改革开放与社会转型。' },
 ])
 </script>
 
@@ -63,26 +69,27 @@ const dynasties = ref([
   <h1 class="hero-title">🏯 朝代总览</h1>
   <p class="hero-quote">"以铜为镜，可以正衣冠；以史为镜，可以知兴替；以人为镜，可以明得失。"</p>
   <p style="font-size:0.82rem;color:var(--vp-c-text-3)">—— 唐太宗 · 李世民</p>
+  <p class="hero-entry"><a :href="withBase('/history/')">🧭 第一次读？按时代顺序走一遍 →</a></p>
   <div class="hero-divider"></div>
 </div>
 
 <!-- ===== 四维统计 ===== -->
 <div class="stats-bar">
   <div class="stat-item">
-    <div class="stat-num">~4000</div>
-    <div class="stat-label">年文明跨度</div>
+    <div class="stat-num">~4100</div>
+    <div class="stat-label">年历史跨度</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">35+</div>
+    <div class="stat-num">32</div>
     <div class="stat-label">个主要政权</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">8</div>
+    <div class="stat-num">10</div>
     <div class="stat-label">个历史时期</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">83</div>
-    <div class="stat-label">个王朝（含割据）</div>
+    <div class="stat-num">38</div>
+    <div class="stat-label">个朝代页面</div>
   </div>
 </div>
 
@@ -240,6 +247,42 @@ const dynasties = ref([
 
 <hr class="section-hr" />
 
+<h2 class="section-heading">⚖️ 近代 · 共和转型</h2>
+
+<div class="dynasty-grid">
+  <a v-for="d in dynasties.slice(23,24)" :key="d.name" :href="withBase(d.link)" class="dynasty-card">
+    <div class="card-header">
+      <h3>{{ d.name }}</h3>
+      <span class="card-period">{{ d.period }}</span>
+    </div>
+    <div class="card-meta">
+      <span><span class="meta-icon">🏙️</span> {{ d.capital }}</span>
+    </div>
+    <span class="card-tag">{{ d.keyword }}</span>
+    <div class="card-desc">{{ d.desc }}</div>
+  </a>
+</div>
+
+<hr class="section-hr" />
+
+<h2 class="section-heading">🚩 当代 · 复兴之路</h2>
+
+<div class="dynasty-grid">
+  <a v-for="d in dynasties.slice(24,25)" :key="d.name" :href="withBase(d.link)" class="dynasty-card">
+    <div class="card-header">
+      <h3>{{ d.name }}</h3>
+      <span class="card-period">{{ d.period }}</span>
+    </div>
+    <div class="card-meta">
+      <span><span class="meta-icon">🏙️</span> {{ d.capital }}</span>
+    </div>
+    <span class="card-tag">{{ d.keyword }}</span>
+    <div class="card-desc">{{ d.desc }}</div>
+  </a>
+</div>
+
+<hr class="section-hr" />
+
 <h2 class="section-heading">💡 兴衰之鉴</h2>
 
 <div class="insight-grid">
@@ -296,6 +339,19 @@ const dynasties = ref([
   max-width: 520px;
   margin: 0 auto 0.6rem;
   line-height: 1.7;
+}
+.hero-entry {
+  margin: 0 0 0.6rem;
+}
+.hero-entry a {
+  font-size: 0.86rem;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px dashed color-mix(in srgb, var(--vp-c-brand-1) 45%, transparent);
+  padding-bottom: 1px;
+}
+.hero-entry a:hover {
+  border-bottom-style: solid;
 }
 .hero-divider {
   width: 60px;
@@ -374,7 +430,7 @@ const dynasties = ref([
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ── 8 个时期的顶部色条 ── */
+/* ── 10 个时期的顶部色条 ── */
 .era-ancient  { border-top: 3px solid #8b6914; }
 .era-dongzhou { border-top: 3px solid #6b8e23; }
 .era-qinhan   { border-top: 3px solid #b22222; }
@@ -383,6 +439,8 @@ const dynasties = ref([
 .era-suitang  { border-top: 3px solid #daa520; }
 .era-multi    { border-top: 3px solid #8b4513; }
 .era-imperial { border-top: 3px solid #2f4f4f; }
+.era-modern   { border-top: 3px solid #8c3b3b; }
+.era-contemporary { border-top: 3px solid #c26a2e; }
 
 /* ── hover 背景色 ── */
 .era-ancient:hover  { border-color: #8b6914; background: rgba(139,105,20,0.06); }
@@ -393,6 +451,8 @@ const dynasties = ref([
 .era-suitang:hover  { border-color: #daa520; background: rgba(218,165,32,0.06); }
 .era-multi:hover    { border-color: #8b4513; background: rgba(139,69,19,0.06); }
 .era-imperial:hover { border-color: #2f4f4f; background: rgba(47,79,79,0.06); }
+.era-modern:hover   { border-color: #8c3b3b; background: rgba(140,59,59,0.06); }
+.era-contemporary:hover { border-color: #c26a2e; background: rgba(194,106,46,0.06); }
 
 /* ===== 朝代卡片网格 ===== */
 .dynasty-grid {

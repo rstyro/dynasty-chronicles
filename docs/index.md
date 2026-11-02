@@ -4,22 +4,30 @@ layout: home
 hero:
   name: "王朝编年史"
   text: "纵览华夏五千年"
-  tagline: 从夏商周至元明清，帝王将相、金戈铁马、文化瑰宝——一部中华文明的数字方志
+  tagline: 从上古到当代，帝王将相、金戈铁马、文化瑰宝——一部中华文明的数字方志
   image:
     src: /logo.svg
     alt: 王朝编年史
   actions:
     - theme: brand
-      text: 🕐 开始探索
-      link: /timeline
+      text: 🧭 按时代读历史
+      link: /history/
     - theme: alt
-      text: 🏯 朝代总览
-      link: /dynasties/
+      text: 🕐 时间线
+      link: /timeline
 
 features:
+  - icon: 🧭
+    title: 历史脉络
+    details: 10 个时代导览，按时间顺序把朝代、人物、战役、文化串成一条线
+    link: /history/
+  - icon: 🧵
+    title: 横向专题
+    details: 制度演变、民族融合、经济重心南移、技术传播——四条跨朝代的问题线
+    link: /threads/
   - icon: 🏯
     title: 朝代更迭
-    details: 从夏商周到元明清，完整梳理每一个朝代的兴衰脉络、制度创新与历史遗产
+    details: 从夏商周到当代，完整梳理每一个朝代与政权的兴衰脉络、制度创新与历史遗产
     link: /dynasties/
   - icon: ⚔️
     title: 著名战役
@@ -33,7 +41,7 @@ features:
     title: 文化瑰宝
     details: 诗词歌赋、四大发明、百家争鸣——探寻延续五千年的中华文化根脉
     link: /culture/
-description: "纵览华夏五千年——从夏商周到元明清，帝王将相、金戈铁马、文化瑰宝的数字方志。"
+description: "纵览华夏五千年——从上古到当代，帝王将相、金戈铁马、文化瑰宝的数字方志。"
 ---
 
 <style>

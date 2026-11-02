@@ -6,9 +6,10 @@
     "vitepress": "^1.6.4"
   },
   "scripts": {
-    "docs:dev": "node docs/.vitepress/gen-random-pages.mjs && vitepress dev docs",
-    "docs:build": "node docs/.vitepress/gen-random-pages.mjs && vitepress build docs",
+    "docs:dev": "node docs/.vitepress/gen-dynasty-data.mjs && node docs/.vitepress/gen-random-pages.mjs && vitepress dev docs",
+    "docs:build": "node docs/.vitepress/gen-dynasty-data.mjs && node docs/.vitepress/gen-random-pages.mjs && vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "gen:dynasty-data": "node docs/.vitepress/gen-dynasty-data.mjs",
     "gen:favicon": "node docs/.vitepress/gen-favicon.mjs"
   }
 }

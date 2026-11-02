@@ -514,8 +514,15 @@ description: "\"溥天之下，莫非王土；率土之滨，莫非王臣。\"�
 |------|------|------|--------|
 | [成吉思汗](/figures/emperors/yuan/genghis-khan) | 蒙古 | 1206–1227 | 蒙古帝国创建者，一代天骄 |
 | [元睿宗](/figures/emperors/yuan/tuo-lei) | 蒙古 | 1227–1229（监国） | 拖雷；三峰山破金，忽必烈之父 |
+| [元太宗](/figures/emperors/yuan/yuan-taizong) | 元 | 1229–1241 | 灭金朝；长子西征征服罗斯诸公国 |
+| [元定宗](/figures/emperors/yuan/yuan-dingzong) | 元 | 1246–1248 | 西征欧洲；与教皇使节交往 |
+| [元宪宗](/figures/emperors/yuan/yuan-xianzong) | 元 | 1251–1259 | 蒙古帝国版图最大；忽必烈灭大理 |
 | [元世祖](/figures/emperors/yuan/hubilie) | 元 | 1260–1294 | 大元建立者，行省制 |
+| [元成宗](/figures/emperors/yuan/yuan-chengzong) | 元 | 1294–1307 | 守成令主；元贞之治 |
 | [元仁宗](/figures/emperors/yuan/yuan-renzong) | 元 | 1311–1320 | 延祐复科，恢复科举，推行汉法 |
+| [元英宗](/figures/emperors/yuan/yuan-yingzong) | 元 | 1320–1323 | 至治新政；编《大元通制》 |
+| [元文宗](/figures/emperors/yuan/yuan-wenzong) | 元 | 1328–1329/1329–1332 | 两都之战胜出；毒杀兄长明宗 |
+| [元顺帝](/figures/emperors/yuan/yuan-shundi) | 元 | 1333–1368（北元续至1370） | 元朝末代皇帝；脱脱更化 |
 
 ### 明朝
 
@@ -532,7 +539,10 @@ description: "\"溥天之下，莫非王土；率土之滨，莫非王臣。\"�
 | [明孝宗](/figures/emperors/ming/ming-xiaozong) | 明 | 1487–1505 | 弘治中兴，一夫一妻，明朝完美皇帝 |
 | [明武宗](/figures/emperors/ming/ming-wu-zong) | 明 | 1505–1521 | 朱厚照，**正德皇帝**，豹房，应州大捷，宁王之乱 |
 | [明世宗](/figures/emperors/ming/ming-shizong) | 明 | 1521–1567 | 嘉靖皇帝，大礼议，崇道修仙 |
+| [明穆宗](/figures/emperors/ming/ming-muzong) | 明 | 1567–1572 | 隆庆开关；俺答封贡 |
 | [明神宗](/figures/emperors/ming/ming-shenzong) | 明 | 1572–1620 | 万历皇帝，张居正改革，几十年不上朝 |
+| [明光宗](/figures/emperors/ming/ming-guangzong) | 明 | 1620（仅29天） | 一月天子；明末三大案（梃击、红丸、移宫） |
+| [明熹宗](/figures/emperors/ming/ming-xizong) | 明 | 1620–1627 | 木匠皇帝；魏忠贤专权 |
 | [明思宗](/figures/emperors/ming/chong-zhen) | 明 | 1627–1644 | 崇祯帝，煤山自缢，君王死社稷 |
 
 ### 清朝

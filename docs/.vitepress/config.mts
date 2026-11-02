@@ -4,7 +4,7 @@ import { generateSidebar } from './sidebar-gen.mjs'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "王朝编年史",
-  description: "纵览华夏五千年——从夏商周到元明清，帝王将相、金戈铁马、文化瑰宝的数字方志",
+  description: "纵览华夏五千年——从上古到当代，帝王将相、金戈铁马、文化瑰宝的数字方志",
   lang: 'zh-CN',
   assetsDir: 'assets',
   base: '/dynasty-chronicles/',
@@ -43,6 +43,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: '脉络', link: '/history/' },
+      { text: '专题', link: '/threads/' },
       { text: '时间线', link: '/timeline' },
       { text: '朝代', link: '/dynasties/' },
       {

@@ -1,41 +1,47 @@
 ---
 title: 中华历史时间线
-description: "约公元前2070年至公元1912年——从三皇五帝的传说到最后一个封建王朝落幕，中华五千年历史脉络速览。"
+description: "约公元前2070年至今——从三皇五帝的传说到当代中国，中华文明四千余年历史脉络速览。"
 ---
 
 <script>
 import { withBase } from 'vitepress'
 import { eras } from './utils/eras.js'
-import { dynasties } from './utils/dynasties.js'
+import { dynasties } from './utils/dynasties.generated.js'
 
-// 全局时间轴锚点：以夏朝建立（前2070）为起点，清帝退位（1912）为终点
+// 全局时间轴锚点：以夏朝建立（前2070）为起点，"今"为终点
 const MIN_YEAR = -2070
-const MAX_YEAR = 1912
+const CURRENT_YEAR = new Date().getFullYear()
+const MAX_YEAR = CURRENT_YEAR
 const TOTAL_SPAN = MAX_YEAR - MIN_YEAR
 
 // 并行政权的手工分行表（0 = 主线，1/2/3 = 并行线）
 // 其余时期默认全部放在主线行
 const ROW_MAP = {
-  '分裂融合': { '曹魏': 0, '西晋': 0, '东晋': 0, '南朝': 0, '蜀汉': 1, '十六国': 1, '孙吴': 2, '北朝': 2 },
-  '宋元明清': { '北宋': 0, '南宋': 0, '元朝': 0, '明朝': 0, '清朝': 0, '辽朝': 1, '西夏': 2, '金朝': 3 }
+  '三国·两晋·十六国': { '曹魏': 0, '西晋': 0, '东晋': 0, '蜀汉': 1, '十六国': 1, '孙吴': 2 },
+  '南北朝·民族融合': { '南朝': 0, '北朝': 1 },
+  '多民族政权并立': { '北宋': 0, '南宋': 0, '辽': 1, '西夏': 2, '金': 3 }
 }
 
 // 各时期主题色（与文明演进卡片呼应）
 const PERIOD_COLORS = {
-  '上古': '#8a7a63',
-  '春秋战国': '#4e8a7e',
-  '帝国初立': '#b5442f',
-  '分裂融合': '#7d5ba6',
+  '上古·文明起源': '#8a7a63',
+  '东周·诸侯割据': '#4e8a7e',
+  '秦汉·大一统': '#b5442f',
+  '三国·两晋·十六国': '#7d5ba6',
+  '南北朝·民族融合': '#4682b4',
   '隋唐盛世': '#c08f1e',
-  '宋元明清': '#3d6b99'
+  '多民族政权并立': '#8b4513',
+  '大一统皇朝': '#3d6b99',
+  '近代·共和转型': '#8c3b3b',
+  '当代·复兴之路': '#c26a2e'
 }
 
 // 时间轴刻度（每 500 年一条）
-const TICKS = [-2000, -1500, -1000, -500, 0, 500, 1000, 1500]
+const TICKS = [-2000, -1500, -1000, -500, 0, 500, 1000, 1500, 2000]
 
 export default {
   data() {
-    return { eras, dynasties, ticks: TICKS, withBase }
+    return { eras, dynasties, ticks: TICKS, withBase, currentYear: CURRENT_YEAR }
   },
   computed: {
     // 速览表：按时期分组
@@ -68,13 +74,16 @@ export default {
           period,
           color: PERIOD_COLORS[period],
           min: items[0].start,
-          max: items[items.length - 1].end,
+          max: items.reduce((a, b) => (this.parseYear(b.end) ?? -Infinity) > (this.parseYear(a.end) ?? -Infinity) ? b : a).end,
           lanes: Object.keys(lanes).sort((a, b) => a - b).map(k => lanes[k])
         }
       })
     },
     statDynasties() {
       return this.dynasties.length
+    },
+    statYears() {
+      return Math.round(TOTAL_SPAN / 100) * 100
     }
   },
   methods: {
@@ -82,6 +91,7 @@ export default {
       if (typeof y === 'number') return y
       const s = String(y)
       if (s === '传说时代') return null
+      if (s === '今' || s === '至今') return CURRENT_YEAR
       if (s.startsWith('前')) return -parseInt(s.slice(1), 10)
       return parseInt(s, 10)
     },
@@ -109,15 +119,19 @@ export default {
 
 <!-- ============ 顶部英雄区 ============ -->
 <div class="timeline-hero">
-  <p class="hero-kicker">GENEALOGY OF CHINA · 公元前 2070 — 公元 1912</p>
+  <p class="hero-kicker">GENEALOGY OF CHINA · 公元前 2070 — 公元 {{ currentYear }}</p>
   <h1 class="hero-title">中华历史时间线</h1>
-  <p class="hero-desc">纵览华夏五千年，从三皇五帝的传说，到最后一个封建王朝的落幕。</p>
+  <p class="hero-desc">纵览华夏五千年，从三皇五帝的传说，到当代中国的崛起。</p>
   <div class="hero-stats">
-    <div class="hero-stat"><b>{{ statDynasties }}</b><span>个朝代</span></div>
-    <div class="hero-stat"><b>6</b><span>大历史时期</span></div>
-    <div class="hero-stat"><b>近 4000</b><span>年岁月</span></div>
+    <div class="hero-stat"><b>{{ statDynasties }}</b><span>个政权</span></div>
+    <div class="hero-stat"><b>10</b><span>大历史时期</span></div>
+    <div class="hero-stat"><b>约 {{ statYears }}</b><span>年岁月</span></div>
   </div>
 </div>
+
+::: tip 🧭 想按时代顺序读？
+这份时间线负责"什么时候"；[历史脉络](/history/) 负责"为什么这样走"——10 个时代导览把朝代、人物、战役和文化串成一条线。
+:::
 
 ## 🗺️ 朝代时间轴
 
@@ -166,11 +180,11 @@ export default {
   <thead>
     <tr>
       <th>时期</th>
-      <th>朝代</th>
+      <th>朝代 / 政权</th>
       <th style="text-align:center">起止</th>
       <th>都城</th>
-      <th>开国君主</th>
-      <th>末代君主</th>
+      <th>开国者</th>
+      <th>末任者</th>
       <th>关键词</th>
     </tr>
   </thead>
@@ -281,6 +295,42 @@ export default {
 **关联帝王**：[宋太祖](/figures/emperors/songliao/beisong/song-taizu) · [明太祖](/figures/emperors/ming/ming-taizu) · [康熙帝](/figures/emperors/qing/kangxi)  
 **关联武将**：[岳飞](/figures/generals/songliao/nansong/yue-fei) · [徐达](/figures/generals/ming/xu-da) · [戚继光](/figures/generals/ming/qi-ji-guang) · [袁崇焕](/figures/generals/ming/yuan-chong-huan)  
 **关联谋臣**：[刘基](/figures/strategists/ming/liu-ji) · [张居正](/figures/strategists/ming/zhang-ju-zheng)
+
+---
+
+### ⚖️ 近代（1912–1949）
+
+> **共和初试**——帝制终结，在战乱与革命中寻找现代国家。
+
+| 看点 | 说明 |
+|:---|:---|
+| **北洋与军阀** | 袁世凯称帝失败后北洋分裂，皖、直、奉各系轮番执政 |
+| **新文化运动** | 民主与科学，白话文取代文言，儒家正统受到根本挑战 |
+| **五四与建党** | 1919 年民族主义高涨，1921 年中国共产党成立 |
+| **北伐与十年内战** | 1928 年形式统一，随后是"围剿"、长征与西安事变 |
+| **全面抗战** | 1937–1945，淞沪、徐州、武汉、长沙等大会战 |
+| **国共决战** | 三大战役与渡江战役，1949 年政权更替 |
+
+**关联政权**：[中华民国](/dynasties/xiandai/republic)  
+**关联人物**：[鲁迅](/figures/writers/minguo/lu-xun) · [詹天佑](/figures/scientists/minguo/zhan-tian-you) · [侯德榜](/figures/scientists/minguo/hou-de-bang) · [竺可桢](/figures/scientists/minguo/jing-yuan-yi) · [梁思成](/figures/scientists/minguo/liang-si-cheng) · [裴文中](/figures/scientists/minguo/pei-wen-zhong) · [华罗庚](/figures/scientists/minguo/hua-luo-geng)
+
+---
+
+### 🚩 当代（1949–今）
+
+> **工业化与改革**——从计划经济到全球第二大经济体。
+
+| 看点 | 说明 |
+|:---|:---|
+| **建政与恢复** | 土地改革、抗美援朝、统一财经、稳定物价 |
+| **一五计划** | 156 项重点工程，独立工业体系起步 |
+| **曲折探索** | 大跃进与"文化大革命"，国民经济遭受重创 |
+| **改革开放** | 联产承包、经济特区、南方谈话、加入 WTO |
+| **新世纪** | 高铁网络、载人航天、脱贫攻坚、新能源 |
+
+**关联政权**：[中华人民共和国](/dynasties/xiandai/prc)  
+**关联人物**：[钱学森](/figures/scientists/xiandai/qian-xue-sen) · [邓稼先](/figures/scientists/xiandai/deng-jia-xian) · [袁隆平](/figures/scientists/xiandai/yuan-long-ping) · [屠呦呦](/figures/scientists/xiandai/tu-you-you) · [孙家栋](/figures/scientists/xiandai/sun-jia-dong) · [黄旭华](/figures/scientists/xiandai/huang-xu-hua) · [南仁东](/figures/scientists/xiandai/nan-ren-dong) · [王选](/figures/scientists/xiandai/wang-xuan)  
+**关联专题**：[两弹一星](/figures/scientists/liang-dan-yi-xing)
 
 ---
 
@@ -508,10 +558,10 @@ export default {
   margin: 0.6rem 0 0.2rem;
 }
 
-/* ===== 六时期网格卡片 ===== */
+/* ===== 时期网格卡片 ===== */
 .era-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0 2.5rem;
 }
@@ -566,12 +616,16 @@ export default {
 }
 
 /* 各时期主题色点缀 */
-.era-myth     { border-top-color: #7c6a4f; }
-.era-ancient  { border-top-color: #b8860b; }
-.era-imperial { border-top-color: #c0392b; }
-.era-turbulent { border-top-color: #8e44ad; }
-.era-golden   { border-top-color: #d4a017; }
-.era-late     { border-top-color: #2c3e50; }
+.era-ancient   { border-top-color: #8b6914; }
+.era-dongzhou  { border-top-color: #6b8e23; }
+.era-qinhan    { border-top-color: #b22222; }
+.era-weijin    { border-top-color: #6a0dad; }
+.era-nanbei    { border-top-color: #4682b4; }
+.era-suitang   { border-top-color: #daa520; }
+.era-multi     { border-top-color: #8b4513; }
+.era-imperial  { border-top-color: #2f4f4f; }
+.era-modern    { border-top-color: #8c3b3b; }
+.era-contemporary { border-top-color: #c26a2e; }
 
 /* ===== 表格优化 ===== */
 table {

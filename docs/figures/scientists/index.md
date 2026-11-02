@@ -60,6 +60,7 @@ description: "格物致知、开物成务——从张衡、祖冲之到钱学森
 | [姜立夫](/figures/scientists/minguo/jiang-li-fu) | 民国/新中国 | 数学 | 1890–1978 | 南开数学系创办人，陈省身之师 |
 | [詹天佑](/figures/scientists/minguo/zhan-tian-you) | 清末/民国 | 铁路工程 | 1861–1919 | 中国铁路之父，京张铁路 |
 | [吴有训](/figures/scientists/minguo/wu-you-xun) | 民国/新中国 | 物理学 | 1897–1977 | 康普顿效应关键验证者 |
+| [叶企孙](/figures/scientists/minguo/ye-qi-sun) | 民国/新中国 | 物理学·教育 | 1898–1977 | 精确测定普朗克常数；创办清华大学物理系 |
 | [严济慈](/figures/scientists/minguo/yan-ji-ci) | 民国/新中国 | 物理学 | 1901–1996 | 压电效应精确测定，科大校长 |
 | [梁思成](/figures/scientists/minguo/liang-si-cheng) | 民国/新中国 | 建筑 | 1901–1972 | 《中国建筑史》，国徽设计主持 |
 | [俞大绂](/figures/scientists/minguo/yu-da-fu) | 民国/新中国 | 植物病理·农微 | 1901–1993 | 中国植物病理学奠基人，走到田间 |
